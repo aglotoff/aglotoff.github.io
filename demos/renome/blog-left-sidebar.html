@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog | Renome</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+
+<body class="page">
+    <a class="page__skip-link" href="#main-content">Skip to content</a>
+    <header class="header header_transparent page__header">
+        <div class="header__inner">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+            </a>
+            <nav class="nav header__nav">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                    <span class="hamburger__inner">
+                        <span class="hamburger__title">Toggle nav</span>
+                    </span>
+                </button>
+                <div class="nav__menu" id="main-menu">
+                    <div class="nav__scrollpane">
+                        <form class="mobile-search nav__search" action="#" method="post">
+                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <button class="mobile-search__submit" type="submit">
+                                <svg class="icon icon_search">
+                                    <title>Search</title>
+                                    <use xlink:href="img/icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <ul class="nav__list nav__list_horizontal">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link_active" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-blog">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu nav__link_active" href="blog-left-sidebar.html">Blog left sidebar</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-features">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="portfolio.html">Portfolio</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="one-page.html">One page</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.nav__scrollpane -->
+                </div><!-- /.nav__menu -->
+            </nav>
+            <div class="header__actions">
+                <button class="header__search-toggle">
+                    <svg class="icon icon_search">
+                        <title>Show search form</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="mini-cart header__mini-cart">
+                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                        <svg class="icon icon_cart">
+                            <title>Toggle minicart</title>
+                            <use xlink:href="img/icons.svg#cart"></use>
+                        </svg>
+                        <span class="mini-cart__item-count">2</span>
+                    </button>
+                    <div class="mini-cart__drop" id="minicart">
+                        <span class="mini-cart__total">$44.50</span>
+                        <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
+                        <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
+                    </div>
+                </div><!-- /.mini-cart -->
+            </div><!-- /.header__actions -->
+        </div><!-- /.header__inner -->
+        <div class="search header__search" role="dialog" aria-label="Search">
+            <form class="search__form" action="#" method="post">
+                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <button class="search__submit" type="submit">
+                    <svg class="icon icon_search">
+                        <title>Search</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="search__close" type="button" aria-label="Close"></button>
+            </form>
+        </div><!-- /.search -->
+    </header>
+    <main class="page__main" id="main-content">
+        <div class="page-header" style="background-image: url(img/content/blog/blog-header-bg.jpg)">
+            <div class="page-header__inner">
+                <div class="heading-group heading-group_lvl_page page-header__title">
+                    <h1 class="heading-group__title">Blog</h1>
+                    <p class="heading-group__subtitle">News, recipes and much more</p>
+                </div><!-- /.heading-group -->
+            </div>
+        </div><!-- /.page-header -->
+        <div class="blog-layout blog-layout_sidebar_left">
+            <div class="blog-layout__articles">
+                <article class="article blog-layout__article">
+                    <header class="article__header">
+                        <ul class="article__cats">
+                            <li class="article__cat-item">
+                                <a class="article__cat-link" href="javascript:void(0);">Promotions</a>
+                            </li>
+                        </ul>
+                        <h2 class="article__title">
+                            <a class="article__title-link" href="blog-single-left-sidebar.html">Summer specials</a>
+                        </h2>
+                        <time class="article__pubdate" datetime="2015-06-05 19:00">June 5, 2015</time>
+                    </header><!-- /.article__header -->
+                    <div class="article__content">
+                        <a href="blog-single-left-sidebar.html">
+                            <img class="article__image" src="img/content/blog/posts/summer-specials.jpg" alt="Summer specials" />
+                        </a>
+                        <div class="text article__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra felis lectus, eget malesuada lorem suscipit sed. Maecenas sapien lacus, placerat in nibh nec, maximus ornare magna. Ut vestibulum leo vel dignissim interdum.</p>
+                        </div><!-- /.article__text -->
+                        <a class="article__link" href="blog-single-left-sidebar.html">Continue Reading...</a>
+                    </div><!-- /.article__content -->
+                </article><!-- /.article -->
+                <article class="article blog-layout__article">
+                    <header class="article__header">
+                        <ul class="article__cats">
+                            <li class="article__cat-item">
+                                <a class="article__cat-link" href="javascript:void(0);">Press</a>
+                            </li>
+                        </ul>
+                        <h2 class="article__title">
+                            <a class="article__title-link" href="blog-single-left-sidebar.html">Our salad are award winning</a>
+                        </h2>
+                        <time class="article__pubdate" datetime="2015-04-25 19:00">April 25, 2015</time>
+                    </header><!-- /.article__header -->
+                    <div class="article__content">
+                        <div class="video video_format_16x9 article__video">
+                            <div class="video__inner">
+                                <iframe class="video__container" src="https://www.youtube.com/embed/ScMzIvxBSi4"></iframe>
+                            </div><!-- /.video__inner -->
+                        </div><!-- /.video -->
+                        <div class="text article__text">
+                            <p>Sed viverra bibendum sollicitudin. Praesent interdum porttitor elit molestie convallis. Integer sagittis vitae sem eget euismod. Etiam ut risus ac ligula hendrerit volutpat. Donec at consectetur leo, eu pretium estmauris.</p>
+                        </div><!-- /.article__text -->
+                        <a class="article__link" href="blog-single-left-sidebar.html">Continue Reading...</a>
+                    </div><!-- /.article__content -->
+                </article><!-- /.article -->
+                <article class="article blog-layout__article">
+                    <header class="article__header">
+                        <ul class="article__cats">
+                            <li class="article__cat-item">
+                                <a class="article__cat-link" href="javascript:void(0);">Recipes</a>
+                            </li>
+                        </ul>
+                        <h2 class="article__title">
+                            <a class="article__title-link" href="blog-single-left-sidebar.html">Homemade pizza</a>
+                        </h2>
+                        <time class="article__pubdate" datetime="2015-04-07 19:00">April 7, 2015</time>
+                    </header><!-- /.article__header -->
+                    <div class="article__content">
+                        <a href="blog-single-left-sidebar.html">
+                            <img class="article__image" src="img/content/blog/posts/homemade-pizza.jpg" alt="Homemade pizza" />
+                        </a>
+                        <div class="text article__text">
+                            <p>Curabitur pulvinar condimentum augue, id facilisis nunc dapibus vel. Praesent ut tortor non lorem iaculis imperdiet mollis at ex. Ut fringilla, sapien ac tempus mattis, massa tortor posuere neque etiam vitae orci ut tellusbi ben.</p>
+                        </div><!-- /.article__text -->
+                        <a class="article__link" href="blog-single-left-sidebar.html">Continue Reading...</a>
+                    </div><!-- /.article__content -->
+                </article><!-- /.article -->
+                <article class="article blog-layout__article">
+                    <header class="article__header">
+                        <ul class="article__cats">
+                            <li class="article__cat-item">
+                                <a class="article__cat-link" href="javascript:void(0);">Events</a>
+                            </li>
+                        </ul>
+                        <h2 class="article__title">
+                            <a class="article__title-link" href="blog-single-left-sidebar.html">Grand opening!</a>
+                        </h2>
+                        <time class="article__pubdate" datetime="2015-03-10 19:00">March 10, 2015</time>
+                    </header><!-- /.article__header -->
+                    <div class="article__content">
+                        <div class="blog-gallery article__gallery">
+                            <div class="blog-gallery__inner">
+                                <div class="blog-gallery__container">
+                                    <div class="blog-gallery__slide">
+                                        <img class="blog-gallery__img" src="img/content/blog/posts/grand-opening-1.jpg" alt="Great Opening" />
+                                    </div>
+                                    <div class="blog-gallery__slide">
+                                        <img class="blog-gallery__img" src="img/content/blog/posts/grand-opening-2.jpg" alt="Great Opening" />
+                                    </div>
+                                    <div class="blog-gallery__slide">
+                                        <img class="blog-gallery__img" src="img/content/blog/posts/grand-opening-3.jpg" alt="Great Opening" />
+                                    </div>
+                                </div><!-- /.blog-gallery__container -->
+                                <div class="blog-gallery__arrows">
+                                    <button class="blog-gallery__arrow blog-gallery__arrow_dir_prev" type="button">Previous</button>
+                                    <button class="blog-gallery__arrow blog-gallery__arrow_dir_next" type="button">Next</button>
+                                </div><!-- /.blog-gallery__arrows -->
+                            </div><!-- /.blog-gallery__inner -->
+                        </div><!-- /.blog-gallery -->
+                        <div class="text article__text">
+                            <p>Curabitur pulvinar condimentum augue, id facilisis nunc dapibus vel. Praesent ut tortor non lorem iaculis imperdiet mollis at ex. Ut fringilla, sapien ac tempus mattis, massa tortor posuere neque etiam vitae orci ut tellusbi ben.</p>
+                        </div><!-- /.article__text -->
+                        <a class="article__link" href="blog-single-left-sidebar.html">Continue Reading...</a>
+                    </div><!-- /.article__content -->
+                </article><!-- /.article -->
+            </div><!-- /.blog-layout__articles -->
+            <nav class="pagination pagination_blog blog-layout__pagination" aria-label="Pagination Navigation">
+                <div class="pagination__inner">
+                    <a class="pagination__link pagination__link_prev" href="javascript:void(0);">Go to Previous Page</a>
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a class="pagination__link pagination__link_active" href="javascript:void(0);" aria-label="Go to Page 1" aria-current="page">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:void(0);" aria-label="Go to Page 2">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:void(0);" aria-label="Go to Page 3">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:void(0);" aria-label="Go to Page 4">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:void(0);" aria-label="Go to Page 5">5</a>
+                        </li>
+                    </ul>
+                    <a class="pagination__link pagination__link_next" href="javascript:void(0);">Go to Next Page</a>
+                </div><!-- /.pagination__inner -->
+            </nav><!-- /.pagination -->
+            <div class="blog-layout__sidebar">
+                <form class="blog-search blog-layout__search" action="#" method="post">
+                    <input class="blog-search__input" type="text" placeholder="Search" required="required" />
+                    <button class="blog-search__submit" type="submit">
+                        <svg class="icon icon_search">
+                            <title>Search</title>
+                            <use xlink:href="img/icons.svg#search"></use>
+                        </svg>
+                    </button>
+                </form><!-- /.blog-search -->
+                <section class="blog-widget blog-layout__widget">
+                    <h2 class="blog-widget__title">Categories</h2>
+                    <div class="blog-cats">
+                        <ul class="blog-cats__list">
+                            <li class="blog-cats__item">
+                                <a class="blog-cats__link" href="javascript:void(0);">Events</a>
+                            </li>
+                            <li class="blog-cats__item">
+                                <a class="blog-cats__link" href="javascript:void(0);">Press</a>
+                            </li>
+                            <li class="blog-cats__item">
+                                <a class="blog-cats__link" href="javascript:void(0);">Promotions</a>
+                            </li>
+                            <li class="blog-cats__item">
+                                <a class="blog-cats__link" href="javascript:void(0);">Recipes</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.blog-cats -->
+                </section><!-- /.blog-widget -->
+                <section class="blog-widget blog-layout__widget">
+                    <h2 class="blog-widget__title">Popular posts</h2>
+                    <div class="popular-posts">
+                        <div class="popular-posts__list">
+                            <article class="popular-posts__item">
+                                <a class="popular-posts__item-thumb" href="blog-single-left-sidebar.html">
+                                    <img class="popular-posts__item-img" src="img/content/blog/posts/thumbs/85x55/summer-specials.jpg" alt="Summer specials" />
+                                </a>
+                                <div class="popular-posts__item-body">
+                                    <h3 class="popular-posts__item-title">
+                                        <a class="popular-posts__item-link" href="blog-single-left-sidebar.html">Summer specials</a>
+                                    </h3>
+                                    <time class="popular-posts__item-pubdate" datetime="2015-06-05 19:00">June 5, 2015</time>
+                                </div>
+                            </article>
+                            <article class="popular-posts__item">
+                                <a class="popular-posts__item-thumb" href="blog-single-left-sidebar.html">
+                                    <img class="popular-posts__item-img" src="img/content/blog/posts/thumbs/85x55/our-salad-are-award-winning.jpg" alt="Our salad are award winning" />
+                                </a>
+                                <div class="popular-posts__item-body">
+                                    <h3 class="popular-posts__item-title">
+                                        <a class="popular-posts__item-link" href="blog-single-left-sidebar.html">Our salad are award winning</a>
+                                    </h3>
+                                    <time class="popular-posts__item-pubdate" datetime="2015-04-25 19:00">April 25, 2015</time>
+                                </div>
+                            </article>
+                            <article class="popular-posts__item">
+                                <a class="popular-posts__item-thumb" href="blog-single-left-sidebar.html">
+                                    <img class="popular-posts__item-img" src="img/content/blog/posts/thumbs/85x55/homemade-pizza.jpg" alt="Homemade pizza" />
+                                </a>
+                                <div class="popular-posts__item-body">
+                                    <h3 class="popular-posts__item-title">
+                                        <a class="popular-posts__item-link" href="blog-single-left-sidebar.html">Homemade pizza</a>
+                                    </h3>
+                                    <time class="popular-posts__item-pubdate" datetime="2015-04-07 19:00">April 7, 2015</time>
+                                </div>
+                            </article>
+                            <article class="popular-posts__item">
+                                <a class="popular-posts__item-thumb" href="blog-single-left-sidebar.html">
+                                    <img class="popular-posts__item-img" src="img/content/blog/posts/thumbs/85x55/grand-opening.jpg" alt="Grand opening!" />
+                                </a>
+                                <div class="popular-posts__item-body">
+                                    <h3 class="popular-posts__item-title">
+                                        <a class="popular-posts__item-link" href="blog-single-left-sidebar.html">Grand opening!</a>
+                                    </h3>
+                                    <time class="popular-posts__item-pubdate" datetime="2015-03-10 19:00">March 10, 2015</time>
+                                </div>
+                            </article>
+                        </div>
+                    </div><!-- /.popular-posts -->
+                </section><!-- /.blog-widget -->
+            </div><!-- /.blog-layout__sidebar -->
+        </div><!-- /.blog-layout -->
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__social">
+                <div class="footer__social-text">Follow us:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_fb">
+                                <title>Follow us on Facebook</title>
+                                <use xlink:href="img/icons.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_twitter">
+                                <title>Follow us on Twitter</title>
+                                <use xlink:href="img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_gplus">
+                                <title>Follow us on Google Plus</title>
+                                <use xlink:href="img/icons.svg#gplus"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.footer__social -->
+            <a class="footer__logo" href="index.html">
+                <img src="img/logo.png" alt="Renome" />
+            </a><!-- /.footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by polarfawx</div><!-- /.footer__copyright -->
+        </div><!-- /.footer__inner -->
+    </footer>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

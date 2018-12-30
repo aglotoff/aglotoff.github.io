@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Korean Bibimbap &#8211; Shop | Renome</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+
+<body class="page">
+    <a class="page__skip-link" href="#main-content">Skip to content</a>
+    <header class="header header_transparent page__header">
+        <div class="header__inner">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+            </a>
+            <nav class="nav header__nav">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                    <span class="hamburger__inner">
+                        <span class="hamburger__title">Toggle nav</span>
+                    </span>
+                </button>
+                <div class="nav__menu" id="main-menu">
+                    <div class="nav__scrollpane">
+                        <form class="mobile-search nav__search" action="#" method="post">
+                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <button class="mobile-search__submit" type="submit">
+                                <svg class="icon icon_search">
+                                    <title>Search</title>
+                                    <use xlink:href="img/icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <ul class="nav__list nav__list_horizontal">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-blog">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-left-sidebar.html">Blog left sidebar</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-features">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="portfolio.html">Portfolio</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="one-page.html">One page</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link_active" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.nav__scrollpane -->
+                </div><!-- /.nav__menu -->
+            </nav>
+            <div class="header__actions">
+                <button class="header__search-toggle">
+                    <svg class="icon icon_search">
+                        <title>Show search form</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="mini-cart header__mini-cart">
+                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                        <svg class="icon icon_cart">
+                            <title>Toggle minicart</title>
+                            <use xlink:href="img/icons.svg#cart"></use>
+                        </svg>
+                        <span class="mini-cart__item-count">2</span>
+                    </button>
+                    <div class="mini-cart__drop" id="minicart">
+                        <span class="mini-cart__total">$44.50</span>
+                        <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
+                        <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
+                    </div>
+                </div><!-- /.mini-cart -->
+            </div><!-- /.header__actions -->
+        </div><!-- /.header__inner -->
+        <div class="search header__search" role="dialog" aria-label="Search">
+            <form class="search__form" action="#" method="post">
+                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <button class="search__submit" type="submit">
+                    <svg class="icon icon_search">
+                        <title>Search</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="search__close" type="button" aria-label="Close"></button>
+            </form>
+        </div><!-- /.search -->
+    </header>
+    <main class="page__main" id="main-content">
+        <div class="page-header" style="background-image: url(img/content/shop/shop-header-bg.jpg)">
+            <div class="page-header__inner">
+                <div class="heading-group heading-group_lvl_page page-header__title">
+                    <h1 class="heading-group__title">Shop</h1>
+                    <p class="heading-group__subtitle">Order dishes online</p>
+                </div><!-- /.heading-group -->
+            </div>
+        </div><!-- /.page-header -->
+        <div class="product-single">
+            <div class="product-single__notice">
+                <div class="notice" role="alert">
+                    <div class="notice__msg">"Korean bibimbap" was successfully added to your cart.</div>
+                    <a class="notice__link" href="shop-cart.html">View cart</a>
+                </div>
+            </div>
+            <div class="product-single__top">
+                <div class="product-gallery product-single__gallery">
+                    <ul class="product-gallery__thumbs">
+                        <li class="product-gallery__thumb">
+                            <a class="product-gallery__thumb-link product-gallery__thumb-link_active" href="img/content/shop/products/korean-bibimbap-1.jpg" role="button" data-slide="0">
+                                <img class="product-gallery__thumb-img" src="img/content/shop/products/thumbs/100x100/korean-bibimbap-1.jpg" alt="Korean bibimbap" />
+                            </a>
+                        </li>
+                        <li class="product-gallery__thumb">
+                            <a class="product-gallery__thumb-link" href="img/content/shop/products/korean-bibimbap-2.jpg" role="button" data-slide="1">
+                                <img class="product-gallery__thumb-img" src="img/content/shop/products/thumbs/100x100/korean-bibimbap-2.jpg" alt="Korean bibimbap" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="product-gallery__container">
+                        <div class="product-gallery__slide">
+                            <img class="product-gallery__slide-img" src="img/content/shop/products/korean-bibimbap-1.jpg" alt="Korean bibimbap" />
+                        </div>
+                        <div class="product-gallery__slide">
+                            <img class="product-gallery__slide-img" src="img/content/shop/products/korean-bibimbap-2.jpg" alt="Korean bibimbap" />
+                        </div>
+                    </div><!-- /.product-gallery__container -->
+                </div><!-- /.product-gallery -->
+                <div class="product-single__info">
+                    <nav class="product-breadcrumb product-single__breadcrumb" aria-label="Product Category">
+                        <ol class="product-breadcrumb__list">
+                            <li class="product-breadcrumb__item">
+                                <a class="product-breadcrumb__link" href="javascript:void(0);">shop</a>
+                            </li>
+                            <li class="product-breadcrumb__item">
+                                <a class="product-breadcrumb__link" href="javascript:void(0);">mains</a>
+                            </li>
+                            <li class="product-breadcrumb__item">
+                                <a class="product-breadcrumb__link product-breadcrumb__link_current" href="javascript:void(0);" aria-current="page">Korean bibimbap</a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h2 class="product-single__title">Korean bibimbap</h2>
+                    <div class="product-single__reviews">
+                        <div class="product-single__reviews-total"> 2 customer reviews</div>
+                        <div class="rating product-single__rating">
+                            <span class="rating__value">Rated: 4 out of 5</span>
+                            <span class="rating__stars">
+                                <span class="rating__highlighted" style="width:80%;"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-single__price">$19.35</div>
+                    <div class="text product-single__short-desc">
+                        <p>Sed porta efficitur enim, sed feugiat purus aliquam in. Proin vehicula sollicitudin tincidunt. Suspendisse vel ligula a orci viverra congue. Aenean felis odio, dictum eget volutpat eu, lacinia vitae mauris liquam convallis vulputate augue accumsan.</p>
+                    </div>
+                    <form class="add-to-cart product-single__add-to-cart" action="#" method="post">
+                        <input class="input input_theme_number add-to-cart__qty" name="quantity" value="1" type="number" min="1" size="4" step="1" aria-label="Quantity" required="required" />
+                        <button class="btn btn_theme_default btn_size_default add-to-cart__btn" type="submit" name="add-to-cart" value="12345">Add to cart</button>
+                    </form>
+                </div><!-- /.product-single__info -->
+            </div><!-- /.product-single__top-->
+            <div class="tabs product-single__tabs">
+                <div class="tabs__nav">
+                    <ul class="tabs__list" role="tablist" aria-orientation="vertical">
+                        <li class="tabs__item">
+                            <a class="tabs__link tabs__link_active" id="description-tab" tabindex="0" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a class="tabs__link" id="reviews-tab" tabindex="-1" href="#reviews" role="tab" aria-controls="reviews" aria-selected="undefined">Reviews(2)</a>
+                        </li>
+                    </ul>
+                </div><!-- /.tabs__nav -->
+                <div class="tabs__panel tabs__panel_active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                    <div class="product-desc">
+                        <div class="product-desc__inner">
+                            <div class="text">
+                                <p>Fusce pulvinar egestas ex id tincidunt. Curabitur faucibus tellus eu ligula rutrum, non varius est blandit. Pellentesque bibendum faucibus convallis. Sed placerat nulla sodales nunc scelerisque dignissim tincidunt quis est. Morbi porttitor et sapien at condimentum. Quisque mi ligula, porta at ante sit amet, aliquam bibendum risus. Integer id auctor nulla. Donec maximus orci non massa finibus facilisis.</p>
+                            </div>
+                        </div><!-- /.product-desc__inner -->
+                    </div><!-- /.product-desc -->
+                </div><!-- /.tabs__panel -->
+                <div class="tabs__panel" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <div class="reviews">
+                        <ol class="reviews__list">
+                            <li class="review reviews__review">
+                                <div class="review__header">
+                                    <img class="review__avatar" src="img/content/avatars/70x70/john-doe.jpg" alt="John Doe" />
+                                    <div class="review__title">
+                                        <h3 class="review__author">John Doe</h3>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <span class="rating__value">Rated: 4 out of 5</span>
+                                                <span class="rating__stars">
+                                                    <span class="rating__highlighted" style="width:80%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.review__title -->
+                                </div><!-- /.review__header -->
+                                <time class="review__time" datetime="2015-04-25 12:45">Apr 25, 12:45 PM</time>
+                                <div class="review__body">
+                                    <div class="text review__text">Donec maximus at neque pharetra convallis. Fusce tellus odio, mattis nec nisl sit amet, efficitur congue elit. Mauris tincidunt ex id dignissim tincidunt.</div>
+                                </div><!-- /.review__body-->
+                            </li><!-- /.review -->
+                            <li class="review reviews__review">
+                                <div class="review__header">
+                                    <img class="review__avatar" src="img/content/avatars/70x70/jane-doe.jpg" alt="Jane Doe" />
+                                    <div class="review__title">
+                                        <h3 class="review__author">Jane Doe</h3>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <span class="rating__value">Rated: 3 out of 5</span>
+                                                <span class="rating__stars">
+                                                    <span class="rating__highlighted" style="width:60%;"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.review__title -->
+                                </div><!-- /.review__header -->
+                                <time class="review__time" datetime="2015-04-25 12:45">Apr 25, 12:45 PM</time>
+                                <div class="review__body">
+                                    <div class="text review__text">Morbi lobortis enim auctor pharetra auctor. Vestibulum quis lorem a ante aliquet fringilla.</div>
+                                </div><!-- /.review__body-->
+                            </li><!-- /.review -->
+                        </ol><!-- /.reviews__inner -->
+                    </div><!-- /.reviews -->
+                    <form class="review-form" action="#" method="post">
+                        <div class="review-form__inner">
+                            <h3 class="title review-form__title">Add a review</h3>
+                            <div class="review-form__fields">
+                                <div class="review-form__field">
+                                    <label class="review-form__label" for="review-author" id="label-author">Author</label>
+                                    <input class="input input_theme_small review-form__input" id="review-author" aria-labelledby="label-author" name="author" placeholder="Name" required="required" />
+                                </div>
+                                <div class="review-form__field">
+                                    <label class="review-form__label" for="review-email" id="label-email">Email</label>
+                                    <input class="input input_theme_small review-form__input" type="email" id="review-email" aria-labelledby="label-email" name="email" placeholder="Email" required="required" />
+                                </div>
+                                <fieldset class="review-form__field review-form__field_radio-group">
+                                    <legend class="review-form__legend">Your rating</legend>
+                                    <div class="star-rating review-form__rating">
+                                        <input class="star-rating__radio" type="radio" id="star-rating-1" name="rating" value="1" required="required" />
+                                        <label class="star-rating__label star-rating__label_value_1" for="star-rating-1">1 out of 5</label>
+                                        <input class="star-rating__radio" type="radio" id="star-rating-2" name="rating" value="2" />
+                                        <label class="star-rating__label star-rating__label_value_2" for="star-rating-2">2 out of 5</label>
+                                        <input class="star-rating__radio" type="radio" id="star-rating-3" name="rating" value="3" />
+                                        <label class="star-rating__label star-rating__label_value_3" for="star-rating-3">3 out of 5</label>
+                                        <input class="star-rating__radio" type="radio" id="star-rating-4" name="rating" value="4" />
+                                        <label class="star-rating__label star-rating__label_value_4" for="star-rating-4">4 out of 5</label>
+                                        <input class="star-rating__radio" type="radio" id="star-rating-5" name="rating" value="5" />
+                                        <label class="star-rating__label star-rating__label_value_5" for="star-rating-5">5 out of 5</label>
+                                    </div>
+                                </fieldset>
+                                <div class="review-form__field review-form__field_wide">
+                                    <label class="review-form__label" for="review-comment" id="label-comment">Your review</label>
+                                    <textarea class="text-area text-area_theme_small review-form__input" id="review-comment" aria-labelledby="label-comment" name="comment" placeholder="Message" required="required"></textarea>
+                                </div>
+                            </div>
+                            <div class="review-form__bottom">
+                                <button class="btn btn_theme_default btn_size_default review-form__submit" type="submit">Submit</button>
+                            </div>
+                        </div><!-- /.review-form__inner -->
+                    </form>
+                </div><!-- /.tabs__panel -->
+            </div><!-- /.tabs -->
+            <section class="related-products">
+                <div class="related-products__inner">
+                    <h3 class="title related-products__title">Related products</h3>
+                    <ul class="related-products__list">
+                        <li class="related-products__item">
+                            <div class="product" data-product-id="1001">
+                                <a class="product__thumb" href="shop-single.html">
+                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/beef-with-pineapple.jpg" alt="Beef with pineapple" />
+                                </a>
+                                <h2 class="product__title">
+                                    <a class="product__link" href="shop-single.html">Beef with pineapple</a>
+                                </h2>
+                                <div class="product__price">$18.20</div>
+                                <div class="product__add-wrapper">
+                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1001" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                </div>
+                            </div><!-- /.product -->
+                        </li>
+                        <li class="related-products__item">
+                            <div class="product" data-product-id="1002">
+                                <a class="product__thumb" href="shop-single.html">
+                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/egg-baguette.jpg" alt="Egg baguette" />
+                                </a>
+                                <h2 class="product__title">
+                                    <a class="product__link" href="shop-single.html">Egg baguette</a>
+                                </h2>
+                                <div class="product__price">$8.10</div>
+                                <div class="product__add-wrapper">
+                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1002" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                </div>
+                            </div><!-- /.product -->
+                        </li>
+                    </ul>
+                </div><!-- /.related-products__inner -->
+            </section><!-- /.related-products -->
+        </div><!-- /.product-single -->
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__social">
+                <div class="footer__social-text">Follow us:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_fb">
+                                <title>Follow us on Facebook</title>
+                                <use xlink:href="img/icons.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_twitter">
+                                <title>Follow us on Twitter</title>
+                                <use xlink:href="img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_gplus">
+                                <title>Follow us on Google Plus</title>
+                                <use xlink:href="img/icons.svg#gplus"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.footer__social -->
+            <a class="footer__logo" href="index.html">
+                <img src="img/logo.png" alt="Renome" />
+            </a><!-- /.footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by polarfawx</div><!-- /.footer__copyright -->
+        </div><!-- /.footer__inner -->
+    </footer>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

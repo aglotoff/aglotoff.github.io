@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact | Renome</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+
+<body class="page">
+    <a class="page__skip-link" href="#main-content">Skip to content</a>
+    <header class="header header_transparent page__header">
+        <div class="header__inner">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+            </a>
+            <nav class="nav header__nav">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                    <span class="hamburger__inner">
+                        <span class="hamburger__title">Toggle nav</span>
+                    </span>
+                </button>
+                <div class="nav__menu" id="main-menu">
+                    <div class="nav__scrollpane">
+                        <form class="mobile-search nav__search" action="#" method="post">
+                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <button class="mobile-search__submit" type="submit">
+                                <svg class="icon icon_search">
+                                    <title>Search</title>
+                                    <use xlink:href="img/icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <ul class="nav__list nav__list_horizontal">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-blog">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-left-sidebar.html">Blog left sidebar</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-features">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="portfolio.html">Portfolio</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="one-page.html">One page</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link_active" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.nav__scrollpane -->
+                </div><!-- /.nav__menu -->
+            </nav>
+            <div class="header__actions">
+                <button class="header__search-toggle">
+                    <svg class="icon icon_search">
+                        <title>Show search form</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="mini-cart header__mini-cart">
+                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                        <svg class="icon icon_cart">
+                            <title>Toggle minicart</title>
+                            <use xlink:href="img/icons.svg#cart"></use>
+                        </svg>
+                        <span class="mini-cart__item-count">2</span>
+                    </button>
+                    <div class="mini-cart__drop" id="minicart">
+                        <span class="mini-cart__total">$44.50</span>
+                        <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
+                        <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
+                    </div>
+                </div><!-- /.mini-cart -->
+            </div><!-- /.header__actions -->
+        </div><!-- /.header__inner -->
+        <div class="search header__search" role="dialog" aria-label="Search">
+            <form class="search__form" action="#" method="post">
+                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <button class="search__submit" type="submit">
+                    <svg class="icon icon_search">
+                        <title>Search</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="search__close" type="button" aria-label="Close"></button>
+            </form>
+        </div><!-- /.search -->
+    </header>
+    <main class="page__main" id="main-content">
+        <div class="page-header" style="background-image: url(img/content/contact/contact-header-bg.jpg)">
+            <div class="page-header__inner">
+                <div class="heading-group heading-group_lvl_page page-header__title">
+                    <h1 class="heading-group__title">Contact</h1>
+                    <p class="heading-group__subtitle">We welcome you in our restaurant</p>
+                </div><!-- /.heading-group -->
+            </div>
+        </div><!-- /.page-header -->
+        <section class="section section_reverse">
+            <div class="section__inner">
+                <div class="img-group img-group_order_top-right img-group_size_sm section__images">
+                    <div class="img-group__row">
+                        <img class="img-group__img" src="img/content/contact/contact-1.jpg" alt="Contact" />
+                    </div>
+                    <div class="img-group__row">
+                        <img class="img-group__img" src="img/content/contact/contact-2.jpg" alt="Contact" />
+                    </div>
+                </div><!-- /.img-group -->
+                <div class="section__content">
+                    <div class="heading-group heading-group_lvl_section">
+                        <h2 class="heading-group__title">Happy</h2>
+                        <p class="heading-group__subtitle">To hear from you, contact us</p>
+                    </div><!-- /.heading-group -->
+                    <div class="text section__text">
+                        <p>Please feel free to contact us with any questions or to make reservations. If no one is available to take your call, please leave a message. We will contact you as soon as possible.</p>
+                    </div>
+                </div><!-- /.section__content -->
+            </div><!-- /.section__inner -->
+        </section><!-- /.section -->
+        <div class="contact-bottom">
+            <div class="contact-bottom__inner">
+                <div class="contact-details contact-bottom__details">
+                    <h2 class="contact-details__title">Contact Details</h2>
+                    <ul class="contact-details__list">
+                        <li class="contact-details__item">
+                            <div class="contact-details__label">Address</div>
+                            <div class="contact-details__text">355 e 5th st, Manhattan, NY 10003</div>
+                        </li>
+                        <li class="contact-details__item">
+                            <div class="contact-details__label">Phone</div>
+                            <div class="contact-details__text">+1 939 777 55 33</div>
+                        </li>
+                        <li class="contact-details__item">
+                            <div class="contact-details__label">Email</div>
+                            <div class="contact-details__text">reservation@renome.com</div>
+                        </li>
+                    </ul>
+                </div><!-- /.contact-details -->
+                <form class="contact-form contact-bottom__form" action="#" method="post">
+                    <h2 class="contact-form__title">Write a message</h2>
+                    <div class="contact-form__inner">
+                        <div class="contact-form__field">
+                            <label class="contact-form__label" for="contact-first-name" id="label-first-name">First Name</label>
+                            <input class="input input_theme_default contact-form__input" id="contact-first-name" name="first_name" placeholder="First Name *" aria-labelledby="label-first-name" required="required" />
+                        </div>
+                        <div class="contact-form__field">
+                            <label class="contact-form__label" for="contact-last-name" id="label-last-name">Last Name</label>
+                            <input class="input input_theme_default contact-form__input" id="contact-last-name" name="last_name" placeholder="Last Name *" aria-labelledby="label-last-name" required="required" />
+                        </div>
+                        <div class="contact-form__field">
+                            <label class="contact-form__label" for="contact-email" id="label-email">Email</label>
+                            <input class="input input_theme_default contact-form__input" id="contact-email" type="email" name="email" placeholder="Email *" aria-labelledby="label-email" required="required" />
+                        </div>
+                        <div class="contact-form__field">
+                            <label class="contact-form__label" for="contact-subject" id="label-subject">Subject</label>
+                            <input class="input input_theme_default contact-form__input" id="contact-subject" name="subject" placeholder="Subject *" aria-labelledby="label-subject" required="required" />
+                        </div>
+                        <div class="contact-form__field contact-form__field_large">
+                            <label class="contact-form__label" for="contact-message" id="label-message">Message</label>
+                            <textarea class="text-area text-area_theme_default contact-form__input contact-form__input_large" id="contact-message" name="message" placeholder="Message *" aria-labelledby="label-message" required="required"></textarea>
+                        </div>
+                        <button class="btn btn_theme_light btn_size_small contact-form__submit" type="submit">Send</button>
+                    </div><!-- /.contact-form__fields -->
+                </form><!-- /.contact-form -->
+            </div><!-- /.contact-bottom__inner -->
+        </div><!-- /.contact-bottom -->
+        <div class="map">
+            <div class="map__container"></div>
+        </div><!-- /.map-->
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__social">
+                <div class="footer__social-text">Follow us:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_fb">
+                                <title>Follow us on Facebook</title>
+                                <use xlink:href="img/icons.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_twitter">
+                                <title>Follow us on Twitter</title>
+                                <use xlink:href="img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_gplus">
+                                <title>Follow us on Google Plus</title>
+                                <use xlink:href="img/icons.svg#gplus"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.footer__social -->
+            <a class="footer__logo" href="index.html">
+                <img src="img/logo.png" alt="Renome" />
+            </a><!-- /.footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by polarfawx</div><!-- /.footer__copyright -->
+        </div><!-- /.footer__inner -->
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

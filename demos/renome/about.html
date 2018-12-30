@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About | Renome</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+
+<body class="page">
+    <a class="page__skip-link" href="#main-content">Skip to content</a>
+    <header class="header header_transparent page__header">
+        <div class="header__inner">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+            </a>
+            <nav class="nav header__nav">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                    <span class="hamburger__inner">
+                        <span class="hamburger__title">Toggle nav</span>
+                    </span>
+                </button>
+                <div class="nav__menu" id="main-menu">
+                    <div class="nav__scrollpane">
+                        <form class="mobile-search nav__search" action="#" method="post">
+                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <button class="mobile-search__submit" type="submit">
+                                <svg class="icon icon_search">
+                                    <title>Search</title>
+                                    <use xlink:href="img/icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <ul class="nav__list nav__list_horizontal">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link_active" href="about.html">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-blog">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-left-sidebar.html">Blog left sidebar</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-features">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="portfolio.html">Portfolio</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="one-page.html">One page</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.nav__scrollpane -->
+                </div><!-- /.nav__menu -->
+            </nav>
+            <div class="header__actions">
+                <button class="header__search-toggle">
+                    <svg class="icon icon_search">
+                        <title>Show search form</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="mini-cart header__mini-cart">
+                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                        <svg class="icon icon_cart">
+                            <title>Toggle minicart</title>
+                            <use xlink:href="img/icons.svg#cart"></use>
+                        </svg>
+                        <span class="mini-cart__item-count">2</span>
+                    </button>
+                    <div class="mini-cart__drop" id="minicart">
+                        <span class="mini-cart__total">$44.50</span>
+                        <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
+                        <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
+                    </div>
+                </div><!-- /.mini-cart -->
+            </div><!-- /.header__actions -->
+        </div><!-- /.header__inner -->
+        <div class="search header__search" role="dialog" aria-label="Search">
+            <form class="search__form" action="#" method="post">
+                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <button class="search__submit" type="submit">
+                    <svg class="icon icon_search">
+                        <title>Search</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="search__close" type="button" aria-label="Close"></button>
+            </form>
+        </div><!-- /.search -->
+    </header>
+    <main class="page__main" id="main-content">
+        <div class="page-header" style="background-image: url(img/content/about/about-header-bg.jpg)">
+            <div class="page-header__inner">
+                <div class="heading-group heading-group_lvl_page page-header__title">
+                    <h1 class="heading-group__title">About</h1>
+                    <p class="heading-group__subtitle">We create delicious memories</p>
+                </div><!-- /.heading-group -->
+            </div>
+        </div><!-- /.page-header -->
+        <section class="section">
+            <div class="section__inner">
+                <div class="img-group img-group_order_bottom-left img-group_size_lg section__images">
+                    <div class="img-group__row">
+                        <img class="img-group__img" src="img/content/about/history-1.jpg" alt="About" />
+                    </div>
+                    <div class="img-group__row">
+                        <img class="img-group__img" src="img/content/about/history-2.jpg" alt="About" />
+                    </div>
+                </div><!-- /.img-group -->
+                <div class="section__content">
+                    <div class="heading-group heading-group_lvl_section">
+                        <h2 class="heading-group__title">History</h2>
+                        <p class="heading-group__subtitle">Wonderful story of our town</p>
+                    </div><!-- /.heading-group -->
+                    <div class="text section__text">
+                        <p>Renome it is renowned restaurant delights the senses with elegant ambiance, gracious service and delectable menus in the heart of Manhattan’s. The distinctive setting boasts contemporary furnishings and finishes atop the restaurant’s grand modern architecture. Renome offers the Bellecour room for private dining where guests enjoy creative foods and sumptuous late night desserts. Is one of the few Manhattan restaurants to have a coveted 3-star Michelin rating.</p>
+                    </div>
+                </div><!-- /.section__content -->
+            </div><!-- /.section__inner -->
+        </section><!-- /.section -->
+        <section class="section section_reverse">
+            <div class="section__inner">
+                <div class="img-group img-group_order_bottom-left img-group_size_lg section__images">
+                    <div class="img-group__row">
+                        <img class="img-group__img" src="img/content/about/goals-1.jpg" alt="About" />
+                    </div>
+                    <div class="img-group__row">
+                        <img class="img-group__img" src="img/content/about/goals-2.jpg" alt="About" />
+                    </div>
+                </div><!-- /.img-group -->
+                <div class="section__content">
+                    <div class="heading-group heading-group_lvl_section">
+                        <h2 class="heading-group__title">Goals</h2>
+                        <p class="heading-group__subtitle">What we want to achieve</p>
+                    </div><!-- /.heading-group -->
+                    <div class="text section__text">
+                        <p>Our guests come for all occasions – a drink after work, a quick bite before a movie, a business dinner and much more. Our goal is to satisfy the needs of every visitor to our restaurant every day improving the quality of our services.</p>
+                    </div>
+                </div><!-- /.section__content -->
+            </div><!-- /.section__inner -->
+        </section><!-- /.section -->
+        <div class="about-bottom">
+            <div class="about-bottom__inner">
+                <div class="about-gallery about-bottom__gallery">
+                    <a class="about-gallery__thumb mfp-image" href="img/content/about/gallery/img-01.jpg" role="button">
+                        <img class="about-gallery__thumb-img" src="img/content/about/gallery/thumbs/thumb-01.jpg" alt="About" />
+                        <div class="about-gallery__thumb-overlay">
+                            <svg class="icon icon_zoom">
+                                <title>Zoom image</title>
+                                <use xlink:href="img/icons.svg#zoom"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="about-gallery__thumb mfp-image" href="img/content/about/gallery/img-02.jpg" role="button">
+                        <img class="about-gallery__thumb-img" src="img/content/about/gallery/thumbs/thumb-02.jpg" alt="About" />
+                        <div class="about-gallery__thumb-overlay">
+                            <svg class="icon icon_zoom">
+                                <title>Zoom image</title>
+                                <use xlink:href="img/icons.svg#zoom"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="about-gallery__thumb mfp-image" href="img/content/about/gallery/img-03.jpg" role="button">
+                        <img class="about-gallery__thumb-img" src="img/content/about/gallery/thumbs/thumb-03.jpg" alt="About" />
+                        <div class="about-gallery__thumb-overlay">
+                            <svg class="icon icon_zoom">
+                                <title>Zoom image</title>
+                                <use xlink:href="img/icons.svg#zoom"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="about-gallery__thumb mfp-image" href="img/content/about/gallery/img-04.jpg" role="button">
+                        <img class="about-gallery__thumb-img" src="img/content/about/gallery/thumbs/thumb-04.jpg" alt="About" />
+                        <div class="about-gallery__thumb-overlay">
+                            <svg class="icon icon_zoom">
+                                <title>Zoom image</title>
+                                <use xlink:href="img/icons.svg#zoom"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="about-gallery__thumb mfp-image" href="img/content/about/gallery/img-05.jpg" role="button">
+                        <img class="about-gallery__thumb-img" src="img/content/about/gallery/thumbs/thumb-05.jpg" alt="About" />
+                        <div class="about-gallery__thumb-overlay">
+                            <svg class="icon icon_zoom">
+                                <title>Zoom image</title>
+                                <use xlink:href="img/icons.svg#zoom"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="about-gallery__thumb mfp-iframe" href="https://www.youtube.com/watch?v=ScMzIvxBSi4" role="button">
+                        <img class="about-gallery__thumb-img" src="img/content/about/gallery/thumbs/thumb-06.jpg" alt="About" />
+                        <div class="about-gallery__thumb-overlay">
+                            <svg class="icon icon_play">
+                                <title>Play video</title>
+                                <use xlink:href="img/icons.svg#play"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div><!-- /.about-gallery -->
+                <div class="opening-hours about-bottom__opening-hours">
+                    <h2 class="opening-hours__title">Opening hours</h2>
+                    <ul class="opening-hours__list">
+                        <li class="opening-hours__item">
+                            <div class="opening-hours__weekdays">Monday - Friday</div>
+                            <div class="opening-hours__time">9:00 - 22:00</div>
+                        </li>
+                        <li class="opening-hours__item">
+                            <div class="opening-hours__weekdays">Saturday - Sunday</div>
+                            <div class="opening-hours__time">10:00 - 21:00</div>
+                        </li>
+                    </ul>
+                </div><!-- /.opening-hours -->
+            </div><!-- /.about-bottom__inner -->
+        </div><!-- /.about-bottom -->
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__social">
+                <div class="footer__social-text">Follow us:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_fb">
+                                <title>Follow us on Facebook</title>
+                                <use xlink:href="img/icons.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_twitter">
+                                <title>Follow us on Twitter</title>
+                                <use xlink:href="img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_gplus">
+                                <title>Follow us on Google Plus</title>
+                                <use xlink:href="img/icons.svg#gplus"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.footer__social -->
+            <a class="footer__logo" href="index.html">
+                <img src="img/logo.png" alt="Renome" />
+            </a><!-- /.footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by polarfawx</div><!-- /.footer__copyright -->
+        </div><!-- /.footer__inner -->
+    </footer>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

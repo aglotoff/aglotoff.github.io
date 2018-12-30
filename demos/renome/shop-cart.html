@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shopping Cart &#8211; Shop | Renome</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+
+<body class="page">
+    <a class="page__skip-link" href="#main-content">Skip to content</a>
+    <header class="header header_transparent page__header">
+        <div class="header__inner">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+            </a>
+            <nav class="nav header__nav">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                    <span class="hamburger__inner">
+                        <span class="hamburger__title">Toggle nav</span>
+                    </span>
+                </button>
+                <div class="nav__menu" id="main-menu">
+                    <div class="nav__scrollpane">
+                        <form class="mobile-search nav__search" action="#" method="post">
+                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <button class="mobile-search__submit" type="submit">
+                                <svg class="icon icon_search">
+                                    <title>Search</title>
+                                    <use xlink:href="img/icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <ul class="nav__list nav__list_horizontal">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-blog">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-left-sidebar.html">Blog left sidebar</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-features">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="portfolio.html">Portfolio</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="one-page.html">One page</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link_active" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.nav__scrollpane -->
+                </div><!-- /.nav__menu -->
+            </nav>
+            <div class="header__actions">
+                <button class="header__search-toggle">
+                    <svg class="icon icon_search">
+                        <title>Show search form</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="mini-cart header__mini-cart">
+                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                        <svg class="icon icon_cart">
+                            <title>Toggle minicart</title>
+                            <use xlink:href="img/icons.svg#cart"></use>
+                        </svg>
+                        <span class="mini-cart__item-count">2</span>
+                    </button>
+                    <div class="mini-cart__drop" id="minicart">
+                        <span class="mini-cart__total">$44.50</span>
+                        <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
+                        <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
+                    </div>
+                </div><!-- /.mini-cart -->
+            </div><!-- /.header__actions -->
+        </div><!-- /.header__inner -->
+        <div class="search header__search" role="dialog" aria-label="Search">
+            <form class="search__form" action="#" method="post">
+                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <button class="search__submit" type="submit">
+                    <svg class="icon icon_search">
+                        <title>Search</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="search__close" type="button" aria-label="Close"></button>
+            </form>
+        </div><!-- /.search -->
+    </header>
+    <main class="page__main" id="main-content">
+        <div class="page-header" style="background-image: url(img/content/shop/shop-header-bg.jpg)">
+            <div class="page-header__inner">
+                <div class="heading-group heading-group_lvl_page page-header__title">
+                    <h1 class="heading-group__title">Shop</h1>
+                    <p class="heading-group__subtitle">Order dishes online</p>
+                </div><!-- /.heading-group -->
+            </div>
+        </div><!-- /.page-header -->
+        <form class="cart-form" action="#" method="post">
+            <div class="cart-form__inner">
+                <table class="cart-form__table">
+                    <colgroup>
+                        <col class="cart-form__col cart-form__col_name_product" />
+                        <col class="cart-form__col cart-form__col_name_qty" />
+                        <col class="cart-form__col cart-form__col_name_total" />
+                        <col class="cart-form__col cart-form__col_name_remove" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="cart-form__header" scope="col">Product</th>
+                            <th class="cart-form__header" scope="col"><abbr class="cart-form__header-abbr" title="Quantity">Qty</abbr>
+                                <span class="cart-form__header-full">Quantity</span>
+                            </th>
+                            <th class="cart-form__header" scope="col">Total</th>
+                            <th class="cart-form__header" scope="col">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="cart-form__item">
+                            <td class="cart-form__cell">
+                                <div class="cart-form__product">
+                                    <a class="cart-form__product-thumb" href="shop-single.html">
+                                        <img class="cart-form__product-img" src="img/content/shop/products/thumbs/80x80/beef-with-pineapple.jpg" alt="Beef with pineapple" />
+                                    </a>
+                                    <div class="cart-form__product-body">
+                                        <a class="cart-form__product-title" href="shop-single.html">Beef with pineapple</a>
+                                        <div class="cart-form__product-price">$18.20</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="cart-form__cell">
+                                <input class="input input_theme_number cart-form__qty" type="number" value="2" name="[10001][qty]" min="0" size="4" step="1" aria-label="Quantity" />
+                            </td>
+                            <td class="cart-form__cell">
+                                <span class="cart-form__subtotal">$36.40</span>
+                            </td>
+                            <td class="cart-form__cell">
+                                <a class="cart-form__remove" href="javascript:void(0);" data-product-id="10001" role="button">Remove this item</a>
+                            </td>
+                        </tr>
+                        <tr class="cart-form__item">
+                            <td class="cart-form__cell">
+                                <div class="cart-form__product">
+                                    <a class="cart-form__product-thumb" href="shop-single.html">
+                                        <img class="cart-form__product-img" src="img/content/shop/products/thumbs/80x80/egg-baguette.jpg" alt="Egg baguette" />
+                                    </a>
+                                    <div class="cart-form__product-body">
+                                        <a class="cart-form__product-title" href="shop-single.html">Egg baguette</a>
+                                        <div class="cart-form__product-price">$8.10</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="cart-form__cell">
+                                <input class="input input_theme_number cart-form__qty" type="number" value="1" name="[10002][qty]" min="0" size="4" step="1" aria-label="Quantity" />
+                            </td>
+                            <td class="cart-form__cell">
+                                <span class="cart-form__subtotal">$8.10</span>
+                            </td>
+                            <td class="cart-form__cell">
+                                <a class="cart-form__remove" href="javascript:void(0);" data-product-id="10002" role="button">Remove this item</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="cart-form__actions">
+                    <div class="cart-form__coupon">
+                        <label class="cart-form__coupon-label" for="cart-coupon-code" id="label-coupon-code">Coupon code</label>
+                        <input class="input input_theme_coupon cart-form__coupon-input" type="text" name="coupon_code" placeholder="Coupon code" id="cart-coupon-code" aria-labelledby="label-coupon-code" />
+                        <button class="btn btn_theme_default btn_size_default cart-form__coupon-apply" type="button" name="apply_coupon" value="Apply coupon">Apply coupon</button>
+                    </div><!-- /.cart-form__coupon -->
+                    <button class="btn btn_theme_default btn_size_default cart-form__submit" type="submit" name="update_cart" value="Update Cart">Update Cart</button>
+                </div><!-- /.cart-form__actions -->
+            </div><!-- /.cart-form__inner -->
+        </form>
+        <div class="cart-totals">
+            <div class="cart-totals__inner">
+                <table class="cart-totals__table">
+                    <tr>
+                        <th class="cart-totals__table-header">Subtotal</th>
+                        <td class="cart-totals__table-cell">$44.50</td>
+                    </tr>
+                    <tr>
+                        <th class="cart-totals__table-header">Shipping</th>
+                        <td class="cart-totals__table-cell">
+                            <div class="cart-shipping cart-totals__shipping">
+                                <ul class="cart-shipping__methods">
+                                    <li class="cart-shipping__method">Free shipping</li>
+                                </ul>
+                                <div class="shipping-calc cart-shipping__calc">
+                                    <button class="shipping-calc__toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="shipping-calc">Calculate Shipping</button>
+                                    <form class="shipping-calc__form" action="#" method="post" id="shipping-calc">
+                                        <label class="shipping-calc__label" for="shipping-country" id="label-country"></label>
+                                        <select class="shipping-calc__country required" id="shipping-country" aria-labelledby="label-country" name="calc_shipping_country">
+                                            <option value="">&nbsp;</option>
+                                            <option value="uk">United Kingdom</option>
+                                            <option value="us">United States</option>
+                                        </select>
+                                        <label class="shipping-calc__label" for="shipping-state" id="label-state">Shipping state</label>
+                                        <input class="input input_theme_small shipping-calc__input" id="shipping-state" aria-labelledby="label-state" name="state" placeholder="State / County" required="required" />
+                                        <label class="shipping-calc__label" for="shipping-postcode" id="label-postcode">Shipping postcode
+                                            <input class="input input_theme_small shipping-calc__postcode" id="shipping-postcode" aria-labelledby="label-postcode" name="postcode" placeholder="Postcode / ZIP" required="required" />
+                                        </label>
+                                        <button class="btn btn_theme_default btn_size_default shipping-calc__submit" type="submit" name="calc_shipping" value="1">Update totals</button>
+                                    </form>
+                                </div>
+                            </div><!-- /.cart-shipping -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="cart-totals__table-header">Total</th>
+                        <td class="cart-totals__table-cell"><strong class="cart-totals__order-total">$44.50</strong></td>
+                    </tr>
+                </table>
+                <div class="cart-totals__checkout">
+                    <a class="btn btn_theme_default btn_size_default cart-totals__checkout-btn" href="shop-checkout.html">Proceed to checkout</a>
+                </div>
+            </div><!-- /.cart-totals__inner -->
+        </div><!-- /.cart-totals -->
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__social">
+                <div class="footer__social-text">Follow us:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_fb">
+                                <title>Follow us on Facebook</title>
+                                <use xlink:href="img/icons.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_twitter">
+                                <title>Follow us on Twitter</title>
+                                <use xlink:href="img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_gplus">
+                                <title>Follow us on Google Plus</title>
+                                <use xlink:href="img/icons.svg#gplus"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.footer__social -->
+            <a class="footer__logo" href="index.html">
+                <img src="img/logo.png" alt="Renome" />
+            </a><!-- /.footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by polarfawx</div><!-- /.footer__copyright -->
+        </div><!-- /.footer__inner -->
+    </footer>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

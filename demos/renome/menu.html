@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Menu | Renome</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+
+<body class="page">
+    <a class="page__skip-link" href="#main-content">Skip to content</a>
+    <header class="header header_transparent page__header">
+        <div class="header__inner">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+            </a>
+            <nav class="nav header__nav">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                    <span class="hamburger__inner">
+                        <span class="hamburger__title">Toggle nav</span>
+                    </span>
+                </button>
+                <div class="nav__menu" id="main-menu">
+                    <div class="nav__scrollpane">
+                        <form class="mobile-search nav__search" action="#" method="post">
+                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <button class="mobile-search__submit" type="submit">
+                                <svg class="icon icon_search">
+                                    <title>Search</title>
+                                    <use xlink:href="img/icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <ul class="nav__list nav__list_horizontal">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link_active" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-blog">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-left-sidebar.html">Blog left sidebar</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-features">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="portfolio.html">Portfolio</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="one-page.html">One page</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.nav__scrollpane -->
+                </div><!-- /.nav__menu -->
+            </nav>
+            <div class="header__actions">
+                <button class="header__search-toggle">
+                    <svg class="icon icon_search">
+                        <title>Show search form</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="mini-cart header__mini-cart">
+                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                        <svg class="icon icon_cart">
+                            <title>Toggle minicart</title>
+                            <use xlink:href="img/icons.svg#cart"></use>
+                        </svg>
+                        <span class="mini-cart__item-count">2</span>
+                    </button>
+                    <div class="mini-cart__drop" id="minicart">
+                        <span class="mini-cart__total">$44.50</span>
+                        <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
+                        <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
+                    </div>
+                </div><!-- /.mini-cart -->
+            </div><!-- /.header__actions -->
+        </div><!-- /.header__inner -->
+        <div class="search header__search" role="dialog" aria-label="Search">
+            <form class="search__form" action="#" method="post">
+                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <button class="search__submit" type="submit">
+                    <svg class="icon icon_search">
+                        <title>Search</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="search__close" type="button" aria-label="Close"></button>
+            </form>
+        </div><!-- /.search -->
+    </header>
+    <main class="page__main" id="main-content">
+        <div class="page-header" style="background-image: url(img/content/menu/menu-header-bg.jpg)">
+            <div class="page-header__inner">
+                <div class="heading-group heading-group_lvl_page page-header__title">
+                    <h1 class="heading-group__title">Menu</h1>
+                    <p class="heading-group__subtitle">Delicious and beautiful</p>
+                </div><!-- /.heading-group -->
+            </div>
+        </div><!-- /.page-header -->
+        <section class="section section_reverse">
+            <div class="section__inner">
+                <div class="img-group img-group_order_top-right img-group_size_sm section__images">
+                    <div class="img-group__row">
+                        <img class="img-group__img" src="img/content/menu/menu-1.jpg" alt="Menu" />
+                    </div>
+                    <div class="img-group__row">
+                        <img class="img-group__img" src="img/content/menu/menu-2.jpg" alt="Menu" />
+                    </div>
+                </div><!-- /.img-group -->
+                <div class="section__content">
+                    <div class="heading-group heading-group_lvl_section">
+                        <h2 class="heading-group__title">Discover</h2>
+                        <p class="heading-group__subtitle">Our restaurant menu</p>
+                    </div><!-- /.heading-group -->
+                    <div class="text section__text">
+                        <p>In our menu you will find a great variety of delicious food that will satisfy the needs and tastes of everyone. We strive to source the highest quality ingredients for all of our dishes thereby enhancing the quality of services.</p>
+                    </div>
+                </div><!-- /.section__content -->
+            </div><!-- /.section__inner -->
+        </section><!-- /.section -->
+        <div class="menu">
+            <div class="tabs">
+                <div class="tabs__nav">
+                    <ul class="tabs__list" role="tablist" aria-orientation="vertical">
+                        <li class="tabs__item">
+                            <a class="tabs__link tabs__link_active" id="breakfast-tab" tabindex="0" href="#breakfast" role="tab" aria-controls="breakfast" aria-selected="true">Breakfast</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a class="tabs__link" id="lunch-tab" tabindex="-1" href="#lunch" role="tab" aria-controls="lunch" aria-selected="false">Lunch</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a class="tabs__link" id="drinks-tab" tabindex="-1" href="#drinks" role="tab" aria-controls="drinks" aria-selected="false">Drinks</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a class="tabs__link" id="desserts-tab" tabindex="-1" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+                        </li>
+                    </ul>
+                </div><!-- /.tabs__nav -->
+                <div class="tabs__panel tabs__panel_active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+                    <div class="menu-cat">
+                        <div class="menu-cat__inner">
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Appetizers</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/chicken-wings.jpg" alt="Chicken wings" />
+                                            <a class="menu-product__link" href="img/content/menu/products/chicken-wings.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$9<span class="menu-product__price-decimals">.95</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Chicken wings</h3>
+                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/dumplings.jpg" alt="Dumplings" />
+                                            <a class="menu-product__link" href="img/content/menu/products/dumplings.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.70</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Dumplings</h3>
+                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/french-onion-soup.jpg" alt="French onion soup" />
+                                            <a class="menu-product__link" href="img/content/menu/products/french-onion-soup.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.80</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">French onion soup</h3>
+                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/mini-chilli-pretzels.jpg" alt="Mini chilli pretzels" />
+                                            <a class="menu-product__link" href="img/content/menu/products/mini-chilli-pretzels.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$2<span class="menu-product__price-decimals">.10</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Mini chilli pretzels</h3>
+                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Entrees</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/atlantic-salmon.jpg" alt="Atlantic Salmon" />
+                                            <a class="menu-product__link" href="img/content/menu/products/atlantic-salmon.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$7<span class="menu-product__price-decimals">.30</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Atlantic Salmon</h3>
+                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/fish-tacos.jpg" alt="Fish tacos" />
+                                            <div class="menu-product__label">New</div>
+                                            <a class="menu-product__link" href="img/content/menu/products/fish-tacos.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.45</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Fish tacos</h3>
+                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/sesame-tuna.jpg" alt="Sesame Tuna" />
+                                            <a class="menu-product__link" href="img/content/menu/products/sesame-tuna.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$4<span class="menu-product__price-decimals">.60</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Sesame Tuna</h3>
+                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/parmesan-chicken.jpg" alt="Parmesan chicken" />
+                                            <a class="menu-product__link" href="img/content/menu/products/parmesan-chicken.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$8<span class="menu-product__price-decimals">.35</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Parmesan chicken</h3>
+                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Main Course</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/seared-scallops.jpg" alt="Seared scallops" />
+                                            <a class="menu-product__link" href="img/content/menu/products/seared-scallops.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$3<span class="menu-product__price-decimals">.80</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Seared scallops</h3>
+                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/poached-salmon.jpg" alt="Poached salmon" />
+                                            <a class="menu-product__link" href="img/content/menu/products/poached-salmon.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$9<span class="menu-product__price-decimals">.25</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Poached salmon</h3>
+                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/green-curry.jpg" alt="Green curry" />
+                                            <a class="menu-product__link" href="img/content/menu/products/green-curry.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$7<span class="menu-product__price-decimals">.70</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Green curry</h3>
+                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Salads</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/lobster-salad.jpg" alt="Lobster salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/lobster-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$6<span class="menu-product__price-decimals">.30</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Lobster salad</h3>
+                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/chicken-orange-salad.jpg" alt="Chicken &amp; orange salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/chicken-orange-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$8<span class="menu-product__price-decimals">.50</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
+                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/winter-salad.jpg" alt="Winter salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/winter-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$4<span class="menu-product__price-decimals">.15</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Winter salad</h3>
+                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/thai-style-salad.jpg" alt="Thai-style salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/thai-style-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.05</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Thai-style salad</h3>
+                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                        </div><!-- /.menu-cat__inner -->
+                    </div><!-- /.menu-cat -->
+                </div><!-- /.tabs__panel -->
+                <div class="tabs__panel" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+                    <div class="menu-cat">
+                        <div class="menu-cat__inner">
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Appetizers</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/chicken-wings.jpg" alt="Chicken wings" />
+                                            <a class="menu-product__link" href="img/content/menu/products/chicken-wings.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$9<span class="menu-product__price-decimals">.95</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Chicken wings</h3>
+                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/dumplings.jpg" alt="Dumplings" />
+                                            <a class="menu-product__link" href="img/content/menu/products/dumplings.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.70</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Dumplings</h3>
+                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/french-onion-soup.jpg" alt="French onion soup" />
+                                            <a class="menu-product__link" href="img/content/menu/products/french-onion-soup.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.80</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">French onion soup</h3>
+                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/mini-chilli-pretzels.jpg" alt="Mini chilli pretzels" />
+                                            <a class="menu-product__link" href="img/content/menu/products/mini-chilli-pretzels.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$2<span class="menu-product__price-decimals">.10</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Mini chilli pretzels</h3>
+                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Entrees</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/atlantic-salmon.jpg" alt="Atlantic Salmon" />
+                                            <a class="menu-product__link" href="img/content/menu/products/atlantic-salmon.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$7<span class="menu-product__price-decimals">.30</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Atlantic Salmon</h3>
+                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/fish-tacos.jpg" alt="Fish tacos" />
+                                            <div class="menu-product__label">New</div>
+                                            <a class="menu-product__link" href="img/content/menu/products/fish-tacos.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.45</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Fish tacos</h3>
+                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/sesame-tuna.jpg" alt="Sesame Tuna" />
+                                            <a class="menu-product__link" href="img/content/menu/products/sesame-tuna.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$4<span class="menu-product__price-decimals">.60</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Sesame Tuna</h3>
+                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/parmesan-chicken.jpg" alt="Parmesan chicken" />
+                                            <a class="menu-product__link" href="img/content/menu/products/parmesan-chicken.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$8<span class="menu-product__price-decimals">.35</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Parmesan chicken</h3>
+                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Main Course</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/seared-scallops.jpg" alt="Seared scallops" />
+                                            <a class="menu-product__link" href="img/content/menu/products/seared-scallops.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$3<span class="menu-product__price-decimals">.80</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Seared scallops</h3>
+                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/poached-salmon.jpg" alt="Poached salmon" />
+                                            <a class="menu-product__link" href="img/content/menu/products/poached-salmon.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$9<span class="menu-product__price-decimals">.25</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Poached salmon</h3>
+                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/green-curry.jpg" alt="Green curry" />
+                                            <a class="menu-product__link" href="img/content/menu/products/green-curry.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$7<span class="menu-product__price-decimals">.70</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Green curry</h3>
+                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Salads</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/lobster-salad.jpg" alt="Lobster salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/lobster-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$6<span class="menu-product__price-decimals">.30</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Lobster salad</h3>
+                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/chicken-orange-salad.jpg" alt="Chicken &amp; orange salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/chicken-orange-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$8<span class="menu-product__price-decimals">.50</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
+                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/winter-salad.jpg" alt="Winter salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/winter-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$4<span class="menu-product__price-decimals">.15</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Winter salad</h3>
+                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/thai-style-salad.jpg" alt="Thai-style salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/thai-style-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.05</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Thai-style salad</h3>
+                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                        </div><!-- /.menu-cat__inner -->
+                    </div><!-- /.menu-cat -->
+                </div><!-- /.tabs__panel -->
+                <div class="tabs__panel" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                    <div class="menu-cat">
+                        <div class="menu-cat__inner">
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Appetizers</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/chicken-wings.jpg" alt="Chicken wings" />
+                                            <a class="menu-product__link" href="img/content/menu/products/chicken-wings.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$9<span class="menu-product__price-decimals">.95</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Chicken wings</h3>
+                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/dumplings.jpg" alt="Dumplings" />
+                                            <a class="menu-product__link" href="img/content/menu/products/dumplings.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.70</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Dumplings</h3>
+                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/french-onion-soup.jpg" alt="French onion soup" />
+                                            <a class="menu-product__link" href="img/content/menu/products/french-onion-soup.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.80</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">French onion soup</h3>
+                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/mini-chilli-pretzels.jpg" alt="Mini chilli pretzels" />
+                                            <a class="menu-product__link" href="img/content/menu/products/mini-chilli-pretzels.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$2<span class="menu-product__price-decimals">.10</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Mini chilli pretzels</h3>
+                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Entrees</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/atlantic-salmon.jpg" alt="Atlantic Salmon" />
+                                            <a class="menu-product__link" href="img/content/menu/products/atlantic-salmon.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$7<span class="menu-product__price-decimals">.30</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Atlantic Salmon</h3>
+                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/fish-tacos.jpg" alt="Fish tacos" />
+                                            <div class="menu-product__label">New</div>
+                                            <a class="menu-product__link" href="img/content/menu/products/fish-tacos.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.45</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Fish tacos</h3>
+                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/sesame-tuna.jpg" alt="Sesame Tuna" />
+                                            <a class="menu-product__link" href="img/content/menu/products/sesame-tuna.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$4<span class="menu-product__price-decimals">.60</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Sesame Tuna</h3>
+                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/parmesan-chicken.jpg" alt="Parmesan chicken" />
+                                            <a class="menu-product__link" href="img/content/menu/products/parmesan-chicken.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$8<span class="menu-product__price-decimals">.35</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Parmesan chicken</h3>
+                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Main Course</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/seared-scallops.jpg" alt="Seared scallops" />
+                                            <a class="menu-product__link" href="img/content/menu/products/seared-scallops.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$3<span class="menu-product__price-decimals">.80</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Seared scallops</h3>
+                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/poached-salmon.jpg" alt="Poached salmon" />
+                                            <a class="menu-product__link" href="img/content/menu/products/poached-salmon.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$9<span class="menu-product__price-decimals">.25</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Poached salmon</h3>
+                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/green-curry.jpg" alt="Green curry" />
+                                            <a class="menu-product__link" href="img/content/menu/products/green-curry.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$7<span class="menu-product__price-decimals">.70</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Green curry</h3>
+                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Salads</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/lobster-salad.jpg" alt="Lobster salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/lobster-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$6<span class="menu-product__price-decimals">.30</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Lobster salad</h3>
+                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/chicken-orange-salad.jpg" alt="Chicken &amp; orange salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/chicken-orange-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$8<span class="menu-product__price-decimals">.50</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
+                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/winter-salad.jpg" alt="Winter salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/winter-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$4<span class="menu-product__price-decimals">.15</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Winter salad</h3>
+                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/thai-style-salad.jpg" alt="Thai-style salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/thai-style-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.05</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Thai-style salad</h3>
+                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                        </div><!-- /.menu-cat__inner -->
+                    </div><!-- /.menu-cat -->
+                </div><!-- /.tabs__panel -->
+                <div class="tabs__panel" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                    <div class="menu-cat">
+                        <div class="menu-cat__inner">
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Appetizers</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/chicken-wings.jpg" alt="Chicken wings" />
+                                            <a class="menu-product__link" href="img/content/menu/products/chicken-wings.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$9<span class="menu-product__price-decimals">.95</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Chicken wings</h3>
+                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/dumplings.jpg" alt="Dumplings" />
+                                            <a class="menu-product__link" href="img/content/menu/products/dumplings.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.70</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Dumplings</h3>
+                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/french-onion-soup.jpg" alt="French onion soup" />
+                                            <a class="menu-product__link" href="img/content/menu/products/french-onion-soup.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.80</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">French onion soup</h3>
+                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/mini-chilli-pretzels.jpg" alt="Mini chilli pretzels" />
+                                            <a class="menu-product__link" href="img/content/menu/products/mini-chilli-pretzels.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$2<span class="menu-product__price-decimals">.10</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Mini chilli pretzels</h3>
+                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Entrees</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/atlantic-salmon.jpg" alt="Atlantic Salmon" />
+                                            <a class="menu-product__link" href="img/content/menu/products/atlantic-salmon.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$7<span class="menu-product__price-decimals">.30</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Atlantic Salmon</h3>
+                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/fish-tacos.jpg" alt="Fish tacos" />
+                                            <div class="menu-product__label">New</div>
+                                            <a class="menu-product__link" href="img/content/menu/products/fish-tacos.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.45</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Fish tacos</h3>
+                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/sesame-tuna.jpg" alt="Sesame Tuna" />
+                                            <a class="menu-product__link" href="img/content/menu/products/sesame-tuna.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$4<span class="menu-product__price-decimals">.60</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Sesame Tuna</h3>
+                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/parmesan-chicken.jpg" alt="Parmesan chicken" />
+                                            <a class="menu-product__link" href="img/content/menu/products/parmesan-chicken.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$8<span class="menu-product__price-decimals">.35</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Parmesan chicken</h3>
+                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Main Course</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/seared-scallops.jpg" alt="Seared scallops" />
+                                            <a class="menu-product__link" href="img/content/menu/products/seared-scallops.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$3<span class="menu-product__price-decimals">.80</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Seared scallops</h3>
+                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/poached-salmon.jpg" alt="Poached salmon" />
+                                            <a class="menu-product__link" href="img/content/menu/products/poached-salmon.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$9<span class="menu-product__price-decimals">.25</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Poached salmon</h3>
+                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/green-curry.jpg" alt="Green curry" />
+                                            <a class="menu-product__link" href="img/content/menu/products/green-curry.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$7<span class="menu-product__price-decimals">.70</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Green curry</h3>
+                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                            <section class="menu-cat__section">
+                                <h2 class="menu-cat__section-title">Salads</h2>
+                                <ul class="menu-cat__product-list">
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/lobster-salad.jpg" alt="Lobster salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/lobster-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$6<span class="menu-product__price-decimals">.30</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Lobster salad</h3>
+                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/chicken-orange-salad.jpg" alt="Chicken &amp; orange salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/chicken-orange-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$8<span class="menu-product__price-decimals">.50</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
+                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/winter-salad.jpg" alt="Winter salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/winter-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$4<span class="menu-product__price-decimals">.15</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Winter salad</h3>
+                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-product menu-cat__product">
+                                        <div class="menu-product__thumb">
+                                            <img class="menu-product__img" src="img/content/menu/products/thumbs/thai-style-salad.jpg" alt="Thai-style salad" />
+                                            <a class="menu-product__link" href="img/content/menu/products/thai-style-salad.jpg" role="button">
+                                                <svg class="icon icon_zoom">
+                                                    <title>View full size image</title>
+                                                    <use xlink:href="img/icons.svg#zoom"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="menu-product__price">$5<span class="menu-product__price-decimals">.05</span>
+                                        </div>
+                                        <div class="menu-product__text">
+                                            <h3 class="menu-product__title">Thai-style salad</h3>
+                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!-- /.menu-cat__section -->
+                        </div><!-- /.menu-cat__inner -->
+                    </div><!-- /.menu-cat -->
+                </div><!-- /.tabs__panel -->
+            </div><!-- /.tabs -->
+        </div><!-- /.menu -->
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__social">
+                <div class="footer__social-text">Follow us:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_fb">
+                                <title>Follow us on Facebook</title>
+                                <use xlink:href="img/icons.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_twitter">
+                                <title>Follow us on Twitter</title>
+                                <use xlink:href="img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_gplus">
+                                <title>Follow us on Google Plus</title>
+                                <use xlink:href="img/icons.svg#gplus"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.footer__social -->
+            <a class="footer__logo" href="index.html">
+                <img src="img/logo.png" alt="Renome" />
+            </a><!-- /.footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by polarfawx</div><!-- /.footer__copyright -->
+        </div><!-- /.footer__inner -->
+    </footer>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

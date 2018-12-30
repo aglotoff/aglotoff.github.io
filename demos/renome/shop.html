@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shop | Renome</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+
+<body class="page">
+    <a class="page__skip-link" href="#main-content">Skip to content</a>
+    <header class="header header_transparent page__header">
+        <div class="header__inner">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+            </a>
+            <nav class="nav header__nav">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                    <span class="hamburger__inner">
+                        <span class="hamburger__title">Toggle nav</span>
+                    </span>
+                </button>
+                <div class="nav__menu" id="main-menu">
+                    <div class="nav__scrollpane">
+                        <form class="mobile-search nav__search" action="#" method="post">
+                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <button class="mobile-search__submit" type="submit">
+                                <svg class="icon icon_search">
+                                    <title>Search</title>
+                                    <use xlink:href="img/icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <ul class="nav__list nav__list_horizontal">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-blog">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-left-sidebar.html">Blog left sidebar</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-features">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="portfolio.html">Portfolio</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="one-page.html">One page</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.nav__scrollpane -->
+                                </div><!-- /.nav__submenu -->
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link_active" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.nav__scrollpane -->
+                </div><!-- /.nav__menu -->
+            </nav>
+            <div class="header__actions">
+                <button class="header__search-toggle">
+                    <svg class="icon icon_search">
+                        <title>Show search form</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="mini-cart header__mini-cart">
+                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                        <svg class="icon icon_cart">
+                            <title>Toggle minicart</title>
+                            <use xlink:href="img/icons.svg#cart"></use>
+                        </svg>
+                        <span class="mini-cart__item-count">2</span>
+                    </button>
+                    <div class="mini-cart__drop" id="minicart">
+                        <span class="mini-cart__total">$44.50</span>
+                        <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
+                        <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
+                    </div>
+                </div><!-- /.mini-cart -->
+            </div><!-- /.header__actions -->
+        </div><!-- /.header__inner -->
+        <div class="search header__search" role="dialog" aria-label="Search">
+            <form class="search__form" action="#" method="post">
+                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <button class="search__submit" type="submit">
+                    <svg class="icon icon_search">
+                        <title>Search</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="search__close" type="button" aria-label="Close"></button>
+            </form>
+        </div><!-- /.search -->
+    </header>
+    <main class="page__main" id="main-content">
+        <div class="page-header" style="background-image: url(img/content/shop/shop-header-bg.jpg)">
+            <div class="page-header__inner">
+                <div class="heading-group heading-group_lvl_page page-header__title">
+                    <h1 class="heading-group__title">Shop</h1>
+                    <p class="heading-group__subtitle">Order dishes online</p>
+                </div><!-- /.heading-group -->
+            </div>
+        </div><!-- /.page-header -->
+        <div class="shop-layout">
+            <div class="shop-filter shop-layout__filter">
+                <div class="shop-filter__inner">
+                    <button class="shop-filter__toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="shop-filter">Filter</button>
+                    <ul class="shop-filter__list" id="shop-filter">
+                        <li class="shop-filter__item">
+                            <a class="shop-filter__link shop-filter__link_active" href="shop.html">All products</a>
+                        </li>
+                        <li class="shop-filter__item">
+                            <a class="shop-filter__link" href="shop.html">Mains</a>
+                        </li>
+                        <li class="shop-filter__item">
+                            <a class="shop-filter__link" href="shop.html">Breakfast</a>
+                        </li>
+                        <li class="shop-filter__item">
+                            <a class="shop-filter__link" href="shop.html">Desserts</a>
+                        </li>
+                    </ul>
+                </div><!-- /.shop-filter__inner -->
+            </div><!-- /.shop-filter -->
+            <div class="products shop-layout__products">
+                <div class="products__inner">
+                    <ul class="products__list">
+                        <li class="products__product">
+                            <div class="product" data-product-id="1001">
+                                <a class="product__thumb" href="shop-single.html">
+                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/chicken-livers.jpg" alt="Chicken livers" />
+                                </a>
+                                <h2 class="product__title">
+                                    <a class="product__link" href="shop-single.html">Chicken livers</a>
+                                </h2>
+                                <div class="product__price">$9.55</div>
+                                <div class="product__add-wrapper">
+                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1001" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                </div>
+                            </div><!-- /.product -->
+                        </li>
+                        <li class="products__product">
+                            <div class="product" data-product-id="1002">
+                                <a class="product__thumb" href="shop-single.html">
+                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/steak-with-vegetables.jpg" alt="Steak with vegetables" />
+                                </a>
+                                <h2 class="product__title">
+                                    <a class="product__link" href="shop-single.html">Steak with vegetables</a>
+                                </h2>
+                                <div class="product__price">$14.20</div>
+                                <div class="product__add-wrapper">
+                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1002" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                </div>
+                            </div><!-- /.product -->
+                        </li>
+                        <li class="products__product">
+                            <div class="product" data-product-id="1003">
+                                <a class="product__thumb" href="shop-single.html">
+                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/beef-with-pineapple.jpg" alt="Beef with pineapple" />
+                                </a>
+                                <h2 class="product__title">
+                                    <a class="product__link" href="shop-single.html">Beef with pineapple</a>
+                                </h2>
+                                <div class="product__price">$18.20</div>
+                                <div class="product__add-wrapper">
+                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1003" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                </div>
+                            </div><!-- /.product -->
+                        </li>
+                        <li class="products__product">
+                            <div class="product" data-product-id="1004">
+                                <a class="product__thumb" href="shop-single.html">
+                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/waffles-with-coffee.jpg" alt="Waffles with coffee" />
+                                </a>
+                                <h2 class="product__title">
+                                    <a class="product__link" href="shop-single.html">Waffles with coffee</a>
+                                </h2>
+                                <div class="product__price">$7.90</div>
+                                <div class="product__add-wrapper">
+                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1004" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                </div>
+                            </div><!-- /.product -->
+                        </li>
+                        <li class="products__product">
+                            <div class="product" data-product-id="1005">
+                                <a class="product__thumb" href="shop-single.html">
+                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/apple-pie.jpg" alt="Apple pie" />
+                                </a>
+                                <h2 class="product__title">
+                                    <a class="product__link" href="shop-single.html">Apple pie</a>
+                                </h2>
+                                <div class="product__price">$15.70</div>
+                                <div class="product__add-wrapper">
+                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1005" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                </div>
+                            </div><!-- /.product -->
+                        </li>
+                        <li class="products__product">
+                            <div class="product" data-product-id="1006">
+                                <a class="product__thumb" href="shop-single.html">
+                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/egg-baguette.jpg" alt="Egg baguette" />
+                                </a>
+                                <h2 class="product__title">
+                                    <a class="product__link" href="shop-single.html">Egg baguette</a>
+                                </h2>
+                                <div class="product__price">$8.10</div>
+                                <div class="product__add-wrapper">
+                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1006" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                </div>
+                            </div><!-- /.product -->
+                        </li>
+                    </ul>
+                </div><!-- /.products__inner -->
+            </div><!-- /.products -->
+            <nav class="pagination shop-layout__pagination" aria-label="Pagination Navigation">
+                <div class="pagination__inner">
+                    <a class="pagination__link pagination__link_prev" href="javascript:void(0);">Go to Previous Page</a>
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a class="pagination__link pagination__link_active" href="javascript:void(0);" aria-label="Go to Page 1" aria-current="page">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:void(0);" aria-label="Go to Page 2">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:void(0);" aria-label="Go to Page 3">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:void(0);" aria-label="Go to Page 4">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="javascript:void(0);" aria-label="Go to Page 5">5</a>
+                        </li>
+                    </ul>
+                    <a class="pagination__link pagination__link_next" href="javascript:void(0);">Go to Next Page</a>
+                </div><!-- /.pagination__inner -->
+            </nav><!-- /.pagination -->
+        </div><!-- /.shop-layout -->
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__social">
+                <div class="footer__social-text">Follow us:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_fb">
+                                <title>Follow us on Facebook</title>
+                                <use xlink:href="img/icons.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_twitter">
+                                <title>Follow us on Twitter</title>
+                                <use xlink:href="img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_gplus">
+                                <title>Follow us on Google Plus</title>
+                                <use xlink:href="img/icons.svg#gplus"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.footer__social -->
+            <a class="footer__logo" href="index.html">
+                <img src="img/logo.png" alt="Renome" />
+            </a><!-- /.footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by polarfawx</div><!-- /.footer__copyright -->
+        </div><!-- /.footer__inner -->
+    </footer>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
