@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Checkout | Eion</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+
+<body class="page" id="top">
+    <a class="page__skip-link" href="#main-content">Skip to content</a>
+    <header class="header page__header">
+        <div class="header__left">
+            <div class="header__actions">
+                <button class="header__btn header__nav-toggle"><i class="icon-list icons" aria-label="Toggle menu"></i></button>
+                <div class="header-dropdown header-dropdown_align_left">
+                    <button class="header-dropdown__toggle header__btn"><i class="icon-user icons" aria-label="Toggle account"></i></button>
+                    <div class="header-dropdown__backdrop"></div>
+                    <div class="header-dropdown__popover">
+                        <h2 class="header-dropdown__title">Account</h2>
+                        <div class="header-dropdown__content">
+                            <div class="account">
+                                <form class="account__form" method="post" action="#">
+                                    <div class="form-group form-group_theme_account account__form-group">
+                                        <input class="form-group__input" id="account-username" type="text" name="username" placeholder="Username or Email Address" required="required" aria-labelledby="account-username-label" />
+                                        <label class="form-group__icon" id="account-username-label" for="account-username"><i class="icons icon-user"></i></label>
+                                    </div>
+                                    <div class="form-group form-group_theme_account account__form-group">
+                                        <input class="form-group__input" id="account-password" type="text" name="password" placeholder="Password" required="required" aria-labelledby="account-password-label" />
+                                        <label class="form-group__icon" id="account-password-label" for="account-password"><i class="icons icon-lock"></i></label>
+                                    </div>
+                                    <div class="btn-group account__btns">
+                                        <button class="btn btn_theme_secondary btn_size_default btn-group__btn" type="submit" name="register">Register</button>
+                                        <button class="btn btn_theme_primary btn_size_default btn-group__btn" type="submit" name="login">Login</button>
+                                    </div>
+                                </form><!-- /.account__form -->
+                                <div class="social social_theme_account account__social">
+                                    <div class="social__text">Connect with:</div>
+                                    <ul class="social__list">
+                                        <li class="social__item">
+                                            <a class="social__link" href="javascript:void(0);"><i class="fab fa-twitter" aria-label="Connect with Twitter"></i></a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-label="Connect with Facebook"></i></a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link" href="javascript:void(0);"><i class="fab fa-google-plus-g" aria-label="Connect with Google Plus"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="account__lang">
+                                    <div class="lang-menu lang-menu_align_right">
+                                        <button class="lang-menu__toggle"><i class="icon-globe icons" aria-label="Choose your language"></i></button>
+                                        <ul class="lang-menu__list">
+                                            <li class="lang-menu__item">
+                                                <a class="lang-menu__link lang-menu__link_active" href="javascript:void(0);">English US</a>
+                                            </li>
+                                            <li class="lang-menu__item">
+                                                <a class="lang-menu__link" href="javascript:void(0);">France</a>
+                                            </li>
+                                            <li class="lang-menu__item">
+                                                <a class="lang-menu__link" href="javascript:void(0);">Spanish</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.lang-menu -->
+                                </div><!-- /.account__lang -->
+                            </div><!-- /.account -->
+                        </div>
+                        <button class="header-dropdown__close"><i class="icon-close icons" aria-label="Hide account"></i></button>
+                    </div><!-- .header-dropdown__popover -->
+                </div><!-- .header-dropdown -->
+            </div><!-- .header__actions -->
+        </div><!-- .header__left -->
+        <div class="header__center">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="product-detail.html">Flower</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="product-category-3-columns.html">Shop</a>
+                    </li>
+                </ul>
+                <a class="header__logo header__logo_center" href=".">
+                    <img class="header__logo-img" src="img/logo.png" alt="Eion" />
+                    <div class="header__logo-alt">Eion</div>
+                </a>
+                <ul class="header__nav-list">
+                    <li class="header-dropdown header-dropdown_align_mega header__nav-item">
+                        <a class="header__nav-link header-dropdown__toggle" href="javascript:void(0);" role="button">Pages<div class="header__nav-label"><i class="icon-bell icons" aria-hidden="true"></i></div><i class="icon-arrow-down icons header__nav-arrow" aria-hidden="true"></i></a>
+                        <div class="header-dropdown__popover">
+                            <div class="megamenu">
+                                <div class="megamenu__inner">
+                                    <div class="megamenu__cat">
+                                        <span class="megamenu__title">Home</span>
+                                        <ul class="megamenu__list">
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="index.html">Home 1</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="index-2.html">Home 2</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="index-3.html">Home 3</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.megamenu__cat -->
+                                    <div class="megamenu__cat">
+                                        <span class="megamenu__title">Blog</span>
+                                        <ul class="megamenu__list">
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="blog-category-standard.html">Blog Category Standard</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="blog-grid-category.html">Blog Grid Category</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="blog-masonry-category.html">Blog Masonry Category</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="blog-single-post-no-sidebar.html">Blog Single Post No Sidebar</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="blog-single-post-sidebar.html">Blog Single Post Sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.megamenu__cat -->
+                                    <div class="megamenu__cat">
+                                        <span class="megamenu__title">Product</span>
+                                        <ul class="megamenu__list">
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="product-category-2-columns.html">Category 2 Columns</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="product-category-3-columns.html">Category 3 Columns</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="product-category-3-columns-2.html">Category List</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="product-category-3-columns-sidebar.html">Category 3 Columns Sidebar</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="product-category-3-columns-sidebar-2.html">Category List Sidebar</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="product-category-4-columns.html">Category 4 Columns</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="product-category-fullwidth.html">Category Fullwidth</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="product-detail.html">Product Detail</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.megamenu__cat -->
+                                    <div class="megamenu__cat">
+                                        <span class="megamenu__title">General</span>
+                                        <ul class="megamenu__list">
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="shopping-cart.html">Shopping Cart</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="checkout.html">Checkout</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="about.html">About</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="contact.html">Contact</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="faqs.html">FAQs</a>
+                                            </li>
+                                            <li class="megamenu__item">
+                                                <a class="megamenu__link" href="under-construction.html">Under Construction</a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.megamenu__cat -->
+                                </div><!-- /.megamenu__inner -->
+                            </div><!-- /.megamenu -->
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="blog-category-standard.html">Blog</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><!-- .header__center -->
+        <div class="header__right">
+            <div class="header__actions">
+                <div class="header-dropdown header-dropdown_align_right">
+                    <button class="header-dropdown__toggle header__btn"><i class="icon-basket icons" aria-label="Toggle shopping cart"></i>
+                        <span class="header__cart-items" aria-hidden="true">3</span>
+                    </button>
+                    <div class="header-dropdown__backdrop"></div>
+                    <div class="header-dropdown__popover">
+                        <h2 class="header-dropdown__title">Shopping Cart</h2>
+                        <div class="header-dropdown__content">
+                            <div class="minicart">
+                                <ul class="minicart__items">
+                                    <li class="minicart__item">
+                                        <a class="minicart__thumb" href="product-detail.html" tabindex="-1">
+                                            <img class="minicart__img" src="img/content/products/120x80/flower-01.jpg" alt="Fl Model A315" />
+                                        </a>
+                                        <div class="minicart__product-info">
+                                            <a class="minicart__name" href="product-detail.html">Fl Model A315</a>
+                                            <div class="minicart__price">$530</div>
+                                        </div>
+                                        <div class="minicart__qty">x2</div>
+                                        <button class="minicart__remove"><i class="fas fa-times" aria-label="Remove this item"></i></button>
+                                    </li>
+                                    <li class="minicart__item">
+                                        <a class="minicart__thumb" href="product-detail.html" tabindex="-1">
+                                            <img class="minicart__img" src="img/content/products/120x80/flower-02.jpg" alt="Fl Model A210" />
+                                        </a>
+                                        <div class="minicart__product-info">
+                                            <a class="minicart__name" href="product-detail.html">Fl Model A210</a>
+                                            <div class="minicart__price">$399</div>
+                                        </div>
+                                        <button class="minicart__remove"><i class="fas fa-times" aria-label="Remove this item"></i></button>
+                                    </li>
+                                </ul><!-- /.minicart__items -->
+                                <div class="minicart__total">
+                                    <span class="minicart__total-text">Total:</span>
+                                    <span class="minicart__total-price">$1,459</span>
+                                </div><!-- /.minicart__total -->
+                                <div class="btn-group minicart__btns">
+                                    <a class="btn btn_theme_secondary btn_size_default btn-group__btn" href="shopping-cart.html">View Cart</a>
+                                    <a class="btn btn_theme_primary btn_size_default btn-group__btn" href="checkout.html">Checkout</a>
+                                </div><!-- /.minicart__btns -->
+                            </div><!-- /.minicart -->
+                        </div>
+                        <button class="header-dropdown__close"><i class="icon-close icons" aria-label="Hide minicart"></i></button>
+                    </div><!-- .header-dropdown__popover -->
+                </div><!-- .header-dropdown -->
+                <div class="header-dropdown header-dropdown_align_right">
+                    <button class="header-dropdown__toggle header__btn"><i class="icon-magnifier icons" aria-label="Toggle search"></i></button>
+                    <div class="header-dropdown__backdrop"></div>
+                    <div class="header-dropdown__popover">
+                        <h2 class="header-dropdown__title">Search</h2>
+                        <div class="header-dropdown__content">
+                            <div class="search">
+                                <input class="search__input" type="text" placeholder="Type to Search..." />
+                                <ul class="search__results">
+                                    <li class="search__result">
+                                        <div class="search__result-info">
+                                            <div class="rating search__rating">
+                                                <span class="rating__sr-text">Rated 5</span>
+                                                <span class="rating__stars" aria-hidden="true"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            </div>
+                                            <a class="search__name" href="product-detail.html">Fl Model A351</a>
+                                            <div class="search__price">$530</div>
+                                        </div>
+                                        <a class="search__thumb" href="product-detail.html" tabindex="-1">
+                                            <img class="search__img" src="img/content/products/120x80/flower-01.jpg" alt="Fl Model A351" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- /.search -->
+                        </div>
+                        <button class="header-dropdown__close"><i class="icon-close icons" aria-label="Hide search"></i></button>
+                    </div><!-- .header-dropdown__popover -->
+                </div><!-- .header-dropdown -->
+            </div><!-- .header__actions -->
+        </div><!-- .header__right -->
+    </header><!-- /.header -->
+    <nav class="side-nav side-nav_align_left page__nav">
+        <div class="side-nav__backdrop"></div>
+        <div class="side-nav__drawer">
+            <div class="side-nav__inner">
+                <div class="side-nav__logo">
+                    <img src="img/logo-alt.png" alt="Eion" />
+                </div>
+                <div class="social social_theme_side-nav side-nav__social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0);"><i class="fab fa-twitter" aria-label="Follow us on Twitter"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-label="Follow us on Facebook"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0);"><i class="fab fa-instagram" aria-label="Follow us on Instagram"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0);"><i class="fab fa-google-plus-g" aria-label="Follow us on Google Plus"></i></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="javascript:void(0);"><i class="fab fa-pinterest" aria-label="Follow us on Pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="side-nav__menu">
+                    <li class="side-nav__menu-item">
+                        <a class="side-nav__menu-link" href="about.html">About</a>
+                    </li>
+                    <li class="side-nav__menu-item">
+                        <a class="side-nav__menu-link" href="product-detail.html">Flower</a>
+                    </li>
+                    <li class="side-nav__menu-item">
+                        <a class="side-nav__menu-link" href="product-category-3-columns.html">Shop</a>
+                    </li>
+                    <li class="side-nav__menu-item">
+                        <a class="side-nav__menu-link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">Pages<div class="side-nav__menu-label">New</div><i class="icon-arrow-down icons side-nav__menu-arrow" aria-hidden="true"></i></a>
+                        <ul class="side-nav__menu side-nav__menu_submenu">
+                            <li class="side-nav__menu-item">
+                                <a class="side-nav__menu-link side-nav__menu-link_submenu" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">Home<i class="icon-arrow-down icons side-nav__menu-arrow" aria-hidden="true"></i></a>
+                                <ul class="side-nav__menu side-nav__menu_submenu">
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="index.html">Home 1</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="index-2.html">Home 2</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="index-3.html">Home 3</a>
+                                    </li>
+                                </ul><!-- /.side-nav__menu -->
+                            </li>
+                            <li class="side-nav__menu-item">
+                                <a class="side-nav__menu-link side-nav__menu-link_submenu" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">Blog<i class="icon-arrow-down icons side-nav__menu-arrow" aria-hidden="true"></i></a>
+                                <ul class="side-nav__menu side-nav__menu_submenu">
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="blog-category-standard.html">Blog Category Standard</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="blog-grid-category.html">Blog Grid Category</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="blog-masonry-category.html">Blog Masonry Category</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="blog-single-post-no-sidebar.html">Blog Single Post No Sidebar</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="blog-single-post-sidebar.html">Blog Single Post Sidebar</a>
+                                    </li>
+                                </ul><!-- /.side-nav__menu -->
+                            </li>
+                            <li class="side-nav__menu-item">
+                                <a class="side-nav__menu-link side-nav__menu-link_submenu" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">Product<i class="icon-arrow-down icons side-nav__menu-arrow" aria-hidden="true"></i></a>
+                                <ul class="side-nav__menu side-nav__menu_submenu">
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="product-category-2-columns.html">Category 2 Columns</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="product-category-3-columns.html">Category 3 Columns</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="product-category-3-columns-2.html">Category List</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="product-category-3-columns-sidebar.html">Category 3 Columns Sidebar</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="product-category-3-columns-sidebar-2.html">Category List Sidebar</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="product-category-4-columns.html">Category 4 Columns</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="product-category-fullwidth.html">Category Fullwidth</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="product-detail.html">Product Detail</a>
+                                    </li>
+                                </ul><!-- /.side-nav__menu -->
+                            </li>
+                            <li class="side-nav__menu-item">
+                                <a class="side-nav__menu-link side-nav__menu-link_submenu" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">General<i class="icon-arrow-down icons side-nav__menu-arrow" aria-hidden="true"></i></a>
+                                <ul class="side-nav__menu side-nav__menu_submenu">
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="shopping-cart.html">Shopping Cart</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="checkout.html">Checkout</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="about.html">About</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="contact.html">Contact</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="faqs.html">FAQs</a>
+                                    </li>
+                                    <li class="side-nav__menu-item">
+                                        <a class="side-nav__menu-link side-nav__menu-link_submenu" href="under-construction.html">Under Construction</a>
+                                    </li>
+                                </ul><!-- /.side-nav__menu -->
+                            </li>
+                        </ul><!-- /.side-nav__menu -->
+                    </li>
+                    <li class="side-nav__menu-item">
+                        <a class="side-nav__menu-link" href="blog-category-standard.html">Blog</a>
+                    </li>
+                    <li class="side-nav__menu-item">
+                        <a class="side-nav__menu-link" href="contact.html">Contact</a>
+                    </li>
+                </ul><!-- /.side-nav__menu -->
+                <form class="side-nav__search" method="post" action=".">
+                    <div class="side-nav__search-inner">
+                        <label class="side-nav__search-icon" for="side-search" id="side-search-label"><i class="icon-magnifier icons" aria-label="Search"></i></label>
+                        <input class="side-nav__search-input" type="text" name="s" id="side-search" aria-labelledby="side-search-label" placeholder="Search..." />
+                    </div>
+                </form><!-- /.side-nav__search -->
+                <button class="side-nav__close"><i class="icon-close icons" aria-label="Hide side nav"></i></button>
+            </div><!-- /.side-nav__inner -->
+        </div><!-- /.side-nav__drawer -->
+    </nav><!-- /.side-nav -->
+    <form class="checkout" action="#" method="post">
+        <div class="page__container">
+            <h1 class="checkout__title">Checkout</h1>
+            <div class="checkout__inner">
+                <div class="checkout__left">
+                    <a class="back-link" href="product-category-3-columns.html"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>
+                        <span class="back-link__text">Back</span>
+                    </a>
+                    <h2 class="title checkout__section-title">Billing Details</h2>
+                    <div class="form-fields">
+                        <div class="form-fields__inner">
+                            <div class="form-fields__field form-fields__field_small">
+                                <div class="form-group form-group_theme_checkout">
+                                    <input class="form-group__input" id="billing-first-name" type="text" name="billing_first_name" placeholder="First Name *" required="required" aria-labelledby="billing-first-name-label" />
+                                    <label class="form-group__hidden-label" id="billing-first-name-label" for="billing-first-name">First name</label>
+                                </div>
+                            </div>
+                            <div class="form-fields__field form-fields__field_small">
+                                <div class="form-group form-group_theme_checkout">
+                                    <input class="form-group__input" id="billing-last-name" type="text" name="billing_last_name" placeholder="Last Name *" required="required" aria-labelledby="billing-last-name-label" />
+                                    <label class="form-group__hidden-label" id="billing-last-name-label" for="billing-last-name">Last name</label>
+                                </div>
+                            </div>
+                            <div class="form-fields__field">
+                                <div class="form-group form-group_theme_checkout">
+                                    <input class="form-group__input" id="billing-email" type="email" name="billing_email" placeholder="Your Email *" required="required" aria-labelledby="billing-email-label" />
+                                    <label class="form-group__icon" aria-label="Your Email" id="billing-email-label" for="billing-email"><i class="icons icon-envelope"></i></label>
+                                </div>
+                            </div>
+                            <div class="form-fields__field">
+                                <div class="form-group form-group_theme_checkout">
+                                    <input class="form-group__input" id="billing-phone" type="tel" name="billing_phone" placeholder="Your Phone *" required="required" aria-labelledby="billing-phone-label" />
+                                    <label class="form-group__icon" aria-label="Your Phone" id="billing-phone-label" for="billing-phone"><i class="icons icon-screen-smartphone"></i></label>
+                                </div>
+                            </div>
+                            <div class="form-fields__field">
+                                <div class="form-group form-group_theme_checkout">
+                                    <select class="form-group__input form-group__input_select" id="billing-country" name="billing_country" aria-labelledby="billing-country-label" required="required">
+                                        <option value="" disabled="disabled" selected="selected">Country *</option>
+                                        <option value="ru">Russia (RU)</option>
+                                    </select>
+                                    <span class="form-group__icon"><i class="fas fa-angle-down" aria-hidden="true"></i></span>
+                                    <label class="form-group__hidden-label" id="billing-country-label" for="billing-country">Your Country</label>
+                                </div>
+                            </div>
+                            <div class="form-fields__field form-fields__field_small">
+                                <div class="form-group form-group_theme_checkout">
+                                    <input class="form-group__input" id="billing-city" type="text" name="billing_city" placeholder="Town / City *" required="required" aria-labelledby="billing-city-label" />
+                                    <label class="form-group__hidden-label" id="billing-city-label" for="billing-city">Town / City</label>
+                                </div>
+                            </div>
+                            <div class="form-fields__field form-fields__field_small">
+                                <div class="form-group form-group_theme_checkout">
+                                    <input class="form-group__input" id="billing-postcode" type="text" name="billing_postcode" placeholder="Postcode / Zip *" required="required" aria-labelledby="billing-postcode-label" />
+                                    <label class="form-group__hidden-label" id="billing-postcode-label" for="billing-postcode">Postcode / Zip</label>
+                                </div>
+                            </div>
+                            <div class="form-fields__field">
+                                <div class="form-group form-group_theme_checkout">
+                                    <input class="form-group__input" id="billing-address1" type="text" name="billing_address1" placeholder="Address 1 *" required="required" aria-labelledby="billing-address1-label" />
+                                    <label class="form-group__icon" aria-label="Address 1" id="billing-address1-label" for="billing-address1"><i class="icons icon-location-pin"></i></label>
+                                </div>
+                            </div>
+                            <div class="form-fields__field">
+                                <div class="form-group form-group_theme_checkout">
+                                    <input class="form-group__input" id="billing-address2" type="text" name="billing_address2" placeholder="Address 2" aria-labelledby="billing-address2-label" />
+                                    <label class="form-group__icon" aria-label="Address 2" id="billing-address2-label" for="billing-address2"><i class="icons icon-location-pin"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="checkout__check">
+                        <input class="checkout__check-input" type="checkbox" name="create_account" value="1" data-toggle="create-account" />
+                        <span class="checkout__check-mark" aria-hidden="true"></span>
+                        <span class="checkout__check-text checkout__check-text_small">Create an account?</span>
+                    </label>
+                    <div class="checkout__account-fields" id="create-account">
+                        <p class="checkout__account-text">Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
+                        <div class="form-fields">
+                            <div class="form-fields__inner">
+                                <div class="form-fields__field">
+                                    <div class="form-group form-group_theme_checkout">
+                                        <input class="form-group__input" id="checkout-account-password" type="password" name="checkout_account_password" placeholder="Password *" required="required" aria-labelledby="checkout-account-password-label" />
+                                        <label class="form-group__icon" aria-label="Password" id="checkout-account-password-label" for="checkout-account-password"><i class="icons icon-icon-lock"></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="title checkout__section-title">
+                        <label class="checkout__check checkout__check_title">
+                            <span class="checkout__check-text">Ship to a different address?</span>
+                            <input class="checkout__check-input" type="checkbox" name="ship_different_address" value="1" data-toggle="shipping-fields" />
+                            <span class="checkout__check-mark" aria-hidden="true"></span>
+                        </label>
+                    </h2>
+                    <div class="checkout__shipping-fields" id="shipping-fields">
+                        <div class="form-fields">
+                            <div class="form-fields__inner">
+                                <div class="form-fields__field form-fields__field_small">
+                                    <div class="form-group form-group_theme_checkout">
+                                        <input class="form-group__input" id="shipping-first-name" type="text" name="shipping_first_name" placeholder="First Name *" required="required" aria-labelledby="shipping-first-name-label" />
+                                        <label class="form-group__hidden-label" id="shipping-first-name-label" for="shipping-first-name">First name</label>
+                                    </div>
+                                </div>
+                                <div class="form-fields__field form-fields__field_small">
+                                    <div class="form-group form-group_theme_checkout">
+                                        <input class="form-group__input" id="shipping-last-name" type="text" name="shipping_last_name" placeholder="Last Name *" required="required" aria-labelledby="shipping-last-name-label" />
+                                        <label class="form-group__hidden-label" id="shipping-last-name-label" for="shipping-last-name">Last name</label>
+                                    </div>
+                                </div>
+                                <div class="form-fields__field">
+                                    <div class="form-group form-group_theme_checkout">
+                                        <select class="form-group__input form-group__input_select" id="shipping-country" name="shipping_country" aria-labelledby="shipping-country-label" required="required">
+                                            <option value="" disabled="disabled" selected="selected">Country *</option>
+                                            <option value="ru">Russia (RU)</option>
+                                        </select>
+                                        <span class="form-group__icon"><i class="fas fa-angle-down" aria-hidden="true"></i></span>
+                                        <label class="form-group__hidden-label" id="shipping-country-label" for="shipping-country">Your Country</label>
+                                    </div>
+                                </div>
+                                <div class="form-fields__field form-fields__field_small">
+                                    <div class="form-group form-group_theme_checkout">
+                                        <input class="form-group__input" id="shipping-city" type="text" name="shipping_city" placeholder="Town / City *" required="required" aria-labelledby="shipping-city-label" />
+                                        <label class="form-group__hidden-label" id="shipping-city-label" for="shipping-city">Town / City</label>
+                                    </div>
+                                </div>
+                                <div class="form-fields__field form-fields__field_small">
+                                    <div class="form-group form-group_theme_checkout">
+                                        <input class="form-group__input" id="shipping-postcode" type="text" name="shipping_postcode" placeholder="Postcode / Zip *" required="required" aria-labelledby="shipping-postcode-label" />
+                                        <label class="form-group__hidden-label" id="shipping-postcode-label" for="shipping-postcode">Postcode / Zip</label>
+                                    </div>
+                                </div>
+                                <div class="form-fields__field">
+                                    <div class="form-group form-group_theme_checkout">
+                                        <input class="form-group__input" id="shipping-address1" type="text" name="shipping_address1" placeholder="Address 1 *" required="required" aria-labelledby="shipping-address1-label" />
+                                        <label class="form-group__icon" aria-label="Address 1" id="shipping-address1-label" for="shipping-address1"><i class="icons icon-location-pin"></i></label>
+                                    </div>
+                                </div>
+                                <div class="form-fields__field">
+                                    <div class="form-group form-group_theme_checkout">
+                                        <input class="form-group__input" id="shipping-address2" type="text" name="shipping_address2" placeholder="Address 2" aria-labelledby="shipping-address2-label" />
+                                        <label class="form-group__icon" aria-label="Address 2" id="shipping-address2-label" for="shipping-address2"><i class="icons icon-location-pin"></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-fields">
+                        <div class="form-fields__inner">
+                            <div class="form-fields__field">
+                                <div class="form-group form-group_theme_default">
+                                    <textarea class="form-group__input" id="shipping-notes" name="shipping_notes" placeholder="Order Notes" aria-labelledby="shipping-notes-label" rows="6"></textarea>
+                                    <label class="form-group__icon" aria-label="Order Notes" id="shipping-notes-label" for="shipping-notes"><i class="icons icon-pencil"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__right">
+                    <div class="checkout__right-inner">
+                        <div class="checkout__review-order">
+                            <h2 class="title checkout__section-title">Your order</h2>
+                            <table class="review-order">
+                                <thead>
+                                    <tr class="review-order__row">
+                                        <th class="review-order__header" scope="col">Product</th>
+                                        <th class="review-order__header" scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="review-order__row review-order__row_body">
+                                        <td class="review-order__cell">Fl Model A351 x 1</td>
+                                        <td class="review-order__cell">$530</td>
+                                    </tr>
+                                    <tr class="review-order__row review-order__row_body">
+                                        <td class="review-order__cell">Fl Model A511 x 2</td>
+                                        <td class="review-order__cell">$1060</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="review-order__row review-order__row_footer">
+                                        <th class="review-order__header" scope="row">Subtotal</th>
+                                        <td class="review-order__cell">$1590</td>
+                                    </tr>
+                                    <tr class="review-order__row review-order__row_footer">
+                                        <th class="review-order__header" scope="row">Shipping fee</th>
+                                        <td class="review-order__cell">Free</td>
+                                    </tr>
+                                    <tr class="review-order__row review-order__row_footer">
+                                        <th class="review-order__header" scope="row">Coupon</th>
+                                        <td class="review-order__cell">No</td>
+                                    </tr>
+                                    <tr class="review-order__row review-order__row_footer">
+                                        <th class="review-order__header" scope="row">Total</th>
+                                        <td class="review-order__cell">$1590</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="checkout__payment">
+                            <ul class="payment">
+                                <li class="payment__method">
+                                    <label class="payment__label">
+                                        <input class="payment__radio" id="payment-method-direct" type="radio" name="payment_method" value="direct" checked="checked" required="required" />
+                                        <span class="payment__mark" aria-hidden="true"></span>
+                                        <span class="payment__title">Direct payment</span>
+                                    </label>
+                                    <div class="payment__desc">
+                                        <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                    </div>
+                                </li>
+                                <li class="payment__method">
+                                    <label class="payment__label">
+                                        <input class="payment__radio" id="payment-method-cheque" type="radio" name="payment_method" value="cheque" required="required" />
+                                        <span class="payment__mark" aria-hidden="true"></span>
+                                        <span class="payment__title">Cheque payment</span>
+                                    </label>
+                                    <div class="payment__desc">
+                                        <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                    </div>
+                                </li>
+                                <li class="payment__method">
+                                    <label class="payment__label">
+                                        <input class="payment__radio" id="payment-method-paypal" type="radio" name="payment_method" value="paypal" required="required" />
+                                        <span class="payment__mark" aria-hidden="true"></span>
+                                        <span class="payment__title">PayPal</span>
+                                        <img class="payment__cards" src="img/payment.png" alt="" />
+                                        <a class="payment__link" href="javascript:void(0);">What is PayPal?</a>
+                                    </label>
+                                    <div class="payment__desc">
+                                        <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account. </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="checkout__btn-wrap">
+                            <button class="btn btn_theme_primary btn_size_large checkout__btn" type="submit">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="footer page__footer">
+        <div class="instagram-carousel swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="instagram-carousel__img" src="img/content/instagram-feed/feed-01.jpg" alt="Instagram feed" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="instagram-carousel__img" src="img/content/instagram-feed/feed-02.jpg" alt="Instagram feed" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="instagram-carousel__img" src="img/content/instagram-feed/feed-03.jpg" alt="Instagram feed" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="instagram-carousel__img" src="img/content/instagram-feed/feed-04.jpg" alt="Instagram feed" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="instagram-carousel__img" src="img/content/instagram-feed/feed-05.jpg" alt="Instagram feed" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="instagram-carousel__img" src="img/content/instagram-feed/feed-06.jpg" alt="Instagram feed" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="instagram-carousel__img" src="img/content/instagram-feed/feed-07.jpg" alt="Instagram feed" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="instagram-carousel__img" src="img/content/instagram-feed/feed-08.jpg" alt="Instagram feed" />
+                </div>
+            </div>
+            <a class="instagram-carousel__link" href="javascript:void(0)"><i class="fab fa-instagram" aria-label="Follow us on Instagram"></i> @Eion_flower</a>
+        </div><!-- /.instagram-carousel -->
+        <div class="footer__top">
+            <div class="page__container">
+                <div class="footer__top-inner">
+                    <div class="footer__block">
+                        <h2 class="title title_light title_size_small footer__block-title">About Us</h2>
+                        <div class="footer__text text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing 1992 elit London, do <em>flower</em> tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><em>Eion</em> renim ad 2015 minim veniam, quis nostrud exercitation ullamco.</p>
+                        </div>
+                        <img class="footer__signature" src="img/signature.png" alt="John Doe" />
+                    </div><!-- /.footer__block -->
+                    <div class="footer__block">
+                        <h2 class="title title_light title_size_small footer__block-title">Information</h2>
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">FAQs</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">Size Guide</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">Delivery Info</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">Return Info</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">Discount</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">Gift</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">My Wishlist</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">Our Stores</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">Help</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">Customize</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">iOS App</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="javascript:void(0);">Android App</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.footer__block -->
+                    <div class="footer__block">
+                        <h2 class="title title_light title_size_small footer__block-title">Newsletter</h2>
+                        <div class="footer__text text">
+                            <p>Enter your email and we'll send you a coupon with 10% off your next order.</p>
+                        </div>
+                        <form class="subscribe subscribe_footer footer__subscribe" action="#" method="post">
+                            <div class="form-group form-group_theme_footer subscribe__input">
+                                <input class="form-group__input" type="email" placeholder="Your email..." required="required" aria-labelledby="undefined-label" />
+                                <label class="form-group__hidden-label" id="undefined-label">Your email</label>
+                            </div>
+                            <button class="btn btn_theme_inverse btn_size_default subscribe__btn" type="submit" name="subscribe">Subscribe</button>
+                        </form>
+                    </div><!-- /.footer__block -->
+                    <div class="footer__block">
+                        <h2 class="title title_light title_size_small footer__block-title">Contact us</h2>
+                        <address class="footer__address">PO Box CT16122 Collins Street West, Victoria 8007, Australia.</address>
+                        <ul class="footer__contacts">
+                            <li class="footer__contact-item">Phone: +1 (2) 345 6789</li>
+                            <li class="footer__contact-item">Fax: +1 (2) 345 6789</li>
+                            <li class="footer__contact-item">Email: Contact@yourdomain.com</li>
+                        </ul>
+                        <div class="social social_theme_footer footer__social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a class="social__link" href="javascript:void(0);"><i class="fab fa-twitter" aria-label="Follow us on Twitter"></i></a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-label="Follow us on Facebook"></i></a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="javascript:void(0);"><i class="fab fa-instagram" aria-label="Follow us on Instagram"></i></a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="javascript:void(0);"><i class="fab fa-google-plus-g" aria-label="Follow us on Google Plus"></i></a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="javascript:void(0);"><i class="fab fa-pinterest" aria-label="Follow us on Pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /.footer__block -->
+                </div><!-- /.footer__top-inner -->
+            </div><!-- /.page__container -->
+        </div><!-- /.footer__top -->
+        <div class="footer__bottom">
+            <div class="page__container">
+                <div class="footer__bottom-inner">
+                    <a class="footer__logo" href="javascript:void(0)">
+                        <img class="footer__logo-img" src="img/logo-footer.png" alt="Eion" />
+                    </a>
+                    <div class="footer__copyright">© Copyright 2015. Powered by WordPress. Eion Theme by SunriseThemes <br> Html template by polarfawx</div>
+                    <ul class="payments footer__payments">
+                        <li class="payments__item">
+                            <a class="payments__link" href="javascript:void(0);"><i class="fab fa-cc-visa" aria-label="Visa"></i></a>
+                        </li>
+                        <li class="payments__item">
+                            <a class="payments__link" href="javascript:void(0);"><i class="fab fa-cc-mastercard" aria-label="Mastercard"></i></a>
+                        </li>
+                        <li class="payments__item">
+                            <a class="payments__link" href="javascript:void(0);"><i class="fab fa-cc-paypal" aria-label="PayPal"></i></a>
+                        </li>
+                        <li class="payments__item">
+                            <a class="payments__link" href="javascript:void(0);"><i class="fab fa-cc-amex" aria-label="American Express"></i></a>
+                        </li>
+                        <li class="payments__item">
+                            <a class="payments__link" href="javascript:void(0);"><i class="fab fa-cc-jcb" aria-label="JCB"></i></a>
+                        </li>
+                        <li class="payments__item">
+                            <a class="payments__link" href="javascript:void(0);"><i class="fab fa-cc-discover" aria-label="Discover"></i></a>
+                        </li>
+                        <li class="payments__item">
+                            <a class="payments__link" href="javascript:void(0);"><i class="fab fa-cc-stripe" aria-label="Stripe"></i></a>
+                        </li>
+                    </ul>
+                </div><!-- /.footer__bottom-inner -->
+            </div><!-- /.page__container -->
+        </div><!-- /.footer__bottom -->
+    </div>
+    <a class="back-to-top page__back-to-top" href="#top">
+        <div class="fas fa-long-arrow-alt-up" aria-label="Back to top"></div>
+    </a>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
