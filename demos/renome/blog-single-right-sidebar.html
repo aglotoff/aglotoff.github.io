@@ -2,32 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Summer Specials &#8211; Blog | Renome</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body class="page">
-    <a class="page__skip-link" href="#main-content">Skip to content</a>
-    <header class="header header_transparent page__header">
+    <a class="skip-link page__skip-link" href="#content">Skip to content</a>
+    <header class="header header_transparent page__header" id="masthead">
         <div class="header__inner">
             <a class="header__logo" href="index.html">
-                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
-                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+                <img class="header__logo-img" src="img/logo.svg" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.svg" alt="Renome" />
             </a>
             <nav class="nav header__nav">
-                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="site-navigation">
                     <span class="hamburger__inner">
                         <span class="hamburger__title">Toggle nav</span>
                     </span>
                 </button>
-                <div class="nav__menu" id="main-menu">
+                <div class="nav__menu" id="site-navigation">
                     <div class="nav__scrollpane">
                         <form class="mobile-search nav__search" action="#" method="post">
-                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <input class="mobile-search__input" type="text" name="s" placeholder="Search..." />
                             <button class="mobile-search__submit" type="submit">
                                 <svg class="icon icon_search">
                                     <title>Search</title>
@@ -49,11 +49,11 @@
                                 <a class="nav__link" href="reservation.html">Reservation</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link nav__link_active" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                <a class="nav__link nav__link nav__link_active" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
                                 </a>
                                 <div class="nav__submenu" id="submenu-blog">
                                     <div class="nav__scrollpane">
-                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
                                         </a>
                                         <ul class="nav__list">
                                             <li class="nav__item">
@@ -63,15 +63,15 @@
                                                 <a class="nav__link nav__link_submenu nav__link_active" href="blog-right-sidebar.html">Blog right sidebar</a>
                                             </li>
                                         </ul>
-                                    </div><!-- /.nav__scrollpane -->
-                                </div><!-- /.nav__submenu -->
+                                    </div><!-- .nav__scrollpane -->
+                                </div><!-- .nav__submenu -->
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
                                 </a>
                                 <div class="nav__submenu" id="submenu-features">
                                     <div class="nav__scrollpane">
-                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
                                         </a>
                                         <ul class="nav__list">
                                             <li class="nav__item">
@@ -84,8 +84,8 @@
                                                 <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
                                             </li>
                                         </ul>
-                                    </div><!-- /.nav__scrollpane -->
-                                </div><!-- /.nav__submenu -->
+                                    </div><!-- .nav__scrollpane -->
+                                </div><!-- .nav__submenu -->
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="shop.html">Shop</a>
@@ -94,8 +94,8 @@
                                 <a class="nav__link" href="contact.html">Contact</a>
                             </li>
                         </ul>
-                    </div><!-- /.nav__scrollpane -->
-                </div><!-- /.nav__menu -->
+                    </div><!-- .nav__scrollpane -->
+                </div><!-- #site-navigation -->
             </nav>
             <div class="header__actions">
                 <button class="header__search-toggle">
@@ -105,24 +105,24 @@
                     </svg>
                 </button>
                 <div class="mini-cart header__mini-cart">
-                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                    <button class="mini-cart__trigger" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
                         <svg class="icon icon_cart">
                             <title>Toggle minicart</title>
                             <use xlink:href="img/icons.svg#cart"></use>
                         </svg>
                         <span class="mini-cart__item-count">2</span>
                     </button>
-                    <div class="mini-cart__drop" id="minicart">
+                    <div class="mini-cart__drawer" id="minicart">
                         <span class="mini-cart__total">$44.50</span>
                         <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
                         <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
-                    </div>
+                    </div><!-- .mini-cart__drawer -->
                 </div><!-- /.mini-cart -->
-            </div><!-- /.header__actions -->
-        </div><!-- /.header__inner -->
+            </div><!-- .header__actions -->
+        </div><!-- .header__inner -->
         <div class="search header__search" role="dialog" aria-label="Search">
             <form class="search__form" action="#" method="post">
-                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <input class="search__input" type="text" name="s" placeholder="Search..." />
                 <button class="search__submit" type="submit">
                     <svg class="icon icon_search">
                         <title>Search</title>
@@ -131,15 +131,15 @@
                 </button>
                 <button class="search__close" type="button" aria-label="Close"></button>
             </form>
-        </div><!-- /.search -->
-    </header>
-    <main class="page__main" id="main-content">
+        </div><!-- .search -->
+    </header><!-- #masthead -->
+    <main id="content">
         <div class="page-header" style="background-image: url(img/content/blog/blog-header-bg.jpg)">
             <div class="page-header__inner">
-                <div class="heading-group heading-group_lvl_page page-header__title">
+                <div class="heading-group heading-group_lvl_1 page-header__title">
                     <h1 class="heading-group__title">Blog</h1>
                     <p class="heading-group__subtitle">News, recipes and much more</p>
-                </div><!-- /.heading-group -->
+                </div><!-- .heading-group -->
             </div>
         </div><!-- /.page-header -->
         <div class="blog-layout blog-layout_sidebar_right">
@@ -156,7 +156,7 @@
                     </header><!-- /.article__header -->
                     <div class="article__content">
                         <img class="article__image" src="img/content/blog/posts/summer-specials.jpg" alt="Summer specials" />
-                        <div class="text article__text">
+                        <div class="rich-text article__text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra felis lectus, eget malesuada lorem suscipit sed. Maecenas sapien lacus, placerat in nibh nec, maximus ornare magna. Ut vestibulum leo vel dignissim interdum.</p>
                             <p>Mauris sit amet mi volutpat, eleifend diam a, mattis dolor. Sed eget ullamcorper libero. Nulla molestie elementum libero, quis consectetur neque feugiat non. Aenean ipsum eros, pretium quis porttitor et, vestibulum vitae sapien. Fusce sit amet mi porttitor, porttitor arcu ut, convallis risus.</p>
                             <h3>details of promotion</h3>
@@ -179,11 +179,13 @@
                                 </li>
                             </ul><!-- /.article-tags -->
                             <div class="share article__share">
-                                <button class="share__toggle" aria-expanded="false" aria-controls="share">Share<svg class="icon icon_share share__icon">
+                                <button class="share__trigger" aria-haspopup="true" aria-expanded="false" aria-controls="share-post">
+                                    <span>Share</span>
+                                    <svg class="icon icon_share share__icon">
                                         <use xlink:href="img/icons.svg#share"></use>
                                     </svg>
                                 </button>
-                                <ul class="share__drop" id="share">
+                                <ul class="share__drawer" id="share-post">
                                     <li class="share__item">
                                         <a class="share__link" href="javascript:void(0);">Facebook</a>
                                     </li>
@@ -196,15 +198,17 @@
                                     <li class="share__item">
                                         <a class="share__link" href="javascript:void(0);">Pinterest</a>
                                     </li>
-                                </ul>
-                            </div><!-- /.share -->
+                                </ul><!-- .share__drawer -->
+                            </div><!-- .share -->
                         </div><!-- /.article__footer-top -->
                         <div class="article__author">
                             <section class="article-author">
                                 <img class="article-author__avatar" src="img/content/avatars/100x100/richard-miles.jpg" alt="Richard Miles" />
                                 <div class="article-author__text">
                                     <h3 class="article-author__name">Richard Miles</h3>
-                                    <div class="article-author__bio">Praesent pharetra risus velit, a pharetra purus dignissim in. Integer dictum finibus leo, ut vehicula massa cidunt neque pellentesque dictum.</div>
+                                    <div class="rich-text rich-text_small article-author__bio">
+                                        <p>Praesent pharetra risus velit, a pharetra purus dignissim in. Integer dictum finibus leo, ut vehicula massa cidunt neque pellentesque dictum.</p>
+                                    </div>
                                     <ul class="article-author__social">
                                         <li class="article-author__social-item">
                                             <a class="article-author__social-link" href="javascript:void(0);">
@@ -284,7 +288,7 @@
                                         <div class="comment__author">John Doe</div>
                                         <button class="comment__reply-btn" type="button">Reply</button>
                                     </div><!-- /.comment__header -->
-                                    <div class="text comment__body">Donec maximus at neque pharetra convallis. Fusce tellus odio, mattis nec nisl sit amet, efficitur congue elit. Mauris tincidunt ex id dignissim tincidunt.</div><!-- /.comment__body -->
+                                    <div class="rich-text comment__body">Donec maximus at neque pharetra convallis. Fusce tellus odio, mattis nec nisl sit amet, efficitur congue elit. Mauris tincidunt ex id dignissim tincidunt.</div><!-- /.comment__body -->
                                     <div class="comment__replies">
                                         <ul class="comment__reply-list">
                                             <li class="comment comment__reply" data-id="102">
@@ -294,7 +298,7 @@
                                                     <div class="comment__author">Jane Doe</div>
                                                     <button class="comment__reply-btn" type="button">Reply</button>
                                                 </div><!-- /.comment__header -->
-                                                <div class="text comment__body">Donec maximus at neque pharetra convallis. Fusce tellus odio, mattis nec nisl sit amet, efficitur congue elit. Mauris tincidunt ex id dignissim tincidunt.</div><!-- /.comment__body -->
+                                                <div class="rich-text comment__body">Donec maximus at neque pharetra convallis. Fusce tellus odio, mattis nec nisl sit amet, efficitur congue elit. Mauris tincidunt ex id dignissim tincidunt.</div><!-- /.comment__body -->
                                                 <div class="comment__replies"></div><!-- /.comment__replies -->
                                             </li><!-- /.comment -->
                                         </ul>
@@ -408,8 +412,8 @@
                 </section><!-- /.blog-widget -->
             </div><!-- /.blog-layout__sidebar -->
         </div><!-- /.blog-layout -->
-    </main>
-    <footer class="footer">
+    </main><!-- #content -->
+    <footer class="footer" id="colophon">
         <div class="footer__inner">
             <div class="footer__social">
                 <div class="footer__social-text">Follow us:</div>
@@ -439,13 +443,13 @@
                         </a>
                     </li>
                 </ul>
-            </div><!-- /.footer__social -->
+            </div><!-- .footer__social -->
             <a class="footer__logo" href="index.html">
-                <img src="img/logo.png" alt="Renome" />
-            </a><!-- /.footer__logo -->
-            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- /.footer__copyright -->
-        </div><!-- /.footer__inner -->
-    </footer>
+                <img src="img/logo.svg" alt="Renome" />
+            </a><!-- .footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- .footer__copyright -->
+        </div><!-- .footer__inner -->
+    </footer><!-- #colophon -->
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
 </body>

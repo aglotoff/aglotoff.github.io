@@ -2,32 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Renome &#8211; HTML Restaurant Template</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body class="page page_home">
-    <a class="page__skip-link" href="#main-content">Skip to content</a>
-    <header class="header page__header">
+    <a class="skip-link page__skip-link" href="#content">Skip to content</a>
+    <header class="header page__header" id="masthead">
         <div class="header__inner">
             <h1 class="header__logo">
-                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
+                <img class="header__logo-img" src="img/logo.svg" alt="Renome" />
                 <span class="header__logo-text">Renome</span>
             </h1>
             <nav class="nav header__nav">
-                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="site-navigation">
                     <span class="hamburger__inner">
                         <span class="hamburger__title">Toggle nav</span>
                     </span>
                 </button>
-                <div class="nav__menu" id="main-menu">
+                <div class="nav__menu" id="site-navigation">
                     <div class="nav__scrollpane">
                         <form class="mobile-search nav__search" action="#" method="post">
-                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <input class="mobile-search__input" type="text" name="s" placeholder="Search..." />
                             <button class="mobile-search__submit" type="submit">
                                 <svg class="icon icon_search">
                                     <title>Search</title>
@@ -49,11 +49,11 @@
                                 <a class="nav__link" href="#reservation">Reservation</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
                                 </a>
                                 <div class="nav__submenu" id="submenu-blog">
                                     <div class="nav__scrollpane">
-                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
                                         </a>
                                         <ul class="nav__list">
                                             <li class="nav__item">
@@ -63,15 +63,15 @@
                                                 <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
                                             </li>
                                         </ul>
-                                    </div><!-- /.nav__scrollpane -->
-                                </div><!-- /.nav__submenu -->
+                                    </div><!-- .nav__scrollpane -->
+                                </div><!-- .nav__submenu -->
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link nav__link_active" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                <a class="nav__link nav__link nav__link_active" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
                                 </a>
                                 <div class="nav__submenu" id="submenu-features">
                                     <div class="nav__scrollpane">
-                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
                                         </a>
                                         <ul class="nav__list">
                                             <li class="nav__item">
@@ -84,8 +84,8 @@
                                                 <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
                                             </li>
                                         </ul>
-                                    </div><!-- /.nav__scrollpane -->
-                                </div><!-- /.nav__submenu -->
+                                    </div><!-- .nav__scrollpane -->
+                                </div><!-- .nav__submenu -->
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="shop.html">Shop</a>
@@ -94,8 +94,8 @@
                                 <a class="nav__link" href="#contact">Contact</a>
                             </li>
                         </ul>
-                    </div><!-- /.nav__scrollpane -->
-                </div><!-- /.nav__menu -->
+                    </div><!-- .nav__scrollpane -->
+                </div><!-- #site-navigation -->
             </nav>
             <div class="header__actions">
                 <button class="header__search-toggle">
@@ -105,24 +105,24 @@
                     </svg>
                 </button>
                 <div class="mini-cart header__mini-cart">
-                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                    <button class="mini-cart__trigger" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
                         <svg class="icon icon_cart">
                             <title>Toggle minicart</title>
                             <use xlink:href="img/icons.svg#cart"></use>
                         </svg>
                         <span class="mini-cart__item-count">2</span>
                     </button>
-                    <div class="mini-cart__drop" id="minicart">
+                    <div class="mini-cart__drawer" id="minicart">
                         <span class="mini-cart__total">$44.50</span>
                         <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
                         <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
-                    </div>
+                    </div><!-- .mini-cart__drawer -->
                 </div><!-- /.mini-cart -->
-            </div><!-- /.header__actions -->
-        </div><!-- /.header__inner -->
+            </div><!-- .header__actions -->
+        </div><!-- .header__inner -->
         <div class="search header__search" role="dialog" aria-label="Search">
             <form class="search__form" action="#" method="post">
-                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <input class="search__input" type="text" name="s" placeholder="Search..." />
                 <button class="search__submit" type="submit">
                     <svg class="icon icon_search">
                         <title>Search</title>
@@ -131,9 +131,9 @@
                 </button>
                 <button class="search__close" type="button" aria-label="Close"></button>
             </form>
-        </div><!-- /.search -->
-    </header>
-    <main class="page__main" id="main-content">
+        </div><!-- .search -->
+    </header><!-- #masthead -->
+    <main id="content">
         <div class="slider">
             <div class="slider__container">
                 <div class="slider__slide slider__slide_active" style="background-image: url(img/content/slider/slide-01.jpg)">
@@ -141,58 +141,98 @@
                         <div class="slider__slide-heading">
                             <h2 class="slider__slide-title">Made with love</h2>
                             <div class="slider__slide-subtitle">for you</div>
-                        </div>
-                    </div>
-                </div><!-- /.slider__slide -->
+                        </div><!-- .slider__slide-heading -->
+                    </div><!-- .slider__slide-content -->
+                </div><!-- .slider__slide -->
                 <div class="slider__slide" style="background-image: url(img/content/slider/slide-02.jpg)">
                     <div class="slider__slide-content">
                         <div class="slider__slide-heading">
                             <h2 class="slider__slide-title">Made with love</h2>
                             <div class="slider__slide-subtitle">for you</div>
-                        </div>
-                    </div>
-                </div><!-- /.slider__slide -->
+                        </div><!-- .slider__slide-heading -->
+                    </div><!-- .slider__slide-content -->
+                </div><!-- .slider__slide -->
                 <div class="slider__slide" style="background-image: url(img/content/slider/slide-03.jpg)">
                     <div class="slider__slide-content">
                         <div class="slider__slide-heading">
                             <h2 class="slider__slide-title">Made with love</h2>
                             <div class="slider__slide-subtitle">for you</div>
-                        </div>
-                    </div>
-                </div><!-- /.slider__slide -->
-            </div><!-- /.slider__container -->
+                        </div><!-- .slider__slide-heading -->
+                    </div><!-- .slider__slide-content -->
+                </div><!-- .slider__slide -->
+            </div><!-- .slider__container -->
             <div class="slider__arrows">
                 <button class="slider__arrow slider__arrow_dir_prev" type="button">Previous</button>
                 <button class="slider__arrow slider__arrow_dir_next" type="button">Next</button>
-            </div><!-- /.slider__arrows -->
-        </div><!-- /.slider -->
+            </div><!-- .slider__arrows -->
+        </div><!-- .slider -->
         <section class="section">
             <div class="section__inner">
-                <div class="img-group img-group_order_bottom-left img-group_size_lg section__images">
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/about/history-1.jpg" alt="About" />
-                    </div>
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/about/history-2.jpg" alt="About" />
-                    </div>
-                </div><!-- /.img-group -->
+                <div class="img-group img-group_order_bottom-left section__images">
+                    <div class="img-group__wrapper img-group__wrapper_wide">
+                        <picture>
+                            <source srcset="
+    img/content/about/history-1-small.webp 1x,
+    img/content/about/history-1-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/about/history-1-small.webp 1x,
+    img/content/about/history-1-medium.webp 1.5x,
+    img/content/about/history-1-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/about/history-1-small.jpg 1x,
+    img/content/about/history-1-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/about/history-1-small.jpg 1x,
+    img/content/about/history-1-medium.jpg 1.5x,
+    img/content/about/history-1-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/about/history-1-small.jpg" alt="About" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                    <div class="img-group__wrapper img-group__wrapper_wide">
+                        <picture>
+                            <source srcset="
+    img/content/about/history-2-small.webp 1x,
+    img/content/about/history-2-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/about/history-2-small.webp 1x,
+    img/content/about/history-2-medium.webp 1.5x,
+    img/content/about/history-2-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/about/history-2-small.jpg 1x,
+    img/content/about/history-2-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/about/history-2-small.jpg 1x,
+    img/content/about/history-2-medium.jpg 1.5x,
+    img/content/about/history-2-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/about/history-2-small.jpg" alt="About" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                </div><!-- .img-group -->
                 <div class="section__content">
-                    <div class="heading-group heading-group_lvl_section" id="about" tabindex="-1">
+                    <div class="heading-group heading-group_lvl_2" id="about" tabindex="-1">
                         <h2 class="heading-group__title">About</h2>
                         <p class="heading-group__subtitle">We create delicious memories</p>
-                    </div><!-- /.heading-group -->
-                    <div class="text section__text">
+                    </div><!-- .heading-group -->
+                    <div class="rich-text section__text">
                         <p>Renome it is renowned restaurant delights the senses with elegant ambiance, gracious service and delectable menus in the heart of Manhattan’s. The distinctive setting boasts contemporary furnishings and finishes atop the restaurant’s grand modern architecture. Renome offers the Bellecour room for private dining where guests enjoy creative foods and sumptuous late night desserts. Is one of the few Manhattan restaurants to have a coveted 3-star Michelin rating.</p>
-                    </div>
-                </div><!-- /.section__content -->
-            </div><!-- /.section__inner -->
-        </section><!-- /.section -->
+                    </div><!-- .rich-text -->
+                </div><!-- .section__content -->
+            </div><!-- .section__inner -->
+        </section><!-- .section -->
         <section class="gallery">
             <div class="gallery__inner">
-                <div class="heading-group heading-group_lvl_section gallery__heading">
+                <div class="heading-group heading-group_lvl_2 gallery__heading">
                     <h2 class="heading-group__title">Gallery</h2>
                     <p class="heading-group__subtitle">More about us via photos</p>
-                </div><!-- /.heading-group -->
+                </div><!-- .heading-group -->
                 <div class="gallery__wrapper">
                     <div class="gallery__grid">
                         <div class="gallery__thumb">
@@ -267,25 +307,65 @@
         </section><!-- /.gallery -->
         <section class="section section_reverse">
             <div class="section__inner">
-                <div class="img-group img-group_order_top-right img-group_size_sm section__images">
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/menu/menu-1.jpg" alt="Menu" />
-                    </div>
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/menu/menu-2.jpg" alt="Menu" />
-                    </div>
-                </div><!-- /.img-group -->
+                <div class="img-group img-group_order_top-right section__images">
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="
+    img/content/menu/menu-1-small.webp 1x,
+    img/content/menu/menu-1-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/menu/menu-1-small.webp 1x,
+    img/content/menu/menu-1-medium.webp 1.5x,
+    img/content/menu/menu-1-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/menu/menu-1-small.jpg 1x,
+    img/content/menu/menu-1-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/menu/menu-1-small.jpg 1x,
+    img/content/menu/menu-1-medium.jpg 1.5x,
+    img/content/menu/menu-1-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/menu/menu-1-small.jpg" alt="Menu" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="
+    img/content/menu/menu-2-small.webp 1x,
+    img/content/menu/menu-2-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/menu/menu-2-small.webp 1x,
+    img/content/menu/menu-2-medium.webp 1.5x,
+    img/content/menu/menu-2-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/menu/menu-2-small.jpg 1x,
+    img/content/menu/menu-2-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/menu/menu-2-small.jpg 1x,
+    img/content/menu/menu-2-medium.jpg 1.5x,
+    img/content/menu/menu-2-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/menu/menu-2-small.jpg" alt="Menu" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                </div><!-- .img-group -->
                 <div class="section__content">
-                    <div class="heading-group heading-group_lvl_section" id="menu" tabindex="-1">
+                    <div class="heading-group heading-group_lvl_2" id="menu" tabindex="-1">
                         <h2 class="heading-group__title">Menu</h2>
                         <p class="heading-group__subtitle">Delicious and beautiful</p>
-                    </div><!-- /.heading-group -->
-                    <div class="text section__text">
+                    </div><!-- .heading-group -->
+                    <div class="rich-text section__text">
                         <p>In our menu you will find a great variety of delicious food that will satisfy the needs and tastes of everyone. We strive to source the highest quality ingredients for all of our dishes thereby enhancing the quality of services.</p>
-                    </div>
-                </div><!-- /.section__content -->
-            </div><!-- /.section__inner -->
-        </section><!-- /.section -->
+                    </div><!-- .rich-text -->
+                </div><!-- .section__content -->
+            </div><!-- .section__inner -->
+        </section><!-- .section -->
         <div class="menu">
             <div class="tabs">
                 <div class="tabs__nav">
@@ -324,7 +404,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken wings</h3>
-                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -341,7 +423,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Dumplings</h3>
-                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -358,7 +442,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">French onion soup</h3>
-                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -375,7 +461,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Mini chilli pretzels</h3>
-                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>These freshly-baked savouries beat anything out of a packet.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -397,7 +485,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Atlantic Salmon</h3>
-                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -415,7 +505,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Fish tacos</h3>
-                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -432,7 +524,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Sesame Tuna</h3>
-                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -449,7 +543,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Parmesan chicken</h3>
-                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -471,7 +567,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Seared scallops</h3>
-                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -488,7 +586,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Poached salmon</h3>
-                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -505,7 +605,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Green curry</h3>
-                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -527,7 +629,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Lobster salad</h3>
-                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -544,7 +648,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
-                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -561,7 +667,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Winter salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -578,7 +686,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Thai-style salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -606,7 +716,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken wings</h3>
-                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -623,7 +735,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Dumplings</h3>
-                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -640,7 +754,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">French onion soup</h3>
-                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -657,7 +773,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Mini chilli pretzels</h3>
-                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>These freshly-baked savouries beat anything out of a packet.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -679,7 +797,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Atlantic Salmon</h3>
-                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -697,7 +817,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Fish tacos</h3>
-                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -714,7 +836,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Sesame Tuna</h3>
-                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -731,7 +855,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Parmesan chicken</h3>
-                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -753,7 +879,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Seared scallops</h3>
-                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -770,7 +898,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Poached salmon</h3>
-                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -787,7 +917,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Green curry</h3>
-                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -809,7 +941,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Lobster salad</h3>
-                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -826,7 +960,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
-                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -843,7 +979,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Winter salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -860,7 +998,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Thai-style salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -888,7 +1028,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken wings</h3>
-                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -905,7 +1047,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Dumplings</h3>
-                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -922,7 +1066,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">French onion soup</h3>
-                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -939,7 +1085,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Mini chilli pretzels</h3>
-                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>These freshly-baked savouries beat anything out of a packet.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -961,7 +1109,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Atlantic Salmon</h3>
-                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -979,7 +1129,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Fish tacos</h3>
-                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -996,7 +1148,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Sesame Tuna</h3>
-                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1013,7 +1167,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Parmesan chicken</h3>
-                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1035,7 +1191,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Seared scallops</h3>
-                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1052,7 +1210,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Poached salmon</h3>
-                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1069,7 +1229,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Green curry</h3>
-                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1091,7 +1253,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Lobster salad</h3>
-                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1108,7 +1272,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
-                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1125,7 +1291,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Winter salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1142,7 +1310,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Thai-style salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1170,7 +1340,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken wings</h3>
-                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1187,7 +1359,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Dumplings</h3>
-                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1204,7 +1378,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">French onion soup</h3>
-                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1221,7 +1397,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Mini chilli pretzels</h3>
-                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>These freshly-baked savouries beat anything out of a packet.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1243,7 +1421,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Atlantic Salmon</h3>
-                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1261,7 +1441,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Fish tacos</h3>
-                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1278,7 +1460,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Sesame Tuna</h3>
-                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1295,7 +1479,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Parmesan chicken</h3>
-                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1317,7 +1503,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Seared scallops</h3>
-                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1334,7 +1522,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Poached salmon</h3>
-                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1351,7 +1541,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Green curry</h3>
-                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1373,7 +1565,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Lobster salad</h3>
-                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1390,7 +1584,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
-                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1407,7 +1603,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Winter salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1424,7 +1622,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Thai-style salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1438,36 +1638,86 @@
             <div class="testimonial__content">
                 <div class="testimonial__inner">
                     <div class="testimonial__img-wrapper">
-                        <img class="testimonial__img" src="img/content/index/testimonial.jpg" alt="Testimonial" />
+                        <picture>
+                            <source srcset="
+    img/content/testimonial/testimonial-small.webp 1x,
+    img/content/testimonial/testimonial-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/testimonial/testimonial-small.jpg 1x,
+    img/content/testimonial/testimonial-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="testimonial__img" src="img/content/testimonial/testimonial.jpg" alt="Testimonial" />
+                        </picture>
                     </div>
                     <blockquote class="testimonial__quote">
                         <p class="testimonial__quote-text">The most romantic and perfect place</p>
                         <footer class="testimonial__quote-footer"><cite>John Doe</cite></footer>
                     </blockquote>
-                </div>
-            </div>
-        </div><!-- /.testimonial -->
+                </div><!-- .testimonial__inner -->
+            </div><!-- .testimonial__content -->
+        </div><!-- .testimonial -->
         <section class="section">
             <div class="section__inner">
-                <div class="img-group img-group_order_top-left img-group_size_sm section__images">
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/reservation/reservation-1.jpg" alt="Reservation" />
-                    </div>
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/reservation/reservation-2.jpg" alt="Reservation" />
-                    </div>
-                </div><!-- /.img-group -->
+                <div class="img-group img-group_order_bottom-right section__images">
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="
+    img/content/reservation/reservation-1-small.webp 1x,
+    img/content/reservation/reservation-1-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/reservation/reservation-1-small.webp 1x,
+    img/content/reservation/reservation-1-medium.webp 1.5x,
+    img/content/reservation/reservation-1-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/reservation/reservation-1-small.jpg 1x,
+    img/content/reservation/reservation-1-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/reservation/reservation-1-small.jpg 1x,
+    img/content/reservation/reservation-1-medium.jpg 1.5x,
+    img/content/reservation/reservation-1-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/reservation/reservation-1-small.jpg" alt="Reservation" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="
+    img/content/reservation/reservation-2-small.webp 1x,
+    img/content/reservation/reservation-2-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/reservation/reservation-2-small.webp 1x,
+    img/content/reservation/reservation-2-medium.webp 1.5x,
+    img/content/reservation/reservation-2-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/reservation/reservation-2-small.jpg 1x,
+    img/content/reservation/reservation-2-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/reservation/reservation-2-small.jpg 1x,
+    img/content/reservation/reservation-2-medium.jpg 1.5x,
+    img/content/reservation/reservation-2-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/reservation/reservation-2-small.jpg" alt="Reservation" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                </div><!-- .img-group -->
                 <div class="section__content">
-                    <div class="heading-group heading-group_lvl_section" id="reservation" tabindex="-1">
+                    <div class="heading-group heading-group_lvl_2" id="reservation" tabindex="-1">
                         <h2 class="heading-group__title">Reservation</h2>
                         <p class="heading-group__subtitle">Book your table at our restaurant now!</p>
-                    </div><!-- /.heading-group -->
-                    <div class="text section__text">
+                    </div><!-- .heading-group -->
+                    <div class="rich-text section__text">
                         <p>Call you on the date of your reservation to confirm your table. If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1 939 777 55 33).</p>
-                    </div>
-                </div><!-- /.section__content -->
-            </div><!-- /.section__inner -->
-        </section><!-- /.section -->
+                    </div><!-- .rich-text -->
+                </div><!-- .section__content -->
+            </div><!-- .section__inner -->
+        </section><!-- .section -->
         <form class="reservation-form" action="#" method="post">
             <div class="reservation-form__inner">
                 <h2 class="reservation-form__title">Make a Reservation</h2>
@@ -1531,75 +1781,203 @@
         </form><!-- /.reservation-form -->
         <section class="specials">
             <div class="specials__inner">
-                <div class="heading-group heading-group_lvl_section specials__heading">
+                <div class="heading-group heading-group_lvl_2 specials__heading">
                     <h2 class="heading-group__title">Lunch</h2>
                     <p class="heading-group__subtitle">of the day</p>
-                </div><!-- /.heading-group -->
+                </div><!-- .heading-group -->
                 <div class="specials-slider specials__slider">
                     <div class="specials-slider__inner">
                         <div class="specials-slider__container">
                             <div class="specials-slider__slide specials-slider__slide_active">
-                                <img class="specials-slider__slide-img" src="img/content/specials/homemade-baguette.jpg" alt="Homemade baguette" />
-                                <div class="specials-slider__slide-text">
-                                    <h3 class="specials-slider__slide-title">Homemade baguette</h3>
-                                    <div class="specials-slider__slide-weekday">Monday</div>
-                                </div>
-                                <div class="specials-slider__slide-price">$8.95</div>
-                            </div><!-- /.specials-slider__slide -->
+                                <div class="specials-slider__slide-inner">
+                                    <picture>
+                                        <source srcset="
+    img/content/specials/homemade-baguette-small.webp 1x,
+    img/content/specials/homemade-baguette-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                                        <source srcset="
+    img/content/specials/homemade-baguette-small.webp 1x,
+    img/content/specials/homemade-baguette-medium.webp 1.5x,
+    img/content/specials/homemade-baguette-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/specials/homemade-baguette-small.jpg 1x,
+    img/content/specials/homemade-baguette-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                                        <source srcset="
+    img/content/specials/homemade-baguette-small.jpg 1x,
+    img/content/specials/homemade-baguette-medium.jpg 1.5x,
+    img/content/specials/homemade-baguette-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="specials-slider__slide-img" src="img/content/specials/homemade-baguette-small.jpg" alt="Homemade baguette" />
+                                    </picture>
+                                    <div class="specials-slider__slide-text">
+                                        <h3 class="specials-slider__slide-title">Homemade baguette</h3>
+                                        <div class="specials-slider__slide-weekday">Monday</div>
+                                    </div>
+                                    <div class="specials-slider__slide-price">$8.95</div>
+                                </div><!-- .specials-slider__slide-inner -->
+                            </div><!-- .specials-slider__slide -->
                             <div class="specials-slider__slide">
-                                <img class="specials-slider__slide-img" src="img/content/specials/korean-bibimbap.jpg" alt="Korean bibimbap" />
-                                <div class="specials-slider__slide-text">
-                                    <h3 class="specials-slider__slide-title">Korean bibimbap</h3>
-                                    <div class="specials-slider__slide-weekday">Tuesday</div>
-                                </div>
-                                <div class="specials-slider__slide-price">$15.70</div>
-                            </div><!-- /.specials-slider__slide -->
+                                <div class="specials-slider__slide-inner">
+                                    <picture>
+                                        <source srcset="
+    img/content/specials/korean-bibimbap-small.webp 1x,
+    img/content/specials/korean-bibimbap-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                                        <source srcset="
+    img/content/specials/korean-bibimbap-small.webp 1x,
+    img/content/specials/korean-bibimbap-medium.webp 1.5x,
+    img/content/specials/korean-bibimbap-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/specials/korean-bibimbap-small.jpg 1x,
+    img/content/specials/korean-bibimbap-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                                        <source srcset="
+    img/content/specials/korean-bibimbap-small.jpg 1x,
+    img/content/specials/korean-bibimbap-medium.jpg 1.5x,
+    img/content/specials/korean-bibimbap-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="specials-slider__slide-img" src="img/content/specials/korean-bibimbap-small.jpg" alt="Korean bibimbap" />
+                                    </picture>
+                                    <div class="specials-slider__slide-text">
+                                        <h3 class="specials-slider__slide-title">Korean bibimbap</h3>
+                                        <div class="specials-slider__slide-weekday">Tuesday</div>
+                                    </div>
+                                    <div class="specials-slider__slide-price">$15.70</div>
+                                </div><!-- .specials-slider__slide-inner -->
+                            </div><!-- .specials-slider__slide -->
                             <div class="specials-slider__slide">
-                                <img class="specials-slider__slide-img" src="img/content/specials/apple-pie.jpg" alt="Apple pie" />
-                                <div class="specials-slider__slide-text">
-                                    <h3 class="specials-slider__slide-title">Apple pie</h3>
-                                    <div class="specials-slider__slide-weekday">Wednesday</div>
-                                </div>
-                                <div class="specials-slider__slide-price">$8.75</div>
-                            </div><!-- /.specials-slider__slide -->
+                                <div class="specials-slider__slide-inner">
+                                    <picture>
+                                        <source srcset="
+    img/content/specials/apple-pie-small.webp 1x,
+    img/content/specials/apple-pie-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                                        <source srcset="
+    img/content/specials/apple-pie-small.webp 1x,
+    img/content/specials/apple-pie-medium.webp 1.5x,
+    img/content/specials/apple-pie-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/specials/apple-pie-small.jpg 1x,
+    img/content/specials/apple-pie-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                                        <source srcset="
+    img/content/specials/apple-pie-small.jpg 1x,
+    img/content/specials/apple-pie-medium.jpg 1.5x,
+    img/content/specials/apple-pie-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="specials-slider__slide-img" src="img/content/specials/apple-pie-small.jpg" alt="Apple pie" />
+                                    </picture>
+                                    <div class="specials-slider__slide-text">
+                                        <h3 class="specials-slider__slide-title">Apple pie</h3>
+                                        <div class="specials-slider__slide-weekday">Wednesday</div>
+                                    </div>
+                                    <div class="specials-slider__slide-price">$8.75</div>
+                                </div><!-- .specials-slider__slide-inner -->
+                            </div><!-- .specials-slider__slide -->
                             <div class="specials-slider__slide">
-                                <img class="specials-slider__slide-img" src="img/content/specials/steak-with-vegetables.jpg" alt="Steak with vegetables" />
-                                <div class="specials-slider__slide-text">
-                                    <h3 class="specials-slider__slide-title">Steak with vegetables</h3>
-                                    <div class="specials-slider__slide-weekday">Monday</div>
-                                </div>
-                                <div class="specials-slider__slide-price">$14.20</div>
-                            </div><!-- /.specials-slider__slide -->
-                        </div><!-- /.specials-slider__container -->
+                                <div class="specials-slider__slide-inner">
+                                    <picture>
+                                        <source srcset="
+    img/content/specials/steak-with-vegetables-small.webp 1x,
+    img/content/specials/steak-with-vegetables-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                                        <source srcset="
+    img/content/specials/steak-with-vegetables-small.webp 1x,
+    img/content/specials/steak-with-vegetables-medium.webp 1.5x,
+    img/content/specials/steak-with-vegetables-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/specials/steak-with-vegetables-small.jpg 1x,
+    img/content/specials/steak-with-vegetables-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                                        <source srcset="
+    img/content/specials/steak-with-vegetables-small.jpg 1x,
+    img/content/specials/steak-with-vegetables-medium.jpg 1.5x,
+    img/content/specials/steak-with-vegetables-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="specials-slider__slide-img" src="img/content/specials/steak-with-vegetables-small.jpg" alt="Steak with vegetables" />
+                                    </picture>
+                                    <div class="specials-slider__slide-text">
+                                        <h3 class="specials-slider__slide-title">Steak with vegetables</h3>
+                                        <div class="specials-slider__slide-weekday">Monday</div>
+                                    </div>
+                                    <div class="specials-slider__slide-price">$14.20</div>
+                                </div><!-- .specials-slider__slide-inner -->
+                            </div><!-- .specials-slider__slide -->
+                        </div><!-- .specials-slider__container -->
                         <div class="specials-slider__arrows">
                             <button class="specials-slider__arrow specials-slider__arrow_dir_prev" type="button">Previous</button>
                             <button class="specials-slider__arrow specials-slider__arrow_dir_next" type="button">Next</button>
-                        </div><!-- /.specials-slider__arrows -->
-                    </div><!-- /.specials-slider__inner -->
-                </div><!-- /.specials-slider -->
-            </div><!-- /.specials__inner -->
-        </section><!-- /.specials -->
+                        </div><!-- .specials-slider__arrows -->
+                    </div><!-- .specials-slider__inner -->
+                </div><!-- .specials-slider -->
+            </div><!-- .specials__inner -->
+        </section><!-- .specials -->
         <section class="section section_reverse">
             <div class="section__inner">
-                <div class="img-group img-group_order_top-right img-group_size_sm section__images">
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/contact/contact-1.jpg" alt="Contact" />
-                    </div>
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/contact/contact-2.jpg" alt="Contact" />
-                    </div>
-                </div><!-- /.img-group -->
+                <div class="img-group img-group_order_top-right section__images">
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="
+    img/content/contact/contact-1-small.webp 1x,
+    img/content/contact/contact-1-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/contact/contact-1-small.webp 1x,
+    img/content/contact/contact-1-medium.webp 1.5x,
+    img/content/contact/contact-1-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/contact/contact-1-small.jpg 1x,
+    img/content/contact/contact-1-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/contact/contact-1-small.jpg 1x,
+    img/content/contact/contact-1-medium.jpg 1.5x,
+    img/content/contact/contact-1-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/contact/contact-1-small.jpg" alt="Contact" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="
+    img/content/contact/contact-2-small.webp 1x,
+    img/content/contact/contact-2-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/contact/contact-2-small.webp 1x,
+    img/content/contact/contact-2-medium.webp 1.5x,
+    img/content/contact/contact-2-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/contact/contact-2-small.jpg 1x,
+    img/content/contact/contact-2-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/contact/contact-2-small.jpg 1x,
+    img/content/contact/contact-2-medium.jpg 1.5x,
+    img/content/contact/contact-2-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/contact/contact-2-small.jpg" alt="Contact" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                </div><!-- .img-group -->
                 <div class="section__content">
-                    <div class="heading-group heading-group_lvl_section" id="contact" tabindex="-1">
+                    <div class="heading-group heading-group_lvl_2" id="contact" tabindex="-1">
                         <h2 class="heading-group__title">Contact</h2>
                         <p class="heading-group__subtitle">We welcome you in our restaurant</p>
-                    </div><!-- /.heading-group -->
-                    <div class="text section__text">
+                    </div><!-- .heading-group -->
+                    <div class="rich-text section__text">
                         <p>Please feel free to contact us with any questions or to make reservations. If no one is available to take your call, please leave a message. We will contact you as soon as possible.</p>
-                    </div>
-                </div><!-- /.section__content -->
-            </div><!-- /.section__inner -->
-        </section><!-- /.section -->
+                    </div><!-- .rich-text -->
+                </div><!-- .section__content -->
+            </div><!-- .section__inner -->
+        </section><!-- .section -->
         <div class="contact-bottom">
             <div class="contact-bottom__inner">
                 <div class="contact-details contact-bottom__details">
@@ -1647,8 +2025,8 @@
                 </form><!-- /.contact-form -->
             </div><!-- /.contact-bottom__inner -->
         </div><!-- /.contact-bottom -->
-    </main>
-    <footer class="footer">
+    </main><!-- #content -->
+    <footer class="footer" id="colophon">
         <div class="footer__inner">
             <div class="footer__social">
                 <div class="footer__social-text">Follow us:</div>
@@ -1678,13 +2056,13 @@
                         </a>
                     </li>
                 </ul>
-            </div><!-- /.footer__social -->
+            </div><!-- .footer__social -->
             <a class="footer__logo" href="index.html">
-                <img src="img/logo.png" alt="Renome" />
-            </a><!-- /.footer__logo -->
-            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- /.footer__copyright -->
-        </div><!-- /.footer__inner -->
-    </footer>
+                <img src="img/logo.svg" alt="Renome" />
+            </a><!-- .footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- .footer__copyright -->
+        </div><!-- .footer__inner -->
+    </footer><!-- #colophon -->
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
 </body>

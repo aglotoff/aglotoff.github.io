@@ -2,32 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Menu | Renome</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body class="page">
-    <a class="page__skip-link" href="#main-content">Skip to content</a>
-    <header class="header header_transparent page__header">
+    <a class="skip-link page__skip-link" href="#content">Skip to content</a>
+    <header class="header header_transparent page__header" id="masthead">
         <div class="header__inner">
             <a class="header__logo" href="index.html">
-                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
-                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+                <img class="header__logo-img" src="img/logo.svg" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.svg" alt="Renome" />
             </a>
             <nav class="nav header__nav">
-                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="site-navigation">
                     <span class="hamburger__inner">
                         <span class="hamburger__title">Toggle nav</span>
                     </span>
                 </button>
-                <div class="nav__menu" id="main-menu">
+                <div class="nav__menu" id="site-navigation">
                     <div class="nav__scrollpane">
                         <form class="mobile-search nav__search" action="#" method="post">
-                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <input class="mobile-search__input" type="text" name="s" placeholder="Search..." />
                             <button class="mobile-search__submit" type="submit">
                                 <svg class="icon icon_search">
                                     <title>Search</title>
@@ -49,11 +49,11 @@
                                 <a class="nav__link" href="reservation.html">Reservation</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
                                 </a>
                                 <div class="nav__submenu" id="submenu-blog">
                                     <div class="nav__scrollpane">
-                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
                                         </a>
                                         <ul class="nav__list">
                                             <li class="nav__item">
@@ -63,15 +63,15 @@
                                                 <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
                                             </li>
                                         </ul>
-                                    </div><!-- /.nav__scrollpane -->
-                                </div><!-- /.nav__submenu -->
+                                    </div><!-- .nav__scrollpane -->
+                                </div><!-- .nav__submenu -->
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
                                 </a>
                                 <div class="nav__submenu" id="submenu-features">
                                     <div class="nav__scrollpane">
-                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
                                         </a>
                                         <ul class="nav__list">
                                             <li class="nav__item">
@@ -84,8 +84,8 @@
                                                 <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
                                             </li>
                                         </ul>
-                                    </div><!-- /.nav__scrollpane -->
-                                </div><!-- /.nav__submenu -->
+                                    </div><!-- .nav__scrollpane -->
+                                </div><!-- .nav__submenu -->
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="shop.html">Shop</a>
@@ -94,8 +94,8 @@
                                 <a class="nav__link" href="contact.html">Contact</a>
                             </li>
                         </ul>
-                    </div><!-- /.nav__scrollpane -->
-                </div><!-- /.nav__menu -->
+                    </div><!-- .nav__scrollpane -->
+                </div><!-- #site-navigation -->
             </nav>
             <div class="header__actions">
                 <button class="header__search-toggle">
@@ -105,24 +105,24 @@
                     </svg>
                 </button>
                 <div class="mini-cart header__mini-cart">
-                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                    <button class="mini-cart__trigger" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
                         <svg class="icon icon_cart">
                             <title>Toggle minicart</title>
                             <use xlink:href="img/icons.svg#cart"></use>
                         </svg>
                         <span class="mini-cart__item-count">2</span>
                     </button>
-                    <div class="mini-cart__drop" id="minicart">
+                    <div class="mini-cart__drawer" id="minicart">
                         <span class="mini-cart__total">$44.50</span>
                         <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
                         <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
-                    </div>
+                    </div><!-- .mini-cart__drawer -->
                 </div><!-- /.mini-cart -->
-            </div><!-- /.header__actions -->
-        </div><!-- /.header__inner -->
+            </div><!-- .header__actions -->
+        </div><!-- .header__inner -->
         <div class="search header__search" role="dialog" aria-label="Search">
             <form class="search__form" action="#" method="post">
-                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <input class="search__input" type="text" name="s" placeholder="Search..." />
                 <button class="search__submit" type="submit">
                     <svg class="icon icon_search">
                         <title>Search</title>
@@ -131,38 +131,78 @@
                 </button>
                 <button class="search__close" type="button" aria-label="Close"></button>
             </form>
-        </div><!-- /.search -->
-    </header>
-    <main class="page__main" id="main-content">
+        </div><!-- .search -->
+    </header><!-- #masthead -->
+    <main id="content">
         <div class="page-header" style="background-image: url(img/content/menu/menu-header-bg.jpg)">
             <div class="page-header__inner">
-                <div class="heading-group heading-group_lvl_page page-header__title">
+                <div class="heading-group heading-group_lvl_1 page-header__title">
                     <h1 class="heading-group__title">Menu</h1>
                     <p class="heading-group__subtitle">Delicious and beautiful</p>
-                </div><!-- /.heading-group -->
+                </div><!-- .heading-group -->
             </div>
         </div><!-- /.page-header -->
         <section class="section section_reverse">
             <div class="section__inner">
-                <div class="img-group img-group_order_top-right img-group_size_sm section__images">
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/menu/menu-1.jpg" alt="Menu" />
-                    </div>
-                    <div class="img-group__row">
-                        <img class="img-group__img" src="img/content/menu/menu-2.jpg" alt="Menu" />
-                    </div>
-                </div><!-- /.img-group -->
+                <div class="img-group img-group_order_top-right section__images">
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="
+    img/content/menu/menu-1-small.webp 1x,
+    img/content/menu/menu-1-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/menu/menu-1-small.webp 1x,
+    img/content/menu/menu-1-medium.webp 1.5x,
+    img/content/menu/menu-1-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/menu/menu-1-small.jpg 1x,
+    img/content/menu/menu-1-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/menu/menu-1-small.jpg 1x,
+    img/content/menu/menu-1-medium.jpg 1.5x,
+    img/content/menu/menu-1-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/menu/menu-1-small.jpg" alt="Menu" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="
+    img/content/menu/menu-2-small.webp 1x,
+    img/content/menu/menu-2-medium.webp 2x
+" media="(max-width: 480px)" type="image/webp" />
+                            <source srcset="
+    img/content/menu/menu-2-small.webp 1x,
+    img/content/menu/menu-2-medium.webp 1.5x,
+    img/content/menu/menu-2-large.webp 2x
+" type="image/webp" />
+                            <source srcset="
+    img/content/menu/menu-2-small.jpg 1x,
+    img/content/menu/menu-2-medium.jpg 2x
+" media="(max-width: 480px)" type="image/jpeg" />
+                            <source srcset="
+    img/content/menu/menu-2-small.jpg 1x,
+    img/content/menu/menu-2-medium.jpg 1.5x,
+    img/content/menu/menu-2-large.jpg 2x
+" type="image/jpeg" />
+                            <img class="img-group__img" src="img/content/menu/menu-2-small.jpg" alt="Menu" />
+                        </picture>
+                    </div><!-- .img-group__wrapper -->
+                </div><!-- .img-group -->
                 <div class="section__content">
-                    <div class="heading-group heading-group_lvl_section">
+                    <div class="heading-group heading-group_lvl_2">
                         <h2 class="heading-group__title">Discover</h2>
                         <p class="heading-group__subtitle">Our restaurant menu</p>
-                    </div><!-- /.heading-group -->
-                    <div class="text section__text">
+                    </div><!-- .heading-group -->
+                    <div class="rich-text section__text">
                         <p>In our menu you will find a great variety of delicious food that will satisfy the needs and tastes of everyone. We strive to source the highest quality ingredients for all of our dishes thereby enhancing the quality of services.</p>
-                    </div>
-                </div><!-- /.section__content -->
-            </div><!-- /.section__inner -->
-        </section><!-- /.section -->
+                    </div><!-- .rich-text -->
+                </div><!-- .section__content -->
+            </div><!-- .section__inner -->
+        </section><!-- .section -->
         <div class="menu">
             <div class="tabs">
                 <div class="tabs__nav">
@@ -201,7 +241,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken wings</h3>
-                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -218,7 +260,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Dumplings</h3>
-                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -235,7 +279,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">French onion soup</h3>
-                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -252,7 +298,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Mini chilli pretzels</h3>
-                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>These freshly-baked savouries beat anything out of a packet.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -274,7 +322,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Atlantic Salmon</h3>
-                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -292,7 +342,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Fish tacos</h3>
-                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -309,7 +361,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Sesame Tuna</h3>
-                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -326,7 +380,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Parmesan chicken</h3>
-                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -348,7 +404,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Seared scallops</h3>
-                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -365,7 +423,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Poached salmon</h3>
-                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -382,7 +442,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Green curry</h3>
-                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -404,7 +466,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Lobster salad</h3>
-                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -421,7 +485,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
-                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -438,7 +504,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Winter salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -455,7 +523,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Thai-style salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -483,7 +553,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken wings</h3>
-                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -500,7 +572,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Dumplings</h3>
-                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -517,7 +591,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">French onion soup</h3>
-                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -534,7 +610,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Mini chilli pretzels</h3>
-                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>These freshly-baked savouries beat anything out of a packet.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -556,7 +634,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Atlantic Salmon</h3>
-                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -574,7 +654,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Fish tacos</h3>
-                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -591,7 +673,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Sesame Tuna</h3>
-                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -608,7 +692,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Parmesan chicken</h3>
-                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -630,7 +716,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Seared scallops</h3>
-                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -647,7 +735,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Poached salmon</h3>
-                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -664,7 +754,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Green curry</h3>
-                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -686,7 +778,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Lobster salad</h3>
-                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -703,7 +797,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
-                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -720,7 +816,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Winter salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -737,7 +835,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Thai-style salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -765,7 +865,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken wings</h3>
-                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -782,7 +884,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Dumplings</h3>
-                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -799,7 +903,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">French onion soup</h3>
-                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -816,7 +922,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Mini chilli pretzels</h3>
-                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>These freshly-baked savouries beat anything out of a packet.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -838,7 +946,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Atlantic Salmon</h3>
-                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -856,7 +966,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Fish tacos</h3>
-                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -873,7 +985,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Sesame Tuna</h3>
-                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -890,7 +1004,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Parmesan chicken</h3>
-                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -912,7 +1028,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Seared scallops</h3>
-                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -929,7 +1047,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Poached salmon</h3>
-                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -946,7 +1066,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Green curry</h3>
-                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -968,7 +1090,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Lobster salad</h3>
-                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -985,7 +1109,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
-                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1002,7 +1128,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Winter salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1019,7 +1147,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Thai-style salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1047,7 +1177,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken wings</h3>
-                                            <div class="menu-product__desc">It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>It’s all about flavour and fun, fun, fun. Toss fried chicken with a finger-licking sauce spiked with chilli and fresh ginger.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1064,7 +1196,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Dumplings</h3>
-                                            <div class="menu-product__desc">Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Small dumplings filled with spiced lamb. Tossed in a tomato sauce and served with sumac-flavoured Greek yoghurt.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1081,7 +1215,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">French onion soup</h3>
-                                            <div class="menu-product__desc">French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>French onion soup is deeply savoury and hearty - and cheesy croutons make it extra special!</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1098,7 +1234,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Mini chilli pretzels</h3>
-                                            <div class="menu-product__desc">These freshly-baked savouries beat anything out of a packet.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>These freshly-baked savouries beat anything out of a packet.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1120,7 +1258,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Atlantic Salmon</h3>
-                                            <div class="menu-product__desc">Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Have dinner on the table super fast with clever shortcuts and this easy salmon and Greek rice salad.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1138,7 +1278,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Fish tacos</h3>
-                                            <div class="menu-product__desc">Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Fish is a healthy, low-fat taco filling, and it tastes absolutely delicious.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1155,7 +1297,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Sesame Tuna</h3>
-                                            <div class="menu-product__desc">Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Sesame seeds form a tasty crust and are rich in calcium, copper and magnesium.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1172,7 +1316,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Parmesan chicken</h3>
-                                            <div class="menu-product__desc">This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This crunchy crumbed chicken tastes fabulous paired with the fresh flavours of zucchini, mint and olives.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1194,7 +1340,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Seared scallops</h3>
-                                            <div class="menu-product__desc">Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Escape the hustle and bustle with this exotic breakfast that will satisfy your taste buds..</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1211,7 +1359,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Poached salmon</h3>
-                                            <div class="menu-product__desc">Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>Decidedly gourmet poached salmon dish with a zingy watercress mayonnaise.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1228,7 +1378,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Green curry</h3>
-                                            <div class="menu-product__desc">This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This balance of sweet, sour and salty flavours is a hallmark of Thai cooking.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1250,7 +1402,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Lobster salad</h3>
-                                            <div class="menu-product__desc">A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>A simple lobster salad with butter and just a hint of mayonnaise so that you can still taste the sweet lobster meat.</p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1267,7 +1421,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Chicken &amp; orange salad</h3>
-                                            <div class="menu-product__desc">With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>With juicy oranges and a yoghurt dressing, this chicken salad is a treat on any spring table. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1284,7 +1440,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Winter salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp. </div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp. </p>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="menu-product menu-cat__product">
@@ -1301,7 +1459,9 @@
                                         </div>
                                         <div class="menu-product__text">
                                             <h3 class="menu-product__title">Thai-style salad</h3>
-                                            <div class="menu-product__desc">This is a simple winter salad, fresh and crisp.</div>
+                                            <div class="rich-text rich-text_small-spacing menu-product__desc">
+                                                <p>This is a simple winter salad, fresh and crisp.</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -1311,8 +1471,8 @@
                 </div><!-- /.tabs__panel -->
             </div><!-- /.tabs -->
         </div><!-- /.menu -->
-    </main>
-    <footer class="footer">
+    </main><!-- #content -->
+    <footer class="footer" id="colophon">
         <div class="footer__inner">
             <div class="footer__social">
                 <div class="footer__social-text">Follow us:</div>
@@ -1342,13 +1502,13 @@
                         </a>
                     </li>
                 </ul>
-            </div><!-- /.footer__social -->
+            </div><!-- .footer__social -->
             <a class="footer__logo" href="index.html">
-                <img src="img/logo.png" alt="Renome" />
-            </a><!-- /.footer__logo -->
-            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- /.footer__copyright -->
-        </div><!-- /.footer__inner -->
-    </footer>
+                <img src="img/logo.svg" alt="Renome" />
+            </a><!-- .footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- .footer__copyright -->
+        </div><!-- .footer__inner -->
+    </footer><!-- #colophon -->
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
 </body>

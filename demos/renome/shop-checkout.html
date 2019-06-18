@@ -2,32 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Checkout &#8211; Shop | Renome</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body class="page">
-    <a class="page__skip-link" href="#main-content">Skip to content</a>
-    <header class="header header_transparent page__header">
+    <a class="skip-link page__skip-link" href="#content">Skip to content</a>
+    <header class="header header_transparent page__header" id="masthead">
         <div class="header__inner">
             <a class="header__logo" href="index.html">
-                <img class="header__logo-img" src="img/logo.png" alt="Renome" />
-                <img class="header__logo-img_alt" src="img/logo-alt.png" alt="Renome" />
+                <img class="header__logo-img" src="img/logo.svg" alt="Renome" />
+                <img class="header__logo-img_alt" src="img/logo-alt.svg" alt="Renome" />
             </a>
             <nav class="nav header__nav">
-                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="main-menu">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="site-navigation">
                     <span class="hamburger__inner">
                         <span class="hamburger__title">Toggle nav</span>
                     </span>
                 </button>
-                <div class="nav__menu" id="main-menu">
+                <div class="nav__menu" id="site-navigation">
                     <div class="nav__scrollpane">
                         <form class="mobile-search nav__search" action="#" method="post">
-                            <input class="mobile-search__input" type="text" name="q" placeholder="Search..." />
+                            <input class="mobile-search__input" type="text" name="s" placeholder="Search..." />
                             <button class="mobile-search__submit" type="submit">
                                 <svg class="icon icon_search">
                                     <title>Search</title>
@@ -49,11 +49,11 @@
                                 <a class="nav__link" href="reservation.html">Reservation</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
                                 </a>
                                 <div class="nav__submenu" id="submenu-blog">
                                     <div class="nav__scrollpane">
-                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
                                         </a>
                                         <ul class="nav__list">
                                             <li class="nav__item">
@@ -63,15 +63,15 @@
                                                 <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
                                             </li>
                                         </ul>
-                                    </div><!-- /.nav__scrollpane -->
-                                </div><!-- /.nav__submenu -->
+                                    </div><!-- .nav__scrollpane -->
+                                </div><!-- .nav__submenu -->
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
                                 </a>
                                 <div class="nav__submenu" id="submenu-features">
                                     <div class="nav__scrollpane">
-                                        <a class="nav__link nav__link_back" href="javascript:void(0)" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
                                         </a>
                                         <ul class="nav__list">
                                             <li class="nav__item">
@@ -84,8 +84,8 @@
                                                 <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
                                             </li>
                                         </ul>
-                                    </div><!-- /.nav__scrollpane -->
-                                </div><!-- /.nav__submenu -->
+                                    </div><!-- .nav__scrollpane -->
+                                </div><!-- .nav__submenu -->
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link nav__link_active" href="shop.html">Shop</a>
@@ -94,8 +94,8 @@
                                 <a class="nav__link" href="contact.html">Contact</a>
                             </li>
                         </ul>
-                    </div><!-- /.nav__scrollpane -->
-                </div><!-- /.nav__menu -->
+                    </div><!-- .nav__scrollpane -->
+                </div><!-- #site-navigation -->
             </nav>
             <div class="header__actions">
                 <button class="header__search-toggle">
@@ -105,24 +105,24 @@
                     </svg>
                 </button>
                 <div class="mini-cart header__mini-cart">
-                    <button class="mini-cart__toggle" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                    <button class="mini-cart__trigger" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
                         <svg class="icon icon_cart">
                             <title>Toggle minicart</title>
                             <use xlink:href="img/icons.svg#cart"></use>
                         </svg>
                         <span class="mini-cart__item-count">2</span>
                     </button>
-                    <div class="mini-cart__drop" id="minicart">
+                    <div class="mini-cart__drawer" id="minicart">
                         <span class="mini-cart__total">$44.50</span>
                         <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
                         <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
-                    </div>
+                    </div><!-- .mini-cart__drawer -->
                 </div><!-- /.mini-cart -->
-            </div><!-- /.header__actions -->
-        </div><!-- /.header__inner -->
+            </div><!-- .header__actions -->
+        </div><!-- .header__inner -->
         <div class="search header__search" role="dialog" aria-label="Search">
             <form class="search__form" action="#" method="post">
-                <input class="search__input" type="text" name="q" placeholder="Search..." />
+                <input class="search__input" type="text" name="s" placeholder="Search..." />
                 <button class="search__submit" type="submit">
                     <svg class="icon icon_search">
                         <title>Search</title>
@@ -131,15 +131,15 @@
                 </button>
                 <button class="search__close" type="button" aria-label="Close"></button>
             </form>
-        </div><!-- /.search -->
-    </header>
-    <main class="page__main" id="main-content">
+        </div><!-- .search -->
+    </header><!-- #masthead -->
+    <main id="content">
         <div class="page-header" style="background-image: url(img/content/shop/shop-header-bg.jpg)">
             <div class="page-header__inner">
-                <div class="heading-group heading-group_lvl_page page-header__title">
+                <div class="heading-group heading-group_lvl_1 page-header__title">
                     <h1 class="heading-group__title">Shop</h1>
                     <p class="heading-group__subtitle">Order dishes online</p>
-                </div><!-- /.heading-group -->
+                </div><!-- .heading-group -->
             </div>
         </div><!-- /.page-header -->
         <form class="checkout" action="#" method="post">
@@ -333,7 +333,7 @@
                             <span class="payment__mark" aria-hidden="true"></span>
                             <span class="payment__title">Direct payment</span>
                         </label>
-                        <div class="text payment__desc">
+                        <div class="rich-text payment__desc">
                             <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
                         </div>
                     </li>
@@ -343,7 +343,7 @@
                             <span class="payment__mark" aria-hidden="true"></span>
                             <span class="payment__title">Cheque payment</span>
                         </label>
-                        <div class="text payment__desc">
+                        <div class="rich-text payment__desc">
                             <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
                         </div>
                     </li>
@@ -359,7 +359,7 @@
                             <img class="payment__card" src="img/payments/paypal.jpg" alt="PayPal" />
                         </div>
                         <a class="payment__link" href="javascript:void(0);">What is PayPal?</a>
-                        <div class="text payment__desc">
+                        <div class="rich-text payment__desc">
                             <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account. </p>
                         </div>
                     </li>
@@ -369,8 +369,8 @@
                 <button class="btn btn_theme_default btn_size_default checkout__order-btn" type="submit" name="place_order" value="Place order">Place order</button>
             </div><!-- /.checkout__place-order -->
         </form>
-    </main>
-    <footer class="footer">
+    </main><!-- #content -->
+    <footer class="footer" id="colophon">
         <div class="footer__inner">
             <div class="footer__social">
                 <div class="footer__social-text">Follow us:</div>
@@ -400,13 +400,13 @@
                         </a>
                     </li>
                 </ul>
-            </div><!-- /.footer__social -->
+            </div><!-- .footer__social -->
             <a class="footer__logo" href="index.html">
-                <img src="img/logo.png" alt="Renome" />
-            </a><!-- /.footer__logo -->
-            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- /.footer__copyright -->
-        </div><!-- /.footer__inner -->
-    </footer>
+                <img src="img/logo.svg" alt="Renome" />
+            </a><!-- .footer__logo -->
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- .footer__copyright -->
+        </div><!-- .footer__inner -->
+    </footer><!-- #colophon -->
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
 </body>
