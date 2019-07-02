@@ -235,10 +235,10 @@
                     <h2 class="heading-group__title">Lunch</h2>
                     <p class="heading-group__subtitle">of the day</p>
                 </div><!-- .heading-group -->
-                <div class="specials-slider specials__slider">
+                <div class="specials-slider specials__slider" role="group" aria-roledescription="carousel">
                     <div class="specials-slider__inner">
-                        <div class="specials-slider__container">
-                            <div class="specials-slider__slide specials-slider__slide_active">
+                        <div class="specials-slider__container" aria-atomic="false" aria-live="polite">
+                            <div class="specials-slider__slide specials-slider__slide_active" role="group" aria-roledescription="slide" aria-labelledby="specials-homemade-baguette">
                                 <div class="specials-slider__slide-inner">
                                     <picture>
                                         <source srcset="
@@ -262,13 +262,13 @@
                                         <img class="specials-slider__slide-img" src="img/content/specials/homemade-baguette-small.jpg" alt="Homemade baguette" />
                                     </picture>
                                     <div class="specials-slider__slide-text">
-                                        <h3 class="specials-slider__slide-title">Homemade baguette</h3>
+                                        <h3 class="specials-slider__slide-title" id="specials-homemade-baguette">Homemade baguette</h3>
                                         <div class="specials-slider__slide-weekday">Monday</div>
                                     </div>
                                     <div class="specials-slider__slide-price">$8.95</div>
                                 </div><!-- .specials-slider__slide-inner -->
                             </div><!-- .specials-slider__slide -->
-                            <div class="specials-slider__slide">
+                            <div class="specials-slider__slide" role="group" aria-roledescription="slide" aria-labelledby="specials-korean-bibimbap">
                                 <div class="specials-slider__slide-inner">
                                     <picture>
                                         <source srcset="
@@ -292,13 +292,13 @@
                                         <img class="specials-slider__slide-img" src="img/content/specials/korean-bibimbap-small.jpg" alt="Korean bibimbap" />
                                     </picture>
                                     <div class="specials-slider__slide-text">
-                                        <h3 class="specials-slider__slide-title">Korean bibimbap</h3>
+                                        <h3 class="specials-slider__slide-title" id="specials-korean-bibimbap">Korean bibimbap</h3>
                                         <div class="specials-slider__slide-weekday">Tuesday</div>
                                     </div>
                                     <div class="specials-slider__slide-price">$15.70</div>
                                 </div><!-- .specials-slider__slide-inner -->
                             </div><!-- .specials-slider__slide -->
-                            <div class="specials-slider__slide">
+                            <div class="specials-slider__slide" role="group" aria-roledescription="slide" aria-labelledby="specials-apple-pie">
                                 <div class="specials-slider__slide-inner">
                                     <picture>
                                         <source srcset="
@@ -322,13 +322,13 @@
                                         <img class="specials-slider__slide-img" src="img/content/specials/apple-pie-small.jpg" alt="Apple pie" />
                                     </picture>
                                     <div class="specials-slider__slide-text">
-                                        <h3 class="specials-slider__slide-title">Apple pie</h3>
+                                        <h3 class="specials-slider__slide-title" id="specials-apple-pie">Apple pie</h3>
                                         <div class="specials-slider__slide-weekday">Wednesday</div>
                                     </div>
                                     <div class="specials-slider__slide-price">$8.75</div>
                                 </div><!-- .specials-slider__slide-inner -->
                             </div><!-- .specials-slider__slide -->
-                            <div class="specials-slider__slide">
+                            <div class="specials-slider__slide" role="group" aria-roledescription="slide" aria-labelledby="specials-steak-with-vegetables">
                                 <div class="specials-slider__slide-inner">
                                     <picture>
                                         <source srcset="
@@ -352,7 +352,7 @@
                                         <img class="specials-slider__slide-img" src="img/content/specials/steak-with-vegetables-small.jpg" alt="Steak with vegetables" />
                                     </picture>
                                     <div class="specials-slider__slide-text">
-                                        <h3 class="specials-slider__slide-title">Steak with vegetables</h3>
+                                        <h3 class="specials-slider__slide-title" id="specials-steak-with-vegetables">Steak with vegetables</h3>
                                         <div class="specials-slider__slide-weekday">Monday</div>
                                     </div>
                                     <div class="specials-slider__slide-price">$14.20</div>
@@ -508,7 +508,7 @@
                         <p class="heading-group__subtitle">Book your table at our restaurant now!</p>
                     </div><!-- .heading-group -->
                     <div class="rich-text section__text">
-                        <p>Call you on the date of your reservation to confirm your table. If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1 939 777 55 33).</p>
+                        <p>Call you on the date of your reservation to confirm your table. If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1&nbsp;939&nbsp;777&nbsp;55&nbsp;33).</p>
                     </div><!-- .rich-text -->
                     <a class="section__read-more" href="reservation.html" aria-label="Read More">...</a>
                 </div><!-- .section__content -->

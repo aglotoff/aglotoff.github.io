@@ -199,43 +199,43 @@
                     </div><!-- .heading-group -->
                     <div class="rich-text section__text">
                         <p>When you finalize a reservation with OpenTable they will send you a confirmation email immediately. We will also call you on the date of your reservation to confirm your table.</p>
-                        <p>If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1 939 777 55 33).</p>
+                        <p>If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1&nbsp;939&nbsp;777&nbsp;55&nbsp;33).</p>
                     </div><!-- .rich-text -->
                 </div><!-- .section__content -->
             </div><!-- .section__inner -->
         </section><!-- .section -->
-        <form class="reservation-form" action="#" method="post">
-            <div class="reservation-form__inner">
-                <h2 class="reservation-form__title">Make a Reservation</h2>
-                <div class="reservation-form__fields">
-                    <div class="reservation-form__input-group">
-                        <label class="reservation-form__label" for="reservation-date" id="label-date">
+        <form class="reservation" action="#" method="post" data-reservation="{}">
+            <div class="reservation__inner">
+                <h2 class="reservation__title">Make a Reservation</h2>
+                <div class="reservation__fields">
+                    <div class="reservation__input-group">
+                        <label class="reservation__label" for="reservation-date" id="reservation-date-label">
                             <svg class="icon icon_calendar">
                                 <title>Reservation date</title>
                                 <use xlink:href="img/icons.svg#calendar"></use>
                             </svg>
                         </label>
-                        <input class="input input_theme_default reservation-form__input reservation-form__date" type="text" id="reservation-date" name="date" aria-labelledby="label-date" required="required" />
-                    </div>
-                    <div class="reservation-form__input-group">
-                        <label class="reservation-form__label" for="reservation-time" id="label-time">
+                        <input class="input input_theme_default reservation__input" type="text" id="reservation-date" name="date" aria-labelledby="reservation-date-label" required="required" />
+                    </div><!-- .reservation__input-group -->
+                    <div class="reservation__input-group">
+                        <label class="reservation__label" for="reservation-time" id="reservation-time-label">
                             <svg class="icon icon_time">
                                 <title>Reservation time</title>
                                 <use xlink:href="img/icons.svg#time"></use>
                             </svg>
                         </label>
-                        <select class="reservation-form__time" id="reservation-time" name="time" aria-labelledby="label-time">
+                        <select class="reservation__input" id="reservation-time" name="time" aria-labelledby="reservation-time-label">
                             <option value="">&nbsp;</option>
                         </select>
-                    </div>
-                    <div class="reservation-form__input-group">
-                        <label class="reservation-form__label" for="reservation-party" id="label-party">
+                    </div><!-- .reservation__input-group -->
+                    <div class="reservation__input-group">
+                        <label class="reservation__label" for="reservation-party" id="reservation-party-label">
                             <svg class="icon icon_people">
                                 <title>Party size</title>
                                 <use xlink:href="img/icons.svg#people"></use>
                             </svg>
                         </label>
-                        <select class="reservation-form__people" id="reservation-party" name="party" aria-labelledby="label-party">
+                        <select class="reservation__input" id="reservation-party" name="party" aria-labelledby="reservation-party-label">
                             <option value="1">1 Person</option>
                             <option value="2" selected="selected">2 People</option>
                             <option value="3">3 People</option>
@@ -258,13 +258,13 @@
                             <option value="20">20 People</option>
                             <option value="21">Larger party</option>
                         </select>
-                    </div>
-                </div><!-- /.reservation-form__fields -->
-                <div class="reservation-form__bottom">
-                    <button class="btn btn_theme_default btn_size_default reservation-form__submit" type="submit">Find a table</button>
-                </div><!-- /.reservation-form__bottom -->
-            </div><!-- /.reservation-form__inner -->
-        </form><!-- /.reservation-form -->
+                    </div><!-- .reservation__input-group -->
+                </div><!-- .reservation__fields -->
+                <div class="reservation__bottom">
+                    <button class="btn btn_theme_default btn_size_default reservation__submit" type="submit">Find a table</button>
+                </div><!-- .reservation__bottom -->
+            </div><!-- .reservation__inner -->
+        </form><!-- .reservation -->
     </main><!-- #content -->
     <footer class="footer" id="colophon">
         <div class="footer__inner">

@@ -205,51 +205,56 @@
         </section><!-- .section -->
         <div class="contact-bottom">
             <div class="contact-bottom__inner">
-                <div class="contact-details contact-bottom__details">
+                <div class="contact-details contact-bottom__details" itemscope="itemscope" itemtype="http://schema.org/Restaurant">
+                    <meta itemprop="name" content="Renome" />
                     <h2 class="contact-details__title">Contact Details</h2>
                     <ul class="contact-details__list">
                         <li class="contact-details__item">
-                            <div class="contact-details__label">Address</div>
-                            <div class="contact-details__text">355 e 5th st, Manhattan, NY 10003</div>
+                            <span class="contact-details__label">Address</span>
+                            <span class="contact-details__text" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">355 e 5th st</span>
+                                <span itemprop="addressLocality">Manhattan, NY</span>
+                                <span itemprop="postalCode">10003</span>
+                            </span>
                         </li>
                         <li class="contact-details__item">
-                            <div class="contact-details__label">Phone</div>
-                            <div class="contact-details__text">+1 939 777 55 33</div>
+                            <span class="contact-details__label">Phone</span>
+                            <span class="contact-details__text" itemprop="telephone">+1 939 777 55 33</span>
                         </li>
                         <li class="contact-details__item">
-                            <div class="contact-details__label">Email</div>
-                            <div class="contact-details__text">reservation@renome.com</div>
+                            <span class="contact-details__label">Email</span>
+                            <span class="contact-details__text" itemprop="email">reservation@renome.com</span>
                         </li>
                     </ul>
-                </div><!-- /.contact-details -->
+                </div><!-- .contact-details -->
                 <form class="contact-form contact-bottom__form" action="#" method="post">
                     <h2 class="contact-form__title">Write a message</h2>
                     <div class="contact-form__inner">
                         <div class="contact-form__field">
                             <label class="contact-form__label" for="contact-first-name" id="label-first-name">First Name</label>
                             <input class="input input_theme_default contact-form__input" type="text" id="contact-first-name" name="first_name" placeholder="First Name *" aria-labelledby="label-first-name" required="required" />
-                        </div>
+                        </div><!-- .contact-form__field -->
                         <div class="contact-form__field">
                             <label class="contact-form__label" for="contact-last-name" id="label-last-name">Last Name</label>
                             <input class="input input_theme_default contact-form__input" type="text" id="contact-last-name" name="last_name" placeholder="Last Name *" aria-labelledby="label-last-name" required="required" />
-                        </div>
+                        </div><!-- .contact-form__field -->
                         <div class="contact-form__field">
                             <label class="contact-form__label" for="contact-email" id="label-email">Email</label>
                             <input class="input input_theme_default contact-form__input" type="email" id="contact-email" name="email" placeholder="Email *" aria-labelledby="label-email" required="required" />
-                        </div>
+                        </div><!-- .contact-form__field -->
                         <div class="contact-form__field">
                             <label class="contact-form__label" for="contact-subject" id="label-subject">Subject</label>
                             <input class="input input_theme_default contact-form__input" type="text" id="contact-subject" name="subject" placeholder="Subject *" aria-labelledby="label-subject" required="required" />
-                        </div>
+                        </div><!-- .contact-form__field -->
                         <div class="contact-form__field contact-form__field_large">
                             <label class="contact-form__label" for="contact-message" id="label-message">Message</label>
                             <textarea class="text-area text-area_theme_default contact-form__input contact-form__input_large" id="contact-message" name="message" placeholder="Message *" aria-labelledby="label-message" required="required"></textarea>
-                        </div>
+                        </div><!-- .contact-form__field -->
                         <button class="btn btn_theme_light btn_size_small contact-form__submit" type="submit">Send</button>
-                    </div><!-- /.contact-form__fields -->
-                </form><!-- /.contact-form -->
-            </div><!-- /.contact-bottom__inner -->
-        </div><!-- /.contact-bottom -->
+                    </div><!-- .contact-form__inner -->
+                </form><!-- .contact-form -->
+            </div><!-- .contact-bottom__inner -->
+        </div><!-- .contact-bottom -->
         <div class="location-map" data-map="{&quot;latlng&quot;:[40.7,-73.6],&quot;zoom&quot;:11}">
             <div class="location-map__container"></div>
         </div><!-- .location-map -->

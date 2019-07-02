@@ -235,17 +235,22 @@
                                 <div class="shipping-calc cart-shipping__calc">
                                     <button class="shipping-calc__toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="shipping-calc">Calculate Shipping</button>
                                     <form class="shipping-calc__form" action="#" method="post" id="shipping-calc">
-                                        <label class="shipping-calc__label" for="shipping-country" id="label-country"></label>
-                                        <select class="shipping-calc__country required" id="shipping-country" aria-labelledby="label-country" name="calc_shipping_country">
-                                            <option value="">&nbsp;</option>
-                                            <option value="uk">United Kingdom</option>
-                                            <option value="us">United States</option>
-                                        </select>
-                                        <label class="shipping-calc__label" for="shipping-state" id="label-state">Shipping state</label>
-                                        <input class="input input_theme_small shipping-calc__input" id="shipping-state" aria-labelledby="label-state" name="state" placeholder="State / County" required="required" />
-                                        <label class="shipping-calc__label" for="shipping-postcode" id="label-postcode">Shipping postcode
-                                            <input class="input input_theme_small shipping-calc__postcode" id="shipping-postcode" aria-labelledby="label-postcode" name="postcode" placeholder="Postcode / ZIP" required="required" />
-                                        </label>
+                                        <div class="shipping-calc__field">
+                                            <label class="shipping-calc__label" for="shipping-country" id="label-country"></label>
+                                            <select class="shipping-calc__country required" id="shipping-country" aria-labelledby="label-country" name="calc_shipping_country">
+                                                <option value="">Select a country</option>
+                                                <option value="uk">United Kingdom</option>
+                                                <option value="us">United States</option>
+                                            </select>
+                                        </div>
+                                        <div class="shipping-calc__field">
+                                            <label class="shipping-calc__label" for="shipping-state" id="label-state">Shipping state</label>
+                                            <input class="input input_theme_small shipping-calc__input" id="shipping-state" aria-labelledby="label-state" name="state" placeholder="State / County" required="required" />
+                                        </div>
+                                        <div class="shipping-calc__field">
+                                            <label class="shipping-calc__label" for="shipping-postcode" id="label-postcode">Shipping postcode</label>
+                                            <input class="input input_theme_small shipping-calc__input" id="shipping-postcode" aria-labelledby="label-postcode" name="postcode" placeholder="Postcode / ZIP" required="required" />
+                                        </div>
                                         <button class="btn btn_theme_default btn_size_default shipping-calc__submit" type="submit" name="calc_shipping" value="1">Update totals</button>
                                     </form>
                                 </div>
