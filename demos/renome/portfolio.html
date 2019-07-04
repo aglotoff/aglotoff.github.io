@@ -148,23 +148,23 @@
                     <button class="portfolio-filter__toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-filter">Filter</button>
                     <ul class="portfolio-filter__list" role="listbox" aria-label="Portfolio Filter" aria-orientation="vertical" tabindex="0" aria-activedescendant="filter-all" id="portfolio-filter">
                         <li class="portfolio-filter__item">
-                            <button class="portfolio-filter__btn portfolio-filter__btn_active" type="button" role="option" tabindex="-1" aria-selected="true" data-filter="all" id="filter-a">All</button>
+                            <button class="portfolio-filter__option" type="button" role="option" tabindex="-1" aria-selected="true" data-filter="all" id="filter-all">All</button>
                         </li>
                         <li class="portfolio-filter__item">
-                            <button class="portfolio-filter__btn" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="lunch" id="filter-l">Lunch</button>
+                            <button class="portfolio-filter__option" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="lunch" id="filter-lunch">Lunch</button>
                         </li>
                         <li class="portfolio-filter__item">
-                            <button class="portfolio-filter__btn" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="drinks" id="filter-d">Drinks</button>
+                            <button class="portfolio-filter__option" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="drinks" id="filter-drinks">Drinks</button>
                         </li>
                         <li class="portfolio-filter__item">
-                            <button class="portfolio-filter__btn" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="desserts" id="filter-d">Desserts</button>
+                            <button class="portfolio-filter__option" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="desserts" id="filter-desserts">Desserts</button>
                         </li>
                     </ul>
                 </div><!-- .portfolio-filter__inner -->
             </div><!-- .portfolio-filter -->
             <div class="portfolio__container">
                 <div class="portfolio-grid portfolio__grid" id="portfolio" aria-live="polite" aria-relevant="additions" aria-busy="false">
-                    <div class="portfolio-grid__inner">
+                    <div class="portfolio-grid__container">
                         <article class="portfolio-grid__item" data-groups="[&quot;drinks&quot;]">
                             <div class="portfolio-grid__item-inner">
                                 <picture>
@@ -186,7 +186,7 @@
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="drinks">drinks</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="drinks">drinks</a>
                                         </li>
                                     </ul>
                                 </div><!-- .portfolio-grid__overlay -->
@@ -213,7 +213,7 @@
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="desserts">desserts</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="desserts">desserts</a>
                                         </li>
                                     </ul>
                                 </div><!-- .portfolio-grid__overlay -->
@@ -240,7 +240,7 @@
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="lunch">lunch</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="lunch">lunch</a>
                                         </li>
                                     </ul>
                                 </div><!-- .portfolio-grid__overlay -->
@@ -267,7 +267,7 @@
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="lunch">lunch</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="lunch">lunch</a>
                                         </li>
                                     </ul>
                                 </div><!-- .portfolio-grid__overlay -->
@@ -294,7 +294,7 @@
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="lunch">lunch</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="lunch">lunch</a>
                                         </li>
                                     </ul>
                                 </div><!-- .portfolio-grid__overlay -->
@@ -321,14 +321,14 @@
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="desserts">desserts</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="desserts">desserts</a>
                                         </li>
                                     </ul>
                                 </div><!-- .portfolio-grid__overlay -->
                             </div><!-- .portfolio-grid__item-inner -->
                         </article>
                         <div class="portfolio-grid__sizer" aria-hidden="true"></div>
-                    </div><!-- .portfolio-grid__inner -->
+                    </div><!-- .portfolio-grid__container -->
                 </div><!-- .portfolio-grid -->
                 <div class="portfolio__more">
                     <button class="portfolio__more-btn" type="button" aria-controls="portfolio">Load more projects</button>
