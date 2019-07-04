@@ -147,122 +147,194 @@
                 <div class="portfolio-filter__inner">
                     <button class="portfolio-filter__toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="portfolio-filter">Filter</button>
                     <ul class="portfolio-filter__list" role="listbox" aria-label="Portfolio Filter" aria-orientation="vertical" tabindex="0" aria-activedescendant="filter-all" id="portfolio-filter">
-                        <li class="portfolio-filter__item" role="presentation">
-                            <button class="portfolio-filter__btn portfolio-filter__btn_active" type="button" role="option" tabindex="-1" aria-selected="true" data-filter="all" id="filter-all">All</button>
+                        <li class="portfolio-filter__item">
+                            <button class="portfolio-filter__btn portfolio-filter__btn_active" type="button" role="option" tabindex="-1" aria-selected="true" data-filter="all" id="filter-a">All</button>
                         </li>
-                        <li class="portfolio-filter__item" role="presentation">
-                            <button class="portfolio-filter__btn" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="lunch" id="filter-lunch">Lunch</button>
+                        <li class="portfolio-filter__item">
+                            <button class="portfolio-filter__btn" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="lunch" id="filter-l">Lunch</button>
                         </li>
-                        <li class="portfolio-filter__item" role="presentation">
-                            <button class="portfolio-filter__btn" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="drinks" id="filter-drinks">Drinks</button>
+                        <li class="portfolio-filter__item">
+                            <button class="portfolio-filter__btn" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="drinks" id="filter-d">Drinks</button>
                         </li>
-                        <li class="portfolio-filter__item" role="presentation">
-                            <button class="portfolio-filter__btn" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="desserts" id="filter-desserts">Desserts</button>
+                        <li class="portfolio-filter__item">
+                            <button class="portfolio-filter__btn" type="button" role="option" tabindex="-1" aria-selected="false" data-filter="desserts" id="filter-d">Desserts</button>
                         </li>
                     </ul>
-                </div><!-- /.portfolio-filter__inner -->
-            </div><!-- /.portfolio-filter -->
+                </div><!-- .portfolio-filter__inner -->
+            </div><!-- .portfolio-filter -->
             <div class="portfolio__container">
                 <div class="portfolio-grid portfolio__grid" id="portfolio" aria-live="polite" aria-relevant="additions" aria-busy="false">
                     <div class="portfolio-grid__inner">
-                        <div class="portfolio-grid__item" data-groups="[&quot;drinks&quot;]">
+                        <article class="portfolio-grid__item" data-groups="[&quot;drinks&quot;]">
                             <div class="portfolio-grid__item-inner">
-                                <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/mango-cocktail.jpg" alt="Mango cocktail" />
-                                <div class="portfolio-grid__text">
+                                <picture>
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/mango-cocktail-small.webp 1x,
+    img/content/portfolio/projects/thumbs/mango-cocktail-medium.webp 1.5x,
+    img/content/portfolio/projects/thumbs/mango-cocktail-large.webp 2x
+" type="image/webp" />
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/mango-cocktail-small.jpg 1x,
+    img/content/portfolio/projects/thumbs/mango-cocktail-medium.jpg 1.5x,
+    img/content/portfolio/projects/thumbs/mango-cocktail-large.jpg 2x
+" type="image/jpeg" />
+                                    <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/mango-cocktail-small.jpg" alt="Mango cocktail" />
+                                </picture>
+                                <div class="portfolio-grid__overlay">
                                     <h2 class="portfolio-grid__title">
                                         <a class="portfolio-grid__link" href="portfolio-single.html">Mango cocktail</a>
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="drinks">drinks</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="drinks">drinks</a>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-grid__item" data-groups="[&quot;desserts&quot;]">
+                                </div><!-- .portfolio-grid__overlay -->
+                            </div><!-- .portfolio-grid__item-inner -->
+                        </article>
+                        <article class="portfolio-grid__item" data-groups="[&quot;desserts&quot;]">
                             <div class="portfolio-grid__item-inner">
-                                <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/sandwiches.jpg" alt="Sandwiches" />
-                                <div class="portfolio-grid__text">
+                                <picture>
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/sandwiches-small.webp 1x,
+    img/content/portfolio/projects/thumbs/sandwiches-medium.webp 1.5x,
+    img/content/portfolio/projects/thumbs/sandwiches-large.webp 2x
+" type="image/webp" />
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/sandwiches-small.jpg 1x,
+    img/content/portfolio/projects/thumbs/sandwiches-medium.jpg 1.5x,
+    img/content/portfolio/projects/thumbs/sandwiches-large.jpg 2x
+" type="image/jpeg" />
+                                    <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/sandwiches-small.jpg" alt="Sandwiches" />
+                                </picture>
+                                <div class="portfolio-grid__overlay">
                                     <h2 class="portfolio-grid__title">
                                         <a class="portfolio-grid__link" href="portfolio-single.html">Sandwiches</a>
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="desserts">desserts</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="desserts">desserts</a>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-grid__item" data-groups="[&quot;lunch&quot;]">
+                                </div><!-- .portfolio-grid__overlay -->
+                            </div><!-- .portfolio-grid__item-inner -->
+                        </article>
+                        <article class="portfolio-grid__item" data-groups="[&quot;lunch&quot;]">
                             <div class="portfolio-grid__item-inner">
-                                <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/steak-with-vegetables.jpg" alt="Steak with vegetables" />
-                                <div class="portfolio-grid__text">
+                                <picture>
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/steak-with-vegetables-small.webp 1x,
+    img/content/portfolio/projects/thumbs/steak-with-vegetables-medium.webp 1.5x,
+    img/content/portfolio/projects/thumbs/steak-with-vegetables-large.webp 2x
+" type="image/webp" />
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/steak-with-vegetables-small.jpg 1x,
+    img/content/portfolio/projects/thumbs/steak-with-vegetables-medium.jpg 1.5x,
+    img/content/portfolio/projects/thumbs/steak-with-vegetables-large.jpg 2x
+" type="image/jpeg" />
+                                    <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/steak-with-vegetables-small.jpg" alt="Steak with vegetables" />
+                                </picture>
+                                <div class="portfolio-grid__overlay">
                                     <h2 class="portfolio-grid__title">
                                         <a class="portfolio-grid__link" href="portfolio-single.html">Steak with vegetables</a>
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="lunch">lunch</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="lunch">lunch</a>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-grid__item" data-groups="[&quot;lunch&quot;]">
+                                </div><!-- .portfolio-grid__overlay -->
+                            </div><!-- .portfolio-grid__item-inner -->
+                        </article>
+                        <article class="portfolio-grid__item" data-groups="[&quot;lunch&quot;]">
                             <div class="portfolio-grid__item-inner">
-                                <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/chicken-skewers.jpg" alt="Chicken skewers" />
-                                <div class="portfolio-grid__text">
+                                <picture>
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/chicken-skewers-small.webp 1x,
+    img/content/portfolio/projects/thumbs/chicken-skewers-medium.webp 1.5x,
+    img/content/portfolio/projects/thumbs/chicken-skewers-large.webp 2x
+" type="image/webp" />
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/chicken-skewers-small.jpg 1x,
+    img/content/portfolio/projects/thumbs/chicken-skewers-medium.jpg 1.5x,
+    img/content/portfolio/projects/thumbs/chicken-skewers-large.jpg 2x
+" type="image/jpeg" />
+                                    <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/chicken-skewers-small.jpg" alt="Chicken skewers" />
+                                </picture>
+                                <div class="portfolio-grid__overlay">
                                     <h2 class="portfolio-grid__title">
                                         <a class="portfolio-grid__link" href="portfolio-single.html">Chicken skewers</a>
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="lunch">lunch</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="lunch">lunch</a>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-grid__item" data-groups="[&quot;lunch&quot;]">
+                                </div><!-- .portfolio-grid__overlay -->
+                            </div><!-- .portfolio-grid__item-inner -->
+                        </article>
+                        <article class="portfolio-grid__item" data-groups="[&quot;lunch&quot;]">
                             <div class="portfolio-grid__item-inner">
-                                <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/chicken-breast.jpg" alt="Chicken breast" />
-                                <div class="portfolio-grid__text">
+                                <picture>
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/chicken-breast-small.webp 1x,
+    img/content/portfolio/projects/thumbs/chicken-breast-medium.webp 1.5x,
+    img/content/portfolio/projects/thumbs/chicken-breast-large.webp 2x
+" type="image/webp" />
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/chicken-breast-small.jpg 1x,
+    img/content/portfolio/projects/thumbs/chicken-breast-medium.jpg 1.5x,
+    img/content/portfolio/projects/thumbs/chicken-breast-large.jpg 2x
+" type="image/jpeg" />
+                                    <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/chicken-breast-small.jpg" alt="Chicken breast" />
+                                </picture>
+                                <div class="portfolio-grid__overlay">
                                     <h2 class="portfolio-grid__title">
                                         <a class="portfolio-grid__link" href="portfolio-single.html">Chicken breast</a>
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="lunch">lunch</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="lunch">lunch</a>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-grid__item" data-groups="[&quot;desserts&quot;]">
+                                </div><!-- .portfolio-grid__overlay -->
+                            </div><!-- .portfolio-grid__item-inner -->
+                        </article>
+                        <article class="portfolio-grid__item" data-groups="[&quot;desserts&quot;]">
                             <div class="portfolio-grid__item-inner">
-                                <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/berries-and-coconut.jpg" alt="Berries and coconut" />
-                                <div class="portfolio-grid__text">
+                                <picture>
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/berries-and-coconut-small.webp 1x,
+    img/content/portfolio/projects/thumbs/berries-and-coconut-medium.webp 1.5x,
+    img/content/portfolio/projects/thumbs/berries-and-coconut-large.webp 2x
+" type="image/webp" />
+                                    <source srcset="
+    img/content/portfolio/projects/thumbs/berries-and-coconut-small.jpg 1x,
+    img/content/portfolio/projects/thumbs/berries-and-coconut-medium.jpg 1.5x,
+    img/content/portfolio/projects/thumbs/berries-and-coconut-large.jpg 2x
+" type="image/jpeg" />
+                                    <img class="portfolio-grid__img" src="img/content/portfolio/projects/thumbs/berries-and-coconut-small.jpg" alt="Berries and coconut" />
+                                </picture>
+                                <div class="portfolio-grid__overlay">
                                     <h2 class="portfolio-grid__title">
                                         <a class="portfolio-grid__link" href="portfolio-single.html">Berries and coconut</a>
                                     </h2>
                                     <ul class="portfolio-grid__cats">
                                         <li class="portfolio-grid__cat-item">
-                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" data-filter="desserts">desserts</a>
+                                            <a class="portfolio-grid__cat-link" href="javascript:void(0);" role="button" item-filter="desserts">desserts</a>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-grid__sizer"></div>
-                    </div><!-- /.portfolio-grid__inner -->
-                </div><!-- /.portfolio-grid -->
+                                </div><!-- .portfolio-grid__overlay -->
+                            </div><!-- .portfolio-grid__item-inner -->
+                        </article>
+                        <div class="portfolio-grid__sizer" aria-hidden="true"></div>
+                    </div><!-- .portfolio-grid__inner -->
+                </div><!-- .portfolio-grid -->
                 <div class="portfolio__more">
                     <button class="portfolio__more-btn" type="button" aria-controls="portfolio">Load more projects</button>
-                </div><!-- /.portfolio__more -->
-            </div><!-- /.portfolio__container -->
-        </div><!-- /.portfolio -->
+                </div><!-- .portfolio__more -->
+            </div><!-- .portfolio__container -->
+        </div><!-- .portfolio -->
     </main><!-- #content -->
     <footer class="footer" id="colophon">
         <div class="footer__inner">
