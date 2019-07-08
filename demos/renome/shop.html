@@ -142,8 +142,8 @@
                 </div><!-- .heading-group -->
             </div>
         </div><!-- .page-header -->
-        <div class="shop-layout">
-            <div class="shop-filter shop-layout__filter">
+        <div class="shop-main">
+            <div class="shop-filter shop-main__filter">
                 <div class="shop-filter__inner">
                     <button class="shop-filter__toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="shop-filter">Filter</button>
                     <ul class="shop-filter__list" id="shop-filter">
@@ -160,99 +160,171 @@
                             <a class="shop-filter__link" href="shop.html">Desserts</a>
                         </li>
                     </ul>
-                </div><!-- /.shop-filter__inner -->
-            </div><!-- /.shop-filter -->
-            <div class="products shop-layout__products">
-                <div class="products__inner">
-                    <ul class="products__list">
-                        <li class="products__product">
-                            <div class="product" data-product-id="1001">
-                                <a class="product__thumb" href="shop-single.html">
-                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/chicken-livers.jpg" alt="Chicken livers" />
+                </div><!-- .shop-filter__inner -->
+            </div><!-- .shop-filter -->
+            <div class="product-list shop-main__product-list">
+                <div class="product-list__inner">
+                    <ul class="product-list__items">
+                        <li class="product-list__item">
+                            <div class="product">
+                                <a class="product__thumb" href="shop-single.html" tabindex="-1" aria-hidden="true">
+                                    <picture>
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/chicken-livers-small.webp 1x,
+    img/content/shop/products/thumbs/archive/chicken-livers-medium.webp 1.5x,
+    img/content/shop/products/thumbs/archive/chicken-livers-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/chicken-livers-small.jpg 1x,
+    img/content/shop/products/thumbs/archive/chicken-livers-medium.jpg 1.5x,
+    img/content/shop/products/thumbs/archive/chicken-livers-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="product__img" src="img/content/shop/products/thumbs/archive/chicken-livers-small.jpg" alt="Chicken livers" />
+                                    </picture>
                                 </a>
                                 <h2 class="product__title">
                                     <a class="product__link" href="shop-single.html">Chicken livers</a>
                                 </h2>
                                 <div class="product__price">$9.55</div>
                                 <div class="product__add-wrapper">
-                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1001" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                    <button class="product__add-btn">Add to cart</button>
                                 </div>
-                            </div><!-- /.product -->
+                            </div><!-- .product -->
                         </li>
-                        <li class="products__product">
-                            <div class="product" data-product-id="1002">
-                                <a class="product__thumb" href="shop-single.html">
-                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/steak-with-vegetables.jpg" alt="Steak with vegetables" />
+                        <li class="product-list__item">
+                            <div class="product">
+                                <a class="product__thumb" href="shop-single.html" tabindex="-1" aria-hidden="true">
+                                    <picture>
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/steak-with-vegetables-small.webp 1x,
+    img/content/shop/products/thumbs/archive/steak-with-vegetables-medium.webp 1.5x,
+    img/content/shop/products/thumbs/archive/steak-with-vegetables-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/steak-with-vegetables-small.jpg 1x,
+    img/content/shop/products/thumbs/archive/steak-with-vegetables-medium.jpg 1.5x,
+    img/content/shop/products/thumbs/archive/steak-with-vegetables-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="product__img" src="img/content/shop/products/thumbs/archive/steak-with-vegetables-small.jpg" alt="Steak with vegetables" />
+                                    </picture>
                                 </a>
                                 <h2 class="product__title">
                                     <a class="product__link" href="shop-single.html">Steak with vegetables</a>
                                 </h2>
                                 <div class="product__price">$14.20</div>
                                 <div class="product__add-wrapper">
-                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1002" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                    <button class="product__add-btn">Add to cart</button>
                                 </div>
-                            </div><!-- /.product -->
+                            </div><!-- .product -->
                         </li>
-                        <li class="products__product">
-                            <div class="product" data-product-id="1003">
-                                <a class="product__thumb" href="shop-single.html">
-                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/beef-with-pineapple.jpg" alt="Beef with pineapple" />
+                        <li class="product-list__item">
+                            <div class="product">
+                                <a class="product__thumb" href="shop-single.html" tabindex="-1" aria-hidden="true">
+                                    <picture>
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/beef-with-pineapple-small.webp 1x,
+    img/content/shop/products/thumbs/archive/beef-with-pineapple-medium.webp 1.5x,
+    img/content/shop/products/thumbs/archive/beef-with-pineapple-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/beef-with-pineapple-small.jpg 1x,
+    img/content/shop/products/thumbs/archive/beef-with-pineapple-medium.jpg 1.5x,
+    img/content/shop/products/thumbs/archive/beef-with-pineapple-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="product__img" src="img/content/shop/products/thumbs/archive/beef-with-pineapple-small.jpg" alt="Beef with pineapple" />
+                                    </picture>
                                 </a>
                                 <h2 class="product__title">
                                     <a class="product__link" href="shop-single.html">Beef with pineapple</a>
                                 </h2>
                                 <div class="product__price">$18.20</div>
                                 <div class="product__add-wrapper">
-                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1003" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                    <button class="product__add-btn">Add to cart</button>
                                 </div>
-                            </div><!-- /.product -->
+                            </div><!-- .product -->
                         </li>
-                        <li class="products__product">
-                            <div class="product" data-product-id="1004">
-                                <a class="product__thumb" href="shop-single.html">
-                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/waffles-with-coffee.jpg" alt="Waffles with coffee" />
+                        <li class="product-list__item">
+                            <div class="product">
+                                <a class="product__thumb" href="shop-single.html" tabindex="-1" aria-hidden="true">
+                                    <picture>
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/waffles-with-coffee-small.webp 1x,
+    img/content/shop/products/thumbs/archive/waffles-with-coffee-medium.webp 1.5x,
+    img/content/shop/products/thumbs/archive/waffles-with-coffee-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/waffles-with-coffee-small.jpg 1x,
+    img/content/shop/products/thumbs/archive/waffles-with-coffee-medium.jpg 1.5x,
+    img/content/shop/products/thumbs/archive/waffles-with-coffee-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="product__img" src="img/content/shop/products/thumbs/archive/waffles-with-coffee-small.jpg" alt="Waffles with coffee" />
+                                    </picture>
                                 </a>
                                 <h2 class="product__title">
                                     <a class="product__link" href="shop-single.html">Waffles with coffee</a>
                                 </h2>
                                 <div class="product__price">$7.90</div>
                                 <div class="product__add-wrapper">
-                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1004" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                    <button class="product__add-btn">Add to cart</button>
                                 </div>
-                            </div><!-- /.product -->
+                            </div><!-- .product -->
                         </li>
-                        <li class="products__product">
-                            <div class="product" data-product-id="1005">
-                                <a class="product__thumb" href="shop-single.html">
-                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/apple-pie.jpg" alt="Apple pie" />
+                        <li class="product-list__item">
+                            <div class="product">
+                                <a class="product__thumb" href="shop-single.html" tabindex="-1" aria-hidden="true">
+                                    <picture>
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/apple-pie-small.webp 1x,
+    img/content/shop/products/thumbs/archive/apple-pie-medium.webp 1.5x,
+    img/content/shop/products/thumbs/archive/apple-pie-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/apple-pie-small.jpg 1x,
+    img/content/shop/products/thumbs/archive/apple-pie-medium.jpg 1.5x,
+    img/content/shop/products/thumbs/archive/apple-pie-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="product__img" src="img/content/shop/products/thumbs/archive/apple-pie-small.jpg" alt="Apple pie" />
+                                    </picture>
                                 </a>
                                 <h2 class="product__title">
                                     <a class="product__link" href="shop-single.html">Apple pie</a>
                                 </h2>
                                 <div class="product__price">$15.70</div>
                                 <div class="product__add-wrapper">
-                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1005" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                    <button class="product__add-btn">Add to cart</button>
                                 </div>
-                            </div><!-- /.product -->
+                            </div><!-- .product -->
                         </li>
-                        <li class="products__product">
-                            <div class="product" data-product-id="1006">
-                                <a class="product__thumb" href="shop-single.html">
-                                    <img class="product__img" src="img/content/shop/products/thumbs/480x480/egg-baguette.jpg" alt="Egg baguette" />
+                        <li class="product-list__item">
+                            <div class="product">
+                                <a class="product__thumb" href="shop-single.html" tabindex="-1" aria-hidden="true">
+                                    <picture>
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/egg-baguette-small.webp 1x,
+    img/content/shop/products/thumbs/archive/egg-baguette-medium.webp 1.5x,
+    img/content/shop/products/thumbs/archive/egg-baguette-large.webp 2x
+" type="image/webp" />
+                                        <source srcset="
+    img/content/shop/products/thumbs/archive/egg-baguette-small.jpg 1x,
+    img/content/shop/products/thumbs/archive/egg-baguette-medium.jpg 1.5x,
+    img/content/shop/products/thumbs/archive/egg-baguette-large.jpg 2x
+" type="image/jpeg" />
+                                        <img class="product__img" src="img/content/shop/products/thumbs/archive/egg-baguette-small.jpg" alt="Egg baguette" />
+                                    </picture>
                                 </a>
                                 <h2 class="product__title">
                                     <a class="product__link" href="shop-single.html">Egg baguette</a>
                                 </h2>
                                 <div class="product__price">$8.10</div>
                                 <div class="product__add-wrapper">
-                                    <a class="product__add-btn" role="button" data-quantity="1" data-product-id="1006" href="javascript:void(0);" rel="nofollow">Add to cart</a>
+                                    <button class="product__add-btn">Add to cart</button>
                                 </div>
-                            </div><!-- /.product -->
+                            </div><!-- .product -->
                         </li>
                     </ul>
-                </div><!-- /.products__inner -->
-            </div><!-- /.products -->
-            <nav class="pagination shop-layout__pagination" aria-label="Pagination Navigation">
+                </div><!-- .product-list__inner -->
+            </div><!-- .product-list -->
+            <nav class="pagination shop-main__pagination" aria-label="Pagination Navigation">
                 <div class="pagination__inner">
                     <a class="pagination__link pagination__link_prev" href="javascript:void(0);">Go to Previous Page</a>
                     <ul class="pagination__list">
@@ -275,7 +347,7 @@
                     <a class="pagination__link pagination__link_next" href="javascript:void(0);">Go to Next Page</a>
                 </div><!-- .pagination__inner -->
             </nav><!-- .pagination -->
-        </div><!-- /.shop-layout -->
+        </div><!-- .shop-main -->
     </main><!-- #content -->
     <footer class="footer" id="colophon">
         <div class="footer__inner">
@@ -314,6 +386,7 @@
             <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- .footer__copyright -->
         </div><!-- .footer__inner -->
     </footer><!-- #colophon -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from%2CSet%2CObject.assign%2CArray.prototype.find%2CArray.prototype.includes"></script>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
 </body>

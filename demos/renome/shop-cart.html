@@ -166,7 +166,17 @@
                             <td class="cart-form__cell">
                                 <div class="cart-form__product">
                                     <a class="cart-form__product-thumb" href="shop-single.html">
-                                        <img class="cart-form__product-img" src="img/content/shop/products/thumbs/80x80/beef-with-pineapple.jpg" alt="Beef with pineapple" />
+                                        <picture>
+                                            <source srcset="
+    img/content/shop/products/thumbs/cart/beef-with-pineapple-small.webp 1x,
+    img/content/shop/products/thumbs/cart/beef-with-pineapple-large.webp 2x
+" type="image/webp" />
+                                            <source srcset="
+    img/content/shop/products/thumbs/cart/beef-with-pineapple-small.jpg 1x,
+    img/content/shop/products/thumbs/cart/beef-with-pineapple-large.jpg 2x
+" type="image/jpeg" />
+                                            <img class="cart-form__product-img" src="img/content/shop/products/thumbs/cart/beef-with-pineapple-small.jpg" alt="Beef with pineapple" />
+                                        </picture>
                                     </a>
                                     <div class="cart-form__product-body">
                                         <a class="cart-form__product-title" href="shop-single.html">Beef with pineapple</a>
@@ -188,7 +198,17 @@
                             <td class="cart-form__cell">
                                 <div class="cart-form__product">
                                     <a class="cart-form__product-thumb" href="shop-single.html">
-                                        <img class="cart-form__product-img" src="img/content/shop/products/thumbs/80x80/egg-baguette.jpg" alt="Egg baguette" />
+                                        <picture>
+                                            <source srcset="
+    img/content/shop/products/thumbs/cart/egg-baguette-small.webp 1x,
+    img/content/shop/products/thumbs/cart/egg-baguette-large.webp 2x
+" type="image/webp" />
+                                            <source srcset="
+    img/content/shop/products/thumbs/cart/egg-baguette-small.jpg 1x,
+    img/content/shop/products/thumbs/cart/egg-baguette-large.jpg 2x
+" type="image/jpeg" />
+                                            <img class="cart-form__product-img" src="img/content/shop/products/thumbs/cart/egg-baguette-small.jpg" alt="Egg baguette" />
+                                        </picture>
                                     </a>
                                     <div class="cart-form__product-body">
                                         <a class="cart-form__product-title" href="shop-single.html">Egg baguette</a>
@@ -210,13 +230,13 @@
                 </table>
                 <div class="cart-form__actions">
                     <div class="cart-form__coupon">
-                        <label class="cart-form__coupon-label" for="cart-coupon-code" id="label-coupon-code">Coupon code</label>
-                        <input class="input input_theme_coupon cart-form__coupon-input" type="text" name="coupon_code" placeholder="Coupon code" id="cart-coupon-code" aria-labelledby="label-coupon-code" />
+                        <label class="cart-form__coupon-label" for="cart-coupon-code" id="cart-coupon-code-label">Coupon code</label>
+                        <input class="input input_theme_coupon cart-form__coupon-input" type="text" name="coupon_code" placeholder="Coupon code" id="cart-coupon-code" aria-labelledby="cart-coupon-code-label" />
                         <button class="btn btn_theme_default btn_size_default cart-form__coupon-apply" type="button" name="apply_coupon" value="Apply coupon">Apply coupon</button>
-                    </div><!-- /.cart-form__coupon -->
+                    </div><!-- .cart-form__coupon -->
                     <button class="btn btn_theme_default btn_size_default cart-form__submit" type="submit" name="update_cart" value="Update Cart">Update Cart</button>
-                </div><!-- /.cart-form__actions -->
-            </div><!-- /.cart-form__inner -->
+                </div><!-- .cart-form__actions -->
+            </div><!-- .cart-form__inner -->
         </form>
         <div class="cart-totals">
             <div class="cart-totals__inner">
@@ -228,33 +248,33 @@
                     <tr>
                         <th class="cart-totals__table-header">Shipping</th>
                         <td class="cart-totals__table-cell">
-                            <div class="cart-shipping cart-totals__shipping">
-                                <ul class="cart-shipping__methods">
-                                    <li class="cart-shipping__method">Free shipping</li>
+                            <div class="cart-totals__shipping">
+                                <ul class="cart-totals__shipping-methods">
+                                    <li class="cart-totals__shipping-method">Free shipping</li>
                                 </ul>
-                                <div class="shipping-calc cart-shipping__calc">
+                                <div class="shipping-calc cart-totals__shipping-calc">
                                     <button class="shipping-calc__toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="shipping-calc">Calculate Shipping</button>
                                     <form class="shipping-calc__form" action="#" method="post" id="shipping-calc">
                                         <div class="shipping-calc__field">
-                                            <label class="shipping-calc__label" for="shipping-country" id="label-country"></label>
-                                            <select class="shipping-calc__country required" id="shipping-country" aria-labelledby="label-country" name="calc_shipping_country">
+                                            <label class="shipping-calc__label" for="shipping-country" id="shipping-country-label"></label>
+                                            <select class="shipping-calc__country required" id="shipping-country" aria-labelledby="shipping-country-label" name="calc_shipping_country">
                                                 <option value="">Select a country</option>
                                                 <option value="uk">United Kingdom</option>
                                                 <option value="us">United States</option>
                                             </select>
-                                        </div>
+                                        </div><!-- .shipping-calc__field -->
                                         <div class="shipping-calc__field">
-                                            <label class="shipping-calc__label" for="shipping-state" id="label-state">Shipping state</label>
-                                            <input class="input input_theme_small shipping-calc__input" id="shipping-state" aria-labelledby="label-state" name="state" placeholder="State / County" required="required" />
-                                        </div>
+                                            <label class="shipping-calc__label" for="shipping-state" id="shipping-state-label">Shipping state</label>
+                                            <input class="input input_theme_small shipping-calc__input" id="shipping-state" aria-labelledby="shipping-state-label" name="state" placeholder="State / County" required="required" />
+                                        </div><!-- .shipping-calc__field -->
                                         <div class="shipping-calc__field">
-                                            <label class="shipping-calc__label" for="shipping-postcode" id="label-postcode">Shipping postcode</label>
-                                            <input class="input input_theme_small shipping-calc__input" id="shipping-postcode" aria-labelledby="label-postcode" name="postcode" placeholder="Postcode / ZIP" required="required" />
-                                        </div>
+                                            <label class="shipping-calc__label" for="shipping-postcode" id="shipping-postcode-label">Shipping postcode</label>
+                                            <input class="input input_theme_small shipping-calc__input" id="shipping-postcode" aria-labelledby="shipping-postcode-label" name="postcode" placeholder="Postcode / ZIP" required="required" />
+                                        </div><!-- .shipping-calc__field -->
                                         <button class="btn btn_theme_default btn_size_default shipping-calc__submit" type="submit" name="calc_shipping" value="1">Update totals</button>
                                     </form>
-                                </div>
-                            </div><!-- /.cart-shipping -->
+                                </div><!-- .shipping-calc -->
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -265,8 +285,8 @@
                 <div class="cart-totals__checkout">
                     <a class="btn btn_theme_default btn_size_default cart-totals__checkout-btn" href="shop-checkout.html">Proceed to checkout</a>
                 </div>
-            </div><!-- /.cart-totals__inner -->
-        </div><!-- /.cart-totals -->
+            </div><!-- .cart-totals__inner -->
+        </div><!-- .cart-totals -->
     </main><!-- #content -->
     <footer class="footer" id="colophon">
         <div class="footer__inner">
@@ -305,6 +325,7 @@
             <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div><!-- .footer__copyright -->
         </div><!-- .footer__inner -->
     </footer><!-- #colophon -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from%2CSet%2CObject.assign%2CArray.prototype.find%2CArray.prototype.includes"></script>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
 </body>
