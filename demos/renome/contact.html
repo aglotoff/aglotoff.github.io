@@ -147,15 +147,15 @@
                 <div class="img-group img-group_order_top-right section__images">
                     <div class="img-group__wrapper">
                         <picture>
-                            <source srcset="img/content/contact/contact-1-small.webp 450w, img/content/contact/contact-1-medium.webp 720w, img/content/contact/contact-1-large.webp 900w" type="image/webp" sizes="(min-width: 480px) 450px, 100vw" />
-                            <source srcset="img/content/contact/contact-1-small.jpg 450w, img/content/contact/contact-1-medium.jpg 720w, img/content/contact/contact-1-large.jpg 900w" type="image/jpeg" sizes="(min-width: 480px) 450px, 100vw" />
+                            <source srcset="img/content/contact/contact-1-small.webp 450w, img/content/contact/contact-1-medium.webp 625w, img/content/contact/contact-1-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/contact/contact-1-small.jpg 450w, img/content/contact/contact-1-medium.jpg 625w, img/content/contact/contact-1-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
                             <img class="img-group__img" src="img/content/contact/contact-1-small.jpg" alt="Contact" />
                         </picture>
                     </div><!-- .img-group__wrapper -->
                     <div class="img-group__wrapper">
                         <picture>
-                            <source srcset="img/content/contact/contact-2-small.webp 450w, img/content/contact/contact-2-medium.webp 720w, img/content/contact/contact-2-large.webp 900w" type="image/webp" sizes="(min-width: 480px) 450px, 100vw" />
-                            <source srcset="img/content/contact/contact-2-small.jpg 450w, img/content/contact/contact-2-medium.jpg 720w, img/content/contact/contact-2-large.jpg 900w" type="image/jpeg" sizes="(min-width: 480px) 450px, 100vw" />
+                            <source srcset="img/content/contact/contact-2-small.webp 450w, img/content/contact/contact-2-medium.webp 625w, img/content/contact/contact-2-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/contact/contact-2-small.jpg 450w, img/content/contact/contact-2-medium.jpg 625w, img/content/contact/contact-2-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
                             <img class="img-group__img" src="img/content/contact/contact-2-small.jpg" alt="Contact" />
                         </picture>
                     </div><!-- .img-group__wrapper -->
@@ -195,31 +195,33 @@
                         </li>
                     </ul>
                 </div><!-- .contact-details -->
-                <form class="contact-form contact-bottom__form" action="#" method="post">
+                <form class="contact-form form contact-bottom__form" action="#" method="post">
                     <h2 class="contact-form__title">Write a message</h2>
-                    <div class="contact-form__inner">
-                        <div class="contact-form__field">
-                            <label class="contact-form__label" for="contact-first-name" id="label-first-name">First Name</label>
-                            <input class="input input_theme_default contact-form__input" type="text" id="contact-first-name" name="first_name" placeholder="First Name *" aria-labelledby="label-first-name" required="required" />
-                        </div><!-- .contact-form__field -->
-                        <div class="contact-form__field">
-                            <label class="contact-form__label" for="contact-last-name" id="label-last-name">Last Name</label>
-                            <input class="input input_theme_default contact-form__input" type="text" id="contact-last-name" name="last_name" placeholder="Last Name *" aria-labelledby="label-last-name" required="required" />
-                        </div><!-- .contact-form__field -->
-                        <div class="contact-form__field">
-                            <label class="contact-form__label" for="contact-email" id="label-email">Email</label>
-                            <input class="input input_theme_default contact-form__input" type="email" id="contact-email" name="email" placeholder="Email *" aria-labelledby="label-email" required="required" />
-                        </div><!-- .contact-form__field -->
-                        <div class="contact-form__field">
-                            <label class="contact-form__label" for="contact-subject" id="label-subject">Subject</label>
-                            <input class="input input_theme_default contact-form__input" type="text" id="contact-subject" name="subject" placeholder="Subject *" aria-labelledby="label-subject" required="required" />
-                        </div><!-- .contact-form__field -->
-                        <div class="contact-form__field contact-form__field_large">
-                            <label class="contact-form__label" for="contact-message" id="label-message">Message</label>
-                            <textarea class="text-area text-area_theme_default contact-form__input contact-form__input_large" id="contact-message" name="message" placeholder="Message *" aria-labelledby="label-message" required="required"></textarea>
-                        </div><!-- .contact-form__field -->
-                        <button class="btn btn_theme_light btn_size_small contact-form__submit" type="submit">Send</button>
-                    </div><!-- .contact-form__inner -->
+                    <div class="form__fields">
+                        <div class="form__field">
+                            <label class="form__label" for="contact-first-name" id="label-first-name">First Name</label>
+                            <input class="input input_theme_default form__input" type="text" id="contact-first-name" name="first_name" placeholder="First Name *" aria-labelledby="label-first-name" required="required" />
+                        </div><!-- .form__field -->
+                        <div class="form__field">
+                            <label class="form__label" for="contact-last-name" id="label-last-name">Last Name</label>
+                            <input class="input input_theme_default form__input" type="text" id="contact-last-name" name="last_name" placeholder="Last Name *" aria-labelledby="label-last-name" required="required" />
+                        </div><!-- .form__field -->
+                        <div class="form__field">
+                            <label class="form__label" for="contact-email" id="label-email">Email</label>
+                            <input class="input input_theme_default form__input" type="email" id="contact-email" name="email" placeholder="Email *" aria-labelledby="label-email" required="required" />
+                        </div><!-- .form__field -->
+                        <div class="form__field">
+                            <label class="form__label" for="contact-subject" id="label-subject">Subject</label>
+                            <input class="input input_theme_default form__input" type="text" id="contact-subject" name="subject" placeholder="Subject *" aria-labelledby="label-subject" required="required" />
+                        </div><!-- .form__field -->
+                        <div class="form__field form__field_wide">
+                            <label class="form__label" for="contact-message" id="label-message">Message</label>
+                            <textarea class="text-area text-area_theme_default form__input" id="contact-message" name="message" placeholder="Message *" aria-labelledby="label-message" required="required"></textarea>
+                        </div><!-- .form__field -->
+                    </div><!-- .form__fields -->
+                    <div class="contact-form__submit">
+                        <button class="btn btn_theme_light btn_size_small" type="submit">Send</button>
+                    </div><!-- .contact-form__submit -->
                 </form><!-- .contact-form -->
             </div><!-- .contact-bottom__inner -->
         </div><!-- .contact-bottom -->

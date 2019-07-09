@@ -142,232 +142,238 @@
                 </div><!-- .heading-group -->
             </div>
         </div><!-- .page-header -->
-        <form class="checkout" action="#" method="post">
+        <form class="checkout form" action="#" method="post">
             <div class="checkout__customer-details">
                 <div class="checkout__section">
                     <div class="checkout__section-inner">
                         <div class="checkout__section-header">
                             <h2 class="checkout__section-title">Billing address</h2>
-                        </div>
+                        </div><!-- .checkout__section-header -->
                         <div class="checkout__fields-wrap">
-                            <div class="checkout__fields">
-                                <div class="checkout__group checkout__group_large">
-                                    <label class="checkout__label" for="billing-country" id="label-billing-country">Country*</label>
+                            <div class="form__fields">
+                                <div class="form__field form__field_wide">
+                                    <label class="form__label form__label_visible" for="billing-country" id="label-billing-country">Country*</label>
                                     <select class="checkout__select" id="billing-country" name="billing_country" aria-labelledby="label-billing-country">
                                         <option value="uk">United Kingdom (UK)</option>
                                     </select>
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="billing-first-name" id="label-billing-first-name">First Name*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="billing-first-name" name="billing_first_name" aria-labelledby="label-billing-first-name" required="required" />
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="billing-last-name" id="label-billing-last-name">Last Name*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="billing-last-name" name="billing_last_name" aria-labelledby="label-billing-last-name" required="required" />
-                                </div>
-                                <div class="checkout__group checkout__group_large">
-                                    <label class="checkout__label" for="billing-company" id="label-billing-company">Company Name</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="billing-company" name="billing_company" aria-labelledby="label-billing-company" />
-                                </div>
-                                <div class="checkout__group checkout__group_large">
-                                    <label class="checkout__label" for="billing-address1" id="label-billing-address1">Address*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="billing-address1" name="billing_address1" aria-labelledby="label-billing-address1" placeholder="Street address" required="required" />
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="billing-address2" name="billing_address2" aria-label="Apartment, Suite, Unite etc. (optional)" placeholder="Apartment, Suite, Unite etc. (optional)" />
-                                </div>
-                                <div class="checkout__group checkout__group_large">
-                                    <label class="checkout__label" for="billing-city" id="label-billing-city">Town / City*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="billing-city" name="billing_city" aria-labelledby="label-billing-city" placeholder="Town / City" required="required" />
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="billing-county" id="label-billing-county">County</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="billing-county" name="billing_county" aria-labelledby="label-billing-county" />
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="billing-postcode" id="label-billing-postcode">Postcode*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="billing-postcode" name="billing_postcode" aria-labelledby="label-billing-postcode" placeholder="Postcode" required="required" />
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="billing-email" id="label-billing-email">Email address*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="email" id="billing-email" name="billing_email" aria-labelledby="label-billing-email" required="required" />
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="billing-phone" id="label-billing-phone">Phone*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="tel" id="billing-phone" name="billing_phone" aria-labelledby="label-billing-phone" required="required" />
-                                </div>
-                            </div>
-                            <label class="checkout__check">
-                                <input class="checkout__check-input" type="checkbox" name="create_account" value="1" data-toggle="create-account" />
-                                <span class="checkout__check-mark" aria-hidden="true"></span>Create an account?
-                            </label>
-                            <div class="checkout__account-fields" id="create-account">
-                                <div class="text checkout__account-text">
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="billing-first-name" id="label-billing-first-name">First Name*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="billing-first-name" name="billing_first_name" aria-labelledby="label-billing-first-name" required="required" />
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="billing-last-name" id="label-billing-last-name">Last Name*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="billing-last-name" name="billing_last_name" aria-labelledby="label-billing-last-name" required="required" />
+                                </div><!-- .form__field -->
+                                <div class="form__field form__field_wide">
+                                    <label class="form__label form__label_visible" for="billing-company" id="label-billing-company">Company Name</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="billing-company" name="billing_company" aria-labelledby="label-billing-company" />
+                                </div><!-- .form__field -->
+                                <div class="form__field form__field_wide">
+                                    <label class="form__label form__label_visible" for="billing-address1" id="label-billing-address1">Address*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="billing-address1" name="billing_address1" aria-labelledby="label-billing-address1" placeholder="Street address" required="required" />
+                                    <input class="input input_theme_checkout form__input" type="text" id="billing-address2" name="billing_address2" aria-label="Apartment, Suite, Unite etc. (optional)" placeholder="Apartment, Suite, Unite etc. (optional)" />
+                                </div><!-- .form__field -->
+                                <div class="form__field form__field_wide">
+                                    <label class="form__label form__label_visible" for="billing-city" id="label-billing-city">Town / City*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="billing-city" name="billing_city" aria-labelledby="label-billing-city" placeholder="Town / City" required="required" />
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="billing-county" id="label-billing-county">County</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="billing-county" name="billing_county" aria-labelledby="label-billing-county" />
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="billing-postcode" id="label-billing-postcode">Postcode*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="billing-postcode" name="billing_postcode" aria-labelledby="label-billing-postcode" placeholder="Postcode" required="required" />
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="billing-email" id="label-billing-email">Email address*</label>
+                                    <input class="input input_theme_checkout form__input" type="email" id="billing-email" name="billing_email" aria-labelledby="label-billing-email" required="required" />
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="billing-phone" id="label-billing-phone">Phone*</label>
+                                    <input class="input input_theme_checkout form__input" type="tel" id="billing-phone" name="billing_phone" aria-labelledby="label-billing-phone" required="required" />
+                                </div><!-- .form__field -->
+                            </div><!-- .form__fields -->
+                            <div class="checkout__account-header">
+                                <label class="checkbox checkout__checkbox" data-toggle="account-fields">
+                                    <input class="checkbox__input" type="checkbox" name="create_account" value="1" aria-labelledby="label-create-account" id="create-account" />
+                                    <span class="checkbox__mark" aria-hidden="true"></span>
+                                </label>
+                                <label class="checkout__check-label" id="label-create-account" for="create-account">Create an account?</label>
+                            </div><!-- .checkout__account-checkbox -->
+                            <div class="checkout__account-fields" id="account-fields">
+                                <div class="rich-text checkout__account-text">
                                     <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
                                 </div>
-                                <div class="checkout__fields">
-                                    <div class="checkout__group checkout__group_large">
-                                        <label class="checkout__label" for="account-password" id="label-account-password">Account Password*</label>
-                                        <input class="input input_theme_checkout checkout__input" type="password" id="account-password" name="account-password" aria-labelledby="label-account-password" placeholder="Password" required="required" />
-                                    </div>
-                                </div>
-                            </div><!-- /.checkout__fields -->
-                        </div><!-- /.checkout__fields-wrap -->
-                    </div><!-- /.checkout__section__inner -->
-                </div><!-- /.checkout__section -->
+                                <div class="form__fields">
+                                    <div class="form__field form__field_wide">
+                                        <label class="form__label form__label_visible" for="account-password" id="label-account-password">Account Password*</label>
+                                        <input class="input input_theme_checkout form__input" type="password" id="account-password" name="account-password" aria-labelledby="label-account-password" placeholder="Password" required="required" />
+                                    </div><!-- .form__field -->
+                                </div><!-- .form__fields -->
+                            </div><!-- .checkout__fields -->
+                        </div><!-- .checkout__fields-wrap -->
+                    </div><!-- .checkout__section__inner -->
+                </div><!-- .checkout__section -->
                 <div class="checkout__section">
                     <div class="checkout__section-inner">
                         <div class="checkout__section-header">
                             <h2 class="checkout__section-title">Shipping address</h2>
-                            <label class="checkout__check checkout__check_inline">
-                                <input class="checkout__check-input" type="checkbox" name="ship_to_different_address" value="1" data-toggle="shipping-fields" />
-                                <span class="checkout__check-mark" aria-hidden="true"></span>Ship to a different address?
+                            <label class="checkbox checkout__checkbox checkout__shipping-checkbox" data-toggle="shipping-fields">
+                                <input class="checkbox__input" type="checkbox" name="ship_to_different_address" value="1" aria-labelledby="label-ship-to-different-address" id="ship-to-different-address" />
+                                <span class="checkbox__mark" aria-hidden="true"></span>
                             </label>
-                        </div>
+                            <label class="checkout__check-label" id="label-ship-to-different-address" for="ship-to-different-address">Ship to a different address?</label>
+                        </div><!-- .checkout__section-header -->
                         <div class="checkout__fields-wrap">
-                            <div class="checkout__fields" id="shipping-fields">
-                                <div class="checkout__group checkout__group_large">
-                                    <label class="checkout__label" for="shipping-country" id="label-shipping-country">Country*</label>
+                            <div class="form__fields" id="shipping-fields">
+                                <div class="form__field form__field_wide">
+                                    <label class="form__label form__label_visible" for="shipping-country" id="label-shipping-country">Country*</label>
                                     <select class="checkout__select" id="shipping-country" name="shipping_country" aria-labelledby="label-shipping-country">
                                         <option value="uk">United Kingdom (UK)</option>
                                     </select>
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="shipping-first-name" id="label-shipping-first-name">First Name*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="shipping-first-name" name="shipping_first_name" aria-labelledby="label-shipping-first-name" required="required" />
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="shipping-last-name" id="label-shipping-last-name">Last Name*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="shipping-last-name" name="shipping_last_name" aria-labelledby="label-shipping-last-name" required="required" />
-                                </div>
-                                <div class="checkout__group checkout__group_large">
-                                    <label class="checkout__label" for="shipping-company" id="label-shipping-company">Company Name</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="shipping-company" name="shipping_company" aria-labelledby="label-shipping-company" />
-                                </div>
-                                <div class="checkout__group checkout__group_large">
-                                    <label class="checkout__label" for="shipping-address1" id="label-shipping-address1">Address*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="shipping-address1" name="shipping_address1" aria-labelledby="label-shipping-address1" placeholder="Street address" required="required" />
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="shipping-address2" name="shipping_address2" aria-label="Apartment, Suite, Unite etc. (optional)" placeholder="Apartment, Suite, Unite etc. (optional)" />
-                                </div>
-                                <div class="checkout__group checkout__group_large">
-                                    <label class="checkout__label" for="shipping-city" id="label-shipping-city">Town / City*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="shipping-city" name="shipping_city" aria-labelledby="label-shipping-city" placeholder="Town / City" required="required" />
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="shipping-county" id="label-shipping-county">County</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="shipping-county" name="shipping_county" aria-labelledby="label-shipping-county" />
-                                </div>
-                                <div class="checkout__group">
-                                    <label class="checkout__label" for="shipping-postcode" id="label-shipping-postcode">Postcode*</label>
-                                    <input class="input input_theme_checkout checkout__input" type="text" id="shipping-postcode" name="shipping_postcode" aria-labelledby="label-shipping-postcode" placeholder="Postcode" required="required" />
-                                </div>
-                            </div><!-- /.checkout__fields -->
-                            <div class="checkout__fields">
-                                <div class="checkout__group checkout__group_large">
-                                    <label class="checkout__label" for="shipping-notes" id="label-shipping-notes">Order notes</label>
-                                    <textarea class="text-area text-area_theme_checkout checkout__input" id="shipping-notes" name="shipping_notes" aria-labelledby="label-shipping-notes" placeholder="Notes about you order, e.g. special notes for delivery."></textarea>
-                                </div>
-                            </div><!-- /.checkout__fields -->
-                        </div><!-- /.checkout__fields-wrap -->
-                    </div><!-- /.checkout__section__inner -->
-                </div><!-- /.checkout__section -->
-            </div><!-- /.checkout__customer-details -->
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="shipping-first-name" id="label-shipping-first-name">First Name*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="shipping-first-name" name="shipping_first_name" aria-labelledby="label-shipping-first-name" required="required" />
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="shipping-last-name" id="label-shipping-last-name">Last Name*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="shipping-last-name" name="shipping_last_name" aria-labelledby="label-shipping-last-name" required="required" />
+                                </div><!-- .form__field -->
+                                <div class="form__field form__field_wide">
+                                    <label class="form__label form__label_visible" for="shipping-company" id="label-shipping-company">Company Name</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="shipping-company" name="shipping_company" aria-labelledby="label-shipping-company" />
+                                </div><!-- .form__field -->
+                                <div class="form__field form__field_wide">
+                                    <label class="form__label form__label_visible" for="shipping-address1" id="label-shipping-address1">Address*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="shipping-address1" name="shipping_address1" aria-labelledby="label-shipping-address1" placeholder="Street address" required="required" />
+                                    <input class="input input_theme_checkout form__input" type="text" id="shipping-address2" name="shipping_address2" aria-label="Apartment, Suite, Unite etc. (optional)" placeholder="Apartment, Suite, Unite etc. (optional)" />
+                                </div><!-- .form__field -->
+                                <div class="form__field form__field_wide">
+                                    <label class="form__label form__label_visible" for="shipping-city" id="label-shipping-city">Town / City*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="shipping-city" name="shipping_city" aria-labelledby="label-shipping-city" placeholder="Town / City" required="required" />
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="shipping-county" id="label-shipping-county">County</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="shipping-county" name="shipping_county" aria-labelledby="label-shipping-county" />
+                                </div><!-- .form__field -->
+                                <div class="form__field">
+                                    <label class="form__label form__label_visible" for="shipping-postcode" id="label-shipping-postcode">Postcode*</label>
+                                    <input class="input input_theme_checkout form__input" type="text" id="shipping-postcode" name="shipping_postcode" aria-labelledby="label-shipping-postcode" placeholder="Postcode" required="required" />
+                                </div><!-- .form__field -->
+                            </div><!-- .form__fields -->
+                            <div class="form__fields">
+                                <div class="form__field form__field_wide">
+                                    <label class="form__label form__label_visible" for="shipping-notes" id="label-shipping-notes">Order notes</label>
+                                    <textarea class="text-area text-area_theme_checkout form__input" id="shipping-notes" name="shipping_notes" aria-labelledby="label-shipping-notes" placeholder="Notes about you order, e.g. special notes for delivery."></textarea>
+                                </div><!-- .form__field -->
+                            </div><!-- .form__fields -->
+                        </div><!-- .checkout__fields-wrap -->
+                    </div><!-- .checkout__section__inner -->
+                </div><!-- .checkout__section -->
+            </div><!-- .checkout__customer-details -->
             <div class="checkout__section">
                 <div class="checkout__section-inner">
                     <div class="checkout__section-heading">
                         <h2 class="checkout__section-title">Your order</h2>
-                    </div>
-                    <div class="checkout__review-order">
-                        <table class="review-order">
+                    </div><!-- .checkout__section-heading -->
+                    <div class="checkout__order">
+                        <table class="checkout-order">
                             <thead>
                                 <tr>
-                                    <th class="review-order__header" scope="col">Product</th>
-                                    <th class="review-order__header" scope="col">Total</th>
+                                    <th class="checkout-order__header" scope="col">Product</th>
+                                    <th class="checkout-order__header" scope="col">Total</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="review-order__cell">
-                                        <span class="review-order__product-name">Beef with pineapple x 2</span>
+                                    <td class="checkout-order__cell">
+                                        <span class="checkout-order__product-name">Beef with pineapple x 2</span>
                                     </td>
-                                    <td class="review-order__cell">
-                                        <span class="review-order__product-total">$36.40</span>
+                                    <td class="checkout-order__cell">
+                                        <span class="checkout-order__product-total">$36.40</span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="review-order__cell">
-                                        <span class="review-order__product-name">Egg baguette x 1</span>
+                                    <td class="checkout-order__cell">
+                                        <span class="checkout-order__product-name">Egg baguette x 1</span>
                                     </td>
-                                    <td class="review-order__cell">
-                                        <span class="review-order__product-total">$8.10</span>
+                                    <td class="checkout-order__cell">
+                                        <span class="checkout-order__product-total">$8.10</span>
                                     </td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <th class="review-order__header" scope="row">Subtotal</th>
-                                    <td class="review-order__cell">
-                                        <span class="review-order__subtotal">$44.50</span>
+                                    <th class="checkout-order__header" scope="row">Subtotal</th>
+                                    <td class="checkout-order__cell">
+                                        <span class="checkout-order__subtotal">$44.50</span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="review-order__header" scope="row">Shipping</th>
-                                    <td class="review-order__cell">
-                                        <span class="review-order__shipping">Free shipping</span>
+                                    <th class="checkout-order__header" scope="row">Shipping</th>
+                                    <td class="checkout-order__cell">
+                                        <span class="checkout-order__shipping">Free shipping</span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="review-order__header" scope="row">Total</th>
-                                    <td class="review-order__cell">
-                                        <span class="review-order__total">$44.50</span>
+                                    <th class="checkout-order__header" scope="row">Total</th>
+                                    <td class="checkout-order__cell">
+                                        <span class="checkout-order__total">$44.50</span>
                                     </td>
                                 </tr>
                             </tfoot>
                         </table>
-                    </div>
-                </div><!-- /.checkout__section__inner -->
-            </div><!-- /.checkout__section -->
+                    </div><!-- .checkout__order -->
+                </div><!-- .checkout__section__inner -->
+            </div><!-- .checkout__section -->
             <div class="checkout__payment">
-                <ul class="payment">
-                    <li class="payment__method">
-                        <label class="payment__label">
-                            <input class="payment__radio" id="payment-method-direct" type="radio" name="payment_method" value="direct" checked="checked" required="required" />
-                            <span class="payment__mark" aria-hidden="true"></span>
-                            <span class="payment__title">Direct payment</span>
-                        </label>
-                        <div class="rich-text payment__desc">
+                <ul class="payments">
+                    <li class="payments__method">
+                        <div class="payments__header">
+                            <label class="radio payments__radio">
+                                <input class="radio__input" type="radio" name="payment_method" value="direct" aria-labelledby="label-payment-method-direct" id="payment-method-direct" checked="checked" />
+                                <span class="radio__mark" aria-hidden="true"></span>
+                            </label>
+                            <label class="payments__label" id="label-payment-method-direct" for="payment-method-direct">Direct payment</label>
+                        </div><!-- .payments__header -->
+                        <div class="rich-text payments__desc">
                             <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-                        </div>
+                        </div><!-- .payments__desc -->
                     </li>
-                    <li class="payment__method">
-                        <label class="payment__label">
-                            <input class="payment__radio" id="payment-method-cheque" type="radio" name="payment_method" value="cheque" required="required" />
-                            <span class="payment__mark" aria-hidden="true"></span>
-                            <span class="payment__title">Cheque payment</span>
-                        </label>
-                        <div class="rich-text payment__desc">
+                    <li class="payments__method">
+                        <div class="payments__header">
+                            <label class="radio payments__radio">
+                                <input class="radio__input" type="radio" name="payment_method" value="cheque" aria-labelledby="label-payment-method-cheque" id="payment-method-cheque" />
+                                <span class="radio__mark" aria-hidden="true"></span>
+                            </label>
+                            <label class="payments__label" id="label-payment-method-cheque" for="payment-method-cheque">Cheque payment</label>
+                        </div><!-- .payments__header -->
+                        <div class="rich-text payments__desc">
                             <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
-                        </div>
+                        </div><!-- .payments__desc -->
                     </li>
-                    <li class="payment__method">
-                        <label class="payment__label">
-                            <input class="payment__radio" id="payment-method-paypal" type="radio" name="payment_method" value="paypal" required="required" />
-                            <span class="payment__mark" aria-hidden="true"></span>
-                            <span class="payment__title">PayPal</span>
-                        </label>
-                        <div class="payment__cards">
-                            <img class="payment__card" src="img/payments/visa.jpg" alt="Visa" />
-                            <img class="payment__card" src="img/payments/mastercard.jpg" alt="Mastercard" />
-                            <img class="payment__card" src="img/payments/paypal.jpg" alt="PayPal" />
-                        </div>
-                        <a class="payment__link" href="javascript:void(0);">What is PayPal?</a>
-                        <div class="rich-text payment__desc">
+                    <li class="payments__method">
+                        <div class="payments__header">
+                            <label class="radio payments__radio">
+                                <input class="radio__input" type="radio" name="payment_method" value="paypal" aria-labelledby="label-payment-method-paypal" id="payment-method-paypal" />
+                                <span class="radio__mark" aria-hidden="true"></span>
+                            </label>
+                            <label class="payments__label" id="label-payment-method-paypal" for="payment-method-paypal">PayPal</label>
+                            <img class="payments__cards" srcset="img/payments.jpg 1x, img/payments@2x.jpg 2x" src="img/payments.jpg" alt="Visa Mastercard PayPal" />
+                            <a class="payments__link" href="javascript:void(0);">What is PayPal?</a>
+                        </div><!-- .payments__header -->
+                        <div class="rich-text payments__desc">
                             <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account. </p>
-                        </div>
+                        </div><!-- .payments__desc -->
                     </li>
                 </ul>
-            </div><!-- /.checkout__payment -->
+            </div><!-- .checkout__payment -->
             <div class="checkout__place-order">
                 <button class="btn btn_theme_default btn_size_default checkout__order-btn" type="submit" name="place_order" value="Place order">Place order</button>
-            </div><!-- /.checkout__place-order -->
+            </div><!-- .checkout__place-order -->
         </form>
     </main><!-- #content -->
     <footer class="footer" id="colophon">
