@@ -2,336 +2,486 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Renome &#8211; HTML Restaurant Template</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Renome &#8211; HTML Restaurant Template</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body class="page page_home">
-  <a class="skip-link page__skip-link" href="#content">Skip to content</a>
-  <header class="header page__header" id="masthead"><div class="header__inner">
-      <h1 class="header__logo">
-        <img class="header__logo-img" src="img/logo.svg" alt="Renome" />
-        <span class="header__logo-text">Renome</span>
-      </h1>
-      <nav class="nav header__nav">
-        <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="site-navigation">
-          <span class="hamburger__inner">
-            <span class="hamburger__title">Toggle nav</span>
-          </span>
-        </button><div class="nav__menu" id="site-navigation"><div class="nav__scrollpane">
-            <form class="mobile-search nav__search" action="#" method="post">
-              <input class="mobile-search__input" type="text" name="s" placeholder="Search..." />
-              <button class="mobile-search__submit" type="submit">
-                <svg class="icon icon_search">
-                  <title>Search</title>
-                  <use xlink:href="img/icons.svg#search"></use>
-                </svg>
-              </button>
-            </form>
-            <ul class="nav__list nav__list_horizontal">
-              <li class="nav__item">
-                <a class="nav__link nav__link_active" href="index.html">Home</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="about.html">About</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="menu.html">Menu</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="reservation.html">Reservation</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
-                </a><div class="nav__submenu" id="submenu-blog"><div class="nav__scrollpane">
-                    <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
-                    </a>
-                    <ul class="nav__list">
-                      <li class="nav__item">
-                        <a class="nav__link nav__link_submenu" href="blog-left-sidebar.html">Blog left sidebar</a>
-                      </li>
-                      <li class="nav__item">
-                        <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
-                      </li>
-                    </ul>
-                  </div></div>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
-                </a><div class="nav__submenu" id="submenu-features"><div class="nav__scrollpane">
-                    <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
-                    </a>
-                    <ul class="nav__list">
-                      <li class="nav__item">
-                        <a class="nav__link nav__link_submenu" href="portfolio.html">Portfolio</a>
-                      </li>
-                      <li class="nav__item">
-                        <a class="nav__link nav__link_submenu" href="one-page.html">One page</a>
-                      </li>
-                      <li class="nav__item">
-                        <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
-                      </li>
-                    </ul>
-                  </div></div>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="shop.html">Shop</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div></div>
-      </nav><div class="header__actions">
-        <button class="header__search-toggle">
-          <svg class="icon icon_search">
-            <title>Show search form</title>
-            <use xlink:href="img/icons.svg#search"></use>
-          </svg>
-        </button><div class="mini-cart header__mini-cart">
-          <button class="mini-cart__trigger" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
-            <svg class="icon icon_cart">
-              <title>Toggle minicart</title>
-              <use xlink:href="img/icons.svg#cart"></use>
-            </svg>
-            <span class="mini-cart__item-count">2</span>
-          </button><div class="mini-cart__drawer" id="minicart">
-            <span class="mini-cart__total">$44.50</span>
-            <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
-            <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
-          </div>
+    <a class="skip-link page__skip-link" href="#content">Skip to content</a>
+    <header class="header page__header" id="masthead">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <img class="header__logo-img" src="img/logo.svg" alt="Renome" />
+                <span class="header__logo-text">Renome</span>
+            </h1>
+            <nav class="nav header__nav">
+                <button class="hamburger nav__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="site-navigation">
+                    <span class="hamburger__inner">
+                        <span class="hamburger__title">Toggle nav</span>
+                    </span>
+                </button>
+                <div class="nav__menu" id="site-navigation">
+                    <div class="nav__scrollpane">
+                        <form class="mobile-search nav__search" action="#" method="post">
+                            <input class="mobile-search__input" type="text" name="s" placeholder="Search..." />
+                            <button class="mobile-search__submit" type="submit">
+                                <svg class="icon icon_search">
+                                    <title>Search</title>
+                                    <use xlink:href="img/icons.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <ul class="nav__list nav__list_horizontal">
+                            <li class="nav__item">
+                                <a class="nav__link nav__link_active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reservation.html">Reservation</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-blog">Blog<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-blog">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-left-sidebar.html">Blog left sidebar</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="blog-right-sidebar.html">Blog right sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link nav__link" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu-features">Features<span class="nav__arrow nav__arrow_open" aria-hidden="true"></span>
+                                </a>
+                                <div class="nav__submenu" id="submenu-features">
+                                    <div class="nav__scrollpane">
+                                        <a class="nav__link nav__link_back" href="javascript:void(0);" role="button">Back<span class="nav__arrow nav__arrow_close" aria-hidden="true"></span>
+                                        </a>
+                                        <ul class="nav__list">
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="portfolio.html">Portfolio</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="one-page.html">One page</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link nav__link_submenu" href="404.html">404 page</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__actions">
+                <button class="header__search-toggle">
+                    <svg class="icon icon_search">
+                        <title>Show search form</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="mini-cart header__mini-cart">
+                    <button class="mini-cart__trigger" aria-haspopup="true" aria-controls="minicart" aria-expanded="false">
+                        <svg class="icon icon_cart">
+                            <title>Toggle minicart</title>
+                            <use xlink:href="img/icons.svg#cart"></use>
+                        </svg>
+                        <span class="mini-cart__item-count">2</span>
+                    </button>
+                    <div class="mini-cart__drawer" id="minicart">
+                        <span class="mini-cart__total">$44.50</span>
+                        <a class="mini-cart__action" href="shop-cart.html">View Cart</a>
+                        <a class="mini-cart__action" href="shop-checkout.html">Checkout</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div><div class="search header__search" role="dialog" aria-label="Search">
-      <form class="search__form" action="#" method="post">
-        <input class="search__input" type="text" name="s" placeholder="Search..." />
-        <button class="search__submit" type="submit">
-          <svg class="icon icon_search">
-            <title>Search</title>
-            <use xlink:href="img/icons.svg#search"></use>
-          </svg>
-        </button>
-        <button class="search__close" type="button" aria-label="Close"></button>
-      </form>
-    </div></header>
-  <main id="content"><div class="slider"><div class="slider__container"><div class="slider__slide slider__slide_active" style="background-image: url(img/content/slider/slide-01.jpg)"><div class="slider__slide-content"><div class="slider__slide-heading">
-              <h2 class="slider__slide-title">Made with love</h2><div class="slider__slide-subtitle">for you</div>
-            </div></div></div><div class="slider__slide" style="background-image: url(img/content/slider/slide-02.jpg)"><div class="slider__slide-content"><div class="slider__slide-heading">
-              <h2 class="slider__slide-title">Made with love</h2><div class="slider__slide-subtitle">for you</div>
-            </div></div></div><div class="slider__slide" style="background-image: url(img/content/slider/slide-03.jpg)"><div class="slider__slide-content"><div class="slider__slide-heading">
-              <h2 class="slider__slide-title">Made with love</h2><div class="slider__slide-subtitle">for you</div>
-            </div></div></div></div><div class="slider__arrows">
-        <button class="slider__arrow slider__arrow_dir_prev" type="button">Previous</button>
-        <button class="slider__arrow slider__arrow_dir_next" type="button">Next</button>
-      </div></div>
-    <section class="section"><div class="section__inner"><div class="img-group img-group_order_bottom-left section__images"><div class="img-group__wrapper img-group__wrapper_wide">
-            <picture>
-              <source srcset="img/content/about/history-1-small.webp 450w, img/content/about/history-1-medium.webp 625w, img/content/about/history-1-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <source srcset="img/content/about/history-1-small.jpg 450w, img/content/about/history-1-medium.jpg 625w, img/content/about/history-1-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <img class="img-group__img" src="img/content/about/history-1-small.jpg" alt="About" />
-            </picture>
-          </div><div class="img-group__wrapper img-group__wrapper_wide">
-            <picture>
-              <source srcset="img/content/about/history-2-small.webp 450w, img/content/about/history-2-medium.webp 625w, img/content/about/history-2-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <source srcset="img/content/about/history-2-small.jpg 450w, img/content/about/history-2-medium.jpg 625w, img/content/about/history-2-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <img class="img-group__img" src="img/content/about/history-2-small.jpg" alt="About" />
-            </picture>
-          </div></div><div class="section__content"><div class="heading-group heading-group_lvl_2">
-            <h2 class="heading-group__title">About</h2>
-            <p class="heading-group__subtitle">We create delicious memories</p>
-          </div><div class="rich-text section__text">
-            <p>Renome it is renowned restaurant delights the senses with elegant ambiance, gracious service and delectable menus in the heart of Manhattan’s. The distinctive setting boasts contemporary furnishings and finishes atop the restaurant’s grand modern architecture.</p>
-            <p>Renome offers the room for private dining where guests enjoy creative foods and sumptuous late night desserts.</p>
-          </div>
-          <a class="section__read-more" href="about.html" aria-label="Read More">...</a>
-        </div></div></section>
-    <section class="specials"><div class="specials__inner"><div class="heading-group heading-group_lvl_2 specials__heading">
-          <h2 class="heading-group__title">Lunch</h2>
-          <p class="heading-group__subtitle">of the day</p>
-        </div><div class="specials-slider specials__slider" role="group" aria-roledescription="carousel"><div class="specials-slider__inner"><div class="specials-slider__container" aria-atomic="false" aria-live="polite"><div class="specials-slider__slide specials-slider__slide_active" role="group" aria-roledescription="slide" aria-labelledby="specials-homemade-baguette"><div class="specials-slider__slide-inner">
-                  <picture>
-                    <source srcset="img/content/specials/homemade-baguette-small.webp 600w, img/content/specials/homemade-baguette-medium.webp 900w, img/content/specials/homemade-baguette-large.webp 1200w" type="image/webp" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
-                    <source srcset="img/content/specials/homemade-baguette-small.jpg 600w, img/content/specials/homemade-baguette-medium.jpg 900w, img/content/specials/homemade-baguette-large.jpg 1200w" type="image/jpeg" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
-                    <img class="specials-slider__slide-img" src="img/content/specials/homemade-baguette-small.jpg" alt="Homemade baguette" />
-                  </picture><div class="specials-slider__slide-text">
-                    <h3 class="specials-slider__slide-title" id="specials-homemade-baguette">Homemade baguette</h3><div class="specials-slider__slide-weekday">Monday</div>
-                  </div><div class="specials-slider__slide-price">$8.95</div>
-                </div></div><div class="specials-slider__slide" role="group" aria-roledescription="slide" aria-labelledby="specials-korean-bibimbap"><div class="specials-slider__slide-inner">
-                  <picture>
-                    <source srcset="img/content/specials/korean-bibimbap-small.webp 600w, img/content/specials/korean-bibimbap-medium.webp 900w, img/content/specials/korean-bibimbap-large.webp 1200w" type="image/webp" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
-                    <source srcset="img/content/specials/korean-bibimbap-small.jpg 600w, img/content/specials/korean-bibimbap-medium.jpg 900w, img/content/specials/korean-bibimbap-large.jpg 1200w" type="image/jpeg" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
-                    <img class="specials-slider__slide-img" src="img/content/specials/korean-bibimbap-small.jpg" alt="Korean bibimbap" />
-                  </picture><div class="specials-slider__slide-text">
-                    <h3 class="specials-slider__slide-title" id="specials-korean-bibimbap">Korean bibimbap</h3><div class="specials-slider__slide-weekday">Tuesday</div>
-                  </div><div class="specials-slider__slide-price">$15.70</div>
-                </div></div><div class="specials-slider__slide" role="group" aria-roledescription="slide" aria-labelledby="specials-apple-pie"><div class="specials-slider__slide-inner">
-                  <picture>
-                    <source srcset="img/content/specials/apple-pie-small.webp 600w, img/content/specials/apple-pie-medium.webp 900w, img/content/specials/apple-pie-large.webp 1200w" type="image/webp" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
-                    <source srcset="img/content/specials/apple-pie-small.jpg 600w, img/content/specials/apple-pie-medium.jpg 900w, img/content/specials/apple-pie-large.jpg 1200w" type="image/jpeg" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
-                    <img class="specials-slider__slide-img" src="img/content/specials/apple-pie-small.jpg" alt="Apple pie" />
-                  </picture><div class="specials-slider__slide-text">
-                    <h3 class="specials-slider__slide-title" id="specials-apple-pie">Apple pie</h3><div class="specials-slider__slide-weekday">Wednesday</div>
-                  </div><div class="specials-slider__slide-price">$8.75</div>
-                </div></div><div class="specials-slider__slide" role="group" aria-roledescription="slide" aria-labelledby="specials-steak-with-vegetables"><div class="specials-slider__slide-inner">
-                  <picture>
-                    <source srcset="img/content/specials/steak-with-vegetables-small.webp 600w, img/content/specials/steak-with-vegetables-medium.webp 900w, img/content/specials/steak-with-vegetables-large.webp 1200w" type="image/webp" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
-                    <source srcset="img/content/specials/steak-with-vegetables-small.jpg 600w, img/content/specials/steak-with-vegetables-medium.jpg 900w, img/content/specials/steak-with-vegetables-large.jpg 1200w" type="image/jpeg" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
-                    <img class="specials-slider__slide-img" src="img/content/specials/steak-with-vegetables-small.jpg" alt="Steak with vegetables" />
-                  </picture><div class="specials-slider__slide-text">
-                    <h3 class="specials-slider__slide-title" id="specials-steak-with-vegetables">Steak with vegetables</h3><div class="specials-slider__slide-weekday">Monday</div>
-                  </div><div class="specials-slider__slide-price">$14.20</div>
-                </div></div></div><div class="specials-slider__arrows">
-              <button class="specials-slider__arrow specials-slider__arrow_dir_prev" type="button">Previous</button>
-              <button class="specials-slider__arrow specials-slider__arrow_dir_next" type="button">Next</button>
-            </div></div></div></div></section>
-    <section class="section section_reverse"><div class="section__inner"><div class="img-group img-group_order_top-right section__images"><div class="img-group__wrapper">
-            <picture>
-              <source srcset="img/content/menu/menu-1-small.webp 450w, img/content/menu/menu-1-medium.webp 625w, img/content/menu/menu-1-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <source srcset="img/content/menu/menu-1-small.jpg 450w, img/content/menu/menu-1-medium.jpg 625w, img/content/menu/menu-1-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <img class="img-group__img" src="img/content/menu/menu-1-small.jpg" alt="Menu" />
-            </picture>
-          </div><div class="img-group__wrapper">
-            <picture>
-              <source srcset="img/content/menu/menu-2-small.webp 450w, img/content/menu/menu-2-medium.webp 625w, img/content/menu/menu-2-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <source srcset="img/content/menu/menu-2-small.jpg 450w, img/content/menu/menu-2-medium.jpg 625w, img/content/menu/menu-2-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <img class="img-group__img" src="img/content/menu/menu-2-small.jpg" alt="Menu" />
-            </picture>
-          </div></div><div class="section__content"><div class="heading-group heading-group_lvl_2">
-            <h2 class="heading-group__title">Menu</h2>
-            <p class="heading-group__subtitle">Delicious and beautiful</p>
-          </div><div class="rich-text section__text">
-            <p>In our menu you will find a great variety of delicious food that will satisfy the needs and tastes of everyone. We strive to source the highest quality ingredients for all of our dishes thereby enhancing the quality of services.</p>
-          </div>
-          <a class="section__read-more" href="menu.html" aria-label="Read More">...</a>
-        </div></div></section><div class="testimonial"><div class="testimonial__content"><div class="testimonial__inner"><div class="testimonial__img-wrapper">
-            <picture>
-              <source srcset="img/content/testimonial/testimonial-small.webp 1x, img/content/testimonial/testimonial-large.webp 2x" type="image/webp" />
-              <source srcset="img/content/testimonial/testimonial-small.jpg 1x, img/content/testimonial/testimonial-large.jpg 2x" type="image/jpeg" />
-              <img class="testimonial__img" src="img/content/testimonial/testimonial-small.jpg" alt="Testimonial" />
-            </picture>
-          </div>
-          <blockquote class="testimonial__quote">
-            <p class="testimonial__quote-text">The most romantic and perfect place</p>
-            <footer class="testimonial__quote-footer"><cite>John Doe</cite></footer>
-          </blockquote>
-        </div></div></div>
-    <section class="section"><div class="section__inner"><div class="img-group img-group_order_top-left section__images"><div class="img-group__wrapper">
-            <picture>
-              <source srcset="img/content/reservation/reservation-1-small.webp 450w, img/content/reservation/reservation-1-medium.webp 625w, img/content/reservation/reservation-1-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <source srcset="img/content/reservation/reservation-1-small.jpg 450w, img/content/reservation/reservation-1-medium.jpg 625w, img/content/reservation/reservation-1-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <img class="img-group__img" src="img/content/reservation/reservation-1-small.jpg" alt="Reservation" />
-            </picture>
-          </div><div class="img-group__wrapper">
-            <picture>
-              <source srcset="img/content/reservation/reservation-2-small.webp 450w, img/content/reservation/reservation-2-medium.webp 625w, img/content/reservation/reservation-2-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <source srcset="img/content/reservation/reservation-2-small.jpg 450w, img/content/reservation/reservation-2-medium.jpg 625w, img/content/reservation/reservation-2-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <img class="img-group__img" src="img/content/reservation/reservation-2-small.jpg" alt="Reservation" />
-            </picture>
-          </div></div><div class="section__content"><div class="heading-group heading-group_lvl_2">
-            <h2 class="heading-group__title">Reservation</h2>
-            <p class="heading-group__subtitle">Book your table at our restaurant now!</p>
-          </div><div class="rich-text section__text">
-            <p>Call you on the date of your reservation to confirm your table. If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1&nbsp;939&nbsp;777&nbsp;55&nbsp;33).</p>
-          </div>
-          <a class="section__read-more" href="reservation.html" aria-label="Read More">...</a>
-        </div></div></section>
-    <section class="services"><div class="heading-group heading-group_lvl_2">
-        <h2 class="heading-group__title">Our services</h2>
-        <p class="heading-group__subtitle">Advantages of our restaurant</p>
-      </div><div class="services__list-wrapper">
-        <ul class="services__list">
-          <li class="services__item">Pickup or Delivery</li>
-          <li class="services__item">Serving With Love</li>
-          <li class="services__item">Daily Lunch Specials</li>
-        </ul>
-      </div></section><div class="cta"><div class="cta__inner">
-        <a class="btn btn_theme_default btn_size_default cta__btn" href="shop.html">Order now</a>
-      </div></div>
-    <section class="recent-posts"><div class="recent-posts__inner"><div class="heading-group heading-group_lvl_2">
-          <h2 class="heading-group__title">Blog</h2>
-          <p class="heading-group__subtitle">News, recipes and much more</p>
-        </div><div class="recent-posts__list"><div class="recent-posts__item">
-            <article class="recent-posts__post" style="background-image: url(img/content/blog/posts/thumbs/home/grand-opening.jpg)"><div class="recent-posts__post-inner"><div class="recent-posts__date">
-                  <time datetime="2015-10-03 19:00">10/03</time>
+        <div class="search header__search" role="dialog" aria-label="Search">
+            <form class="search__form" action="#" method="post">
+                <input class="search__input" type="text" name="s" placeholder="Search..." />
+                <button class="search__submit" type="submit">
+                    <svg class="icon icon_search">
+                        <title>Search</title>
+                        <use xlink:href="img/icons.svg#search"></use>
+                    </svg>
+                </button>
+                <button class="search__close" type="button" aria-label="Close"></button>
+            </form>
+        </div>
+    </header>
+    <main id="content">
+        <div class="slider">
+            <div class="slider__container">
+                <div class="slider__slide slider__slide_active" style="background-image: url(img/content/slider/slide-01.jpg)">
+                    <div class="slider__slide-content">
+                        <div class="slider__slide-heading">
+                            <h2 class="slider__slide-title">Made with love</h2>
+                            <div class="slider__slide-subtitle">for you</div>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="recent-posts__title">Grand opening!</h3>
-                <a class="recent-posts__link" href="blog-single-left-sidebar.html" aria-label="Read More">...</a>
-              </div></article>
-          </div><div class="recent-posts__item">
-            <article class="recent-posts__post" style="background-image: url(img/content/blog/posts/thumbs/home/mini-chilli-pretzels.jpg)"><div class="recent-posts__post-inner"><div class="recent-posts__date">
-                  <time datetime="2015-07-03 19:00">07/03</time>
+                <div class="slider__slide" style="background-image: url(img/content/slider/slide-02.jpg)">
+                    <div class="slider__slide-content">
+                        <div class="slider__slide-heading">
+                            <h2 class="slider__slide-title">Made with love</h2>
+                            <div class="slider__slide-subtitle">for you</div>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="recent-posts__title">Mini chilli pretzels</h3>
-                <a class="recent-posts__link" href="blog-single-left-sidebar.html" aria-label="Read More">...</a>
-              </div></article>
-          </div><div class="recent-posts__item">
-            <article class="recent-posts__post" style="background-image: url(img/content/blog/posts/thumbs/home/summer-specials.jpg)"><div class="recent-posts__post-inner"><div class="recent-posts__date">
-                  <time datetime="2015-05-06 19:00">05/06</time>
+                <div class="slider__slide" style="background-image: url(img/content/slider/slide-03.jpg)">
+                    <div class="slider__slide-content">
+                        <div class="slider__slide-heading">
+                            <h2 class="slider__slide-title">Made with love</h2>
+                            <div class="slider__slide-subtitle">for you</div>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="recent-posts__title">Summer specials</h3>
-                <a class="recent-posts__link" href="blog-single-left-sidebar.html" aria-label="Read More">...</a>
-              </div></article>
-          </div></div></div></section>
-    <section class="section section_reverse"><div class="section__inner"><div class="img-group img-group_order_top-right section__images"><div class="img-group__wrapper">
-            <picture>
-              <source srcset="img/content/contact/contact-1-small.webp 450w, img/content/contact/contact-1-medium.webp 625w, img/content/contact/contact-1-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <source srcset="img/content/contact/contact-1-small.jpg 450w, img/content/contact/contact-1-medium.jpg 625w, img/content/contact/contact-1-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <img class="img-group__img" src="img/content/contact/contact-1-small.jpg" alt="Contact" />
-            </picture>
-          </div><div class="img-group__wrapper">
-            <picture>
-              <source srcset="img/content/contact/contact-2-small.webp 450w, img/content/contact/contact-2-medium.webp 625w, img/content/contact/contact-2-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <source srcset="img/content/contact/contact-2-small.jpg 450w, img/content/contact/contact-2-medium.jpg 625w, img/content/contact/contact-2-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
-              <img class="img-group__img" src="img/content/contact/contact-2-small.jpg" alt="Contact" />
-            </picture>
-          </div></div><div class="section__content"><div class="heading-group heading-group_lvl_2">
-            <h2 class="heading-group__title">Contact</h2>
-            <p class="heading-group__subtitle">We welcome you in our restaurant</p>
-          </div><div class="rich-text section__text">
-            <p>Please feel free to contact us with any questions or to make reservations. If no one is available to take your call, please leave a message. We will contact you as soon as possible.</p>
-          </div>
-          <a class="section__read-more" href="contact.html" aria-label="Read More">...</a>
-        </div></div></section>
-  </main><!-- #content -->
-  <footer class="footer" id="colophon"><div class="footer__inner"><div class="footer__social"><div class="footer__social-text">Follow us:</div>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="javascript:void(0);">
-              <svg class="icon icon_fb">
-                <title>Follow us on Facebook</title>
-                <use xlink:href="img/icons.svg#fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="javascript:void(0);">
-              <svg class="icon icon_twitter">
-                <title>Follow us on Twitter</title>
-                <use xlink:href="img/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="javascript:void(0);">
-              <svg class="icon icon_gplus">
-                <title>Follow us on Google Plus</title>
-                <use xlink:href="img/icons.svg#gplus"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div><div class="footer__logo-wrap">
-        <a class="footer__logo" href="index.html">
-          <img src="img/logo.svg" alt="Renome" />
-        </a>
-      </div><div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div></div></footer>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from%2CSet%2CObject.assign%2CArray.prototype.find%2CArray.prototype.includes"></script>
-  <script src="js/vendor.js?v=1.3.0"></script>
-  <script src="js/main.js?v=1.3.0"></script>
+            </div>
+            <div class="slider__arrows">
+                <button class="slider__arrow slider__arrow_dir_prev" type="button">Previous</button>
+                <button class="slider__arrow slider__arrow_dir_next" type="button">Next</button>
+            </div>
+        </div>
+        <section class="section">
+            <div class="section__inner">
+                <div class="img-group img-group_order_bottom-left section__images">
+                    <div class="img-group__wrapper img-group__wrapper_wide">
+                        <picture>
+                            <source srcset="img/content/about/history-1-small.webp 450w, img/content/about/history-1-medium.webp 625w, img/content/about/history-1-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/about/history-1-small.jpg 450w, img/content/about/history-1-medium.jpg 625w, img/content/about/history-1-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <img class="img-group__img" src="img/content/about/history-1-small.jpg" alt="About" />
+                        </picture>
+                    </div>
+                    <div class="img-group__wrapper img-group__wrapper_wide">
+                        <picture>
+                            <source srcset="img/content/about/history-2-small.webp 450w, img/content/about/history-2-medium.webp 625w, img/content/about/history-2-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/about/history-2-small.jpg 450w, img/content/about/history-2-medium.jpg 625w, img/content/about/history-2-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <img class="img-group__img" src="img/content/about/history-2-small.jpg" alt="About" />
+                        </picture>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="heading-group heading-group_lvl_2">
+                        <h2 class="heading-group__title">About</h2>
+                        <p class="heading-group__subtitle">We create delicious memories</p>
+                    </div>
+                    <div class="rich-text section__text">
+                        <p>Renome it is renowned restaurant delights the senses with elegant ambiance, gracious service and delectable menus in the heart of Manhattan’s. The distinctive setting boasts contemporary furnishings and finishes atop the restaurant’s grand modern architecture.</p>
+                        <p>Renome offers the room for private dining where guests enjoy creative foods and sumptuous late night desserts.</p>
+                    </div>
+                    <a class="section__read-more" href="about.html" aria-label="Read More">...</a>
+                </div>
+            </div>
+        </section>
+        <section class="specials">
+            <div class="specials__inner">
+                <div class="heading-group heading-group_lvl_2 specials__heading">
+                    <h2 class="heading-group__title">Lunch</h2>
+                    <p class="heading-group__subtitle">of the day</p>
+                </div>
+                <div class="specials-slider specials__slider" role="group" aria-roledescription="carousel">
+                    <div class="specials-slider__inner">
+                        <div class="specials-slider__container" aria-atomic="false" aria-live="polite">
+                            <div class="specials-slider__slide specials-slider__slide_active" role="group" aria-roledescription="slide" aria-labelledby="specials-homemade-baguette">
+                                <div class="specials-slider__slide-inner">
+                                    <picture>
+                                        <source srcset="img/content/specials/homemade-baguette-small.webp 600w, img/content/specials/homemade-baguette-medium.webp 900w, img/content/specials/homemade-baguette-large.webp 1200w" type="image/webp" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
+                                        <source srcset="img/content/specials/homemade-baguette-small.jpg 600w, img/content/specials/homemade-baguette-medium.jpg 900w, img/content/specials/homemade-baguette-large.jpg 1200w" type="image/jpeg" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
+                                        <img class="specials-slider__slide-img" src="img/content/specials/homemade-baguette-small.jpg" alt="Homemade baguette" />
+                                    </picture>
+                                    <div class="specials-slider__slide-text">
+                                        <h3 class="specials-slider__slide-title" id="specials-homemade-baguette">Homemade baguette</h3>
+                                        <div class="specials-slider__slide-weekday">Monday</div>
+                                    </div>
+                                    <div class="specials-slider__slide-price">$8.95</div>
+                                </div>
+                            </div>
+                            <div class="specials-slider__slide" role="group" aria-roledescription="slide" aria-labelledby="specials-korean-bibimbap">
+                                <div class="specials-slider__slide-inner">
+                                    <picture>
+                                        <source srcset="img/content/specials/korean-bibimbap-small.webp 600w, img/content/specials/korean-bibimbap-medium.webp 900w, img/content/specials/korean-bibimbap-large.webp 1200w" type="image/webp" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
+                                        <source srcset="img/content/specials/korean-bibimbap-small.jpg 600w, img/content/specials/korean-bibimbap-medium.jpg 900w, img/content/specials/korean-bibimbap-large.jpg 1200w" type="image/jpeg" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
+                                        <img class="specials-slider__slide-img" src="img/content/specials/korean-bibimbap-small.jpg" alt="Korean bibimbap" />
+                                    </picture>
+                                    <div class="specials-slider__slide-text">
+                                        <h3 class="specials-slider__slide-title" id="specials-korean-bibimbap">Korean bibimbap</h3>
+                                        <div class="specials-slider__slide-weekday">Tuesday</div>
+                                    </div>
+                                    <div class="specials-slider__slide-price">$15.70</div>
+                                </div>
+                            </div>
+                            <div class="specials-slider__slide" role="group" aria-roledescription="slide" aria-labelledby="specials-apple-pie">
+                                <div class="specials-slider__slide-inner">
+                                    <picture>
+                                        <source srcset="img/content/specials/apple-pie-small.webp 600w, img/content/specials/apple-pie-medium.webp 900w, img/content/specials/apple-pie-large.webp 1200w" type="image/webp" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
+                                        <source srcset="img/content/specials/apple-pie-small.jpg 600w, img/content/specials/apple-pie-medium.jpg 900w, img/content/specials/apple-pie-large.jpg 1200w" type="image/jpeg" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
+                                        <img class="specials-slider__slide-img" src="img/content/specials/apple-pie-small.jpg" alt="Apple pie" />
+                                    </picture>
+                                    <div class="specials-slider__slide-text">
+                                        <h3 class="specials-slider__slide-title" id="specials-apple-pie">Apple pie</h3>
+                                        <div class="specials-slider__slide-weekday">Wednesday</div>
+                                    </div>
+                                    <div class="specials-slider__slide-price">$8.75</div>
+                                </div>
+                            </div>
+                            <div class="specials-slider__slide" role="group" aria-roledescription="slide" aria-labelledby="specials-steak-with-vegetables">
+                                <div class="specials-slider__slide-inner">
+                                    <picture>
+                                        <source srcset="img/content/specials/steak-with-vegetables-small.webp 600w, img/content/specials/steak-with-vegetables-medium.webp 900w, img/content/specials/steak-with-vegetables-large.webp 1200w" type="image/webp" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
+                                        <source srcset="img/content/specials/steak-with-vegetables-small.jpg 600w, img/content/specials/steak-with-vegetables-medium.jpg 900w, img/content/specials/steak-with-vegetables-large.jpg 1200w" type="image/jpeg" sizes="(min-width: 750px) 600px, calc(100vw - 20px)" />
+                                        <img class="specials-slider__slide-img" src="img/content/specials/steak-with-vegetables-small.jpg" alt="Steak with vegetables" />
+                                    </picture>
+                                    <div class="specials-slider__slide-text">
+                                        <h3 class="specials-slider__slide-title" id="specials-steak-with-vegetables">Steak with vegetables</h3>
+                                        <div class="specials-slider__slide-weekday">Monday</div>
+                                    </div>
+                                    <div class="specials-slider__slide-price">$14.20</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specials-slider__arrows">
+                            <button class="specials-slider__arrow specials-slider__arrow_dir_prev" type="button">Previous</button>
+                            <button class="specials-slider__arrow specials-slider__arrow_dir_next" type="button">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_reverse">
+            <div class="section__inner">
+                <div class="img-group img-group_order_top-right section__images">
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="img/content/menu/menu-1-small.webp 450w, img/content/menu/menu-1-medium.webp 625w, img/content/menu/menu-1-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/menu/menu-1-small.jpg 450w, img/content/menu/menu-1-medium.jpg 625w, img/content/menu/menu-1-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <img class="img-group__img" src="img/content/menu/menu-1-small.jpg" alt="Menu" />
+                        </picture>
+                    </div>
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="img/content/menu/menu-2-small.webp 450w, img/content/menu/menu-2-medium.webp 625w, img/content/menu/menu-2-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/menu/menu-2-small.jpg 450w, img/content/menu/menu-2-medium.jpg 625w, img/content/menu/menu-2-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <img class="img-group__img" src="img/content/menu/menu-2-small.jpg" alt="Menu" />
+                        </picture>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="heading-group heading-group_lvl_2">
+                        <h2 class="heading-group__title">Menu</h2>
+                        <p class="heading-group__subtitle">Delicious and beautiful</p>
+                    </div>
+                    <div class="rich-text section__text">
+                        <p>In our menu you will find a great variety of delicious food that will satisfy the needs and tastes of everyone. We strive to source the highest quality ingredients for all of our dishes thereby enhancing the quality of services.</p>
+                    </div>
+                    <a class="section__read-more" href="menu.html" aria-label="Read More">...</a>
+                </div>
+            </div>
+        </section>
+        <div class="testimonial">
+            <div class="testimonial__content">
+                <div class="testimonial__inner">
+                    <div class="testimonial__img-wrapper">
+                        <picture>
+                            <source srcset="img/content/testimonial/testimonial-small.webp 1x, img/content/testimonial/testimonial-large.webp 2x" type="image/webp" />
+                            <source srcset="img/content/testimonial/testimonial-small.jpg 1x, img/content/testimonial/testimonial-large.jpg 2x" type="image/jpeg" />
+                            <img class="testimonial__img" src="img/content/testimonial/testimonial-small.jpg" alt="Testimonial" />
+                        </picture>
+                    </div>
+                    <blockquote class="testimonial__quote">
+                        <p class="testimonial__quote-text">The most romantic and perfect place</p>
+                        <footer class="testimonial__quote-footer"><cite>John Doe</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <section class="section">
+            <div class="section__inner">
+                <div class="img-group img-group_order_top-left section__images">
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="img/content/reservation/reservation-1-small.webp 450w, img/content/reservation/reservation-1-medium.webp 625w, img/content/reservation/reservation-1-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/reservation/reservation-1-small.jpg 450w, img/content/reservation/reservation-1-medium.jpg 625w, img/content/reservation/reservation-1-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <img class="img-group__img" src="img/content/reservation/reservation-1-small.jpg" alt="Reservation" />
+                        </picture>
+                    </div>
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="img/content/reservation/reservation-2-small.webp 450w, img/content/reservation/reservation-2-medium.webp 625w, img/content/reservation/reservation-2-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/reservation/reservation-2-small.jpg 450w, img/content/reservation/reservation-2-medium.jpg 625w, img/content/reservation/reservation-2-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <img class="img-group__img" src="img/content/reservation/reservation-2-small.jpg" alt="Reservation" />
+                        </picture>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="heading-group heading-group_lvl_2">
+                        <h2 class="heading-group__title">Reservation</h2>
+                        <p class="heading-group__subtitle">Book your table at our restaurant now!</p>
+                    </div>
+                    <div class="rich-text section__text">
+                        <p>Call you on the date of your reservation to confirm your table. If you do not receive an email, or do not hear from the restaurant, we would recommend calling to confirm your table and verify your reservation booking (+1&nbsp;939&nbsp;777&nbsp;55&nbsp;33).</p>
+                    </div>
+                    <a class="section__read-more" href="reservation.html" aria-label="Read More">...</a>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="heading-group heading-group_lvl_2">
+                <h2 class="heading-group__title">Our services</h2>
+                <p class="heading-group__subtitle">Advantages of our restaurant</p>
+            </div>
+            <div class="services__list-wrapper">
+                <ul class="services__list">
+                    <li class="services__item">Pickup or Delivery</li>
+                    <li class="services__item">Serving With Love</li>
+                    <li class="services__item">Daily Lunch Specials</li>
+                </ul>
+            </div>
+        </section>
+        <div class="cta">
+            <div class="cta__inner">
+                <a class="btn btn_theme_default btn_size_default cta__btn" href="shop.html">Order now</a>
+            </div>
+        </div>
+        <section class="recent-posts">
+            <div class="recent-posts__inner">
+                <div class="heading-group heading-group_lvl_2">
+                    <h2 class="heading-group__title">Blog</h2>
+                    <p class="heading-group__subtitle">News, recipes and much more</p>
+                </div>
+                <div class="recent-posts__list">
+                    <div class="recent-posts__item">
+                        <article class="recent-posts__post" style="background-image: url(img/content/blog/posts/thumbs/home/grand-opening.jpg)">
+                            <div class="recent-posts__post-inner">
+                                <div class="recent-posts__date">
+                                    <time datetime="2015-10-03 19:00">10/03</time>
+                                </div>
+                                <h3 class="recent-posts__title">Grand opening!</h3>
+                                <a class="recent-posts__link" href="blog-single-left-sidebar.html" aria-label="Read More">...</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="recent-posts__item">
+                        <article class="recent-posts__post" style="background-image: url(img/content/blog/posts/thumbs/home/mini-chilli-pretzels.jpg)">
+                            <div class="recent-posts__post-inner">
+                                <div class="recent-posts__date">
+                                    <time datetime="2015-07-03 19:00">07/03</time>
+                                </div>
+                                <h3 class="recent-posts__title">Mini chilli pretzels</h3>
+                                <a class="recent-posts__link" href="blog-single-left-sidebar.html" aria-label="Read More">...</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="recent-posts__item">
+                        <article class="recent-posts__post" style="background-image: url(img/content/blog/posts/thumbs/home/summer-specials.jpg)">
+                            <div class="recent-posts__post-inner">
+                                <div class="recent-posts__date">
+                                    <time datetime="2015-05-06 19:00">05/06</time>
+                                </div>
+                                <h3 class="recent-posts__title">Summer specials</h3>
+                                <a class="recent-posts__link" href="blog-single-left-sidebar.html" aria-label="Read More">...</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_reverse">
+            <div class="section__inner">
+                <div class="img-group img-group_order_top-right section__images">
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="img/content/contact/contact-1-small.webp 450w, img/content/contact/contact-1-medium.webp 625w, img/content/contact/contact-1-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/contact/contact-1-small.jpg 450w, img/content/contact/contact-1-medium.jpg 625w, img/content/contact/contact-1-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <img class="img-group__img" src="img/content/contact/contact-1-small.jpg" alt="Contact" />
+                        </picture>
+                    </div>
+                    <div class="img-group__wrapper">
+                        <picture>
+                            <source srcset="img/content/contact/contact-2-small.webp 450w, img/content/contact/contact-2-medium.webp 625w, img/content/contact/contact-2-large.webp 800w" type="image/webp" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <source srcset="img/content/contact/contact-2-small.jpg 450w, img/content/contact/contact-2-medium.jpg 625w, img/content/contact/contact-2-large.jpg 800w" type="image/jpeg" sizes="(min-width: 470px) 450px, calc(100vh - 20px)" />
+                            <img class="img-group__img" src="img/content/contact/contact-2-small.jpg" alt="Contact" />
+                        </picture>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="heading-group heading-group_lvl_2">
+                        <h2 class="heading-group__title">Contact</h2>
+                        <p class="heading-group__subtitle">We welcome you in our restaurant</p>
+                    </div>
+                    <div class="rich-text section__text">
+                        <p>Please feel free to contact us with any questions or to make reservations. If no one is available to take your call, please leave a message. We will contact you as soon as possible.</p>
+                    </div>
+                    <a class="section__read-more" href="contact.html" aria-label="Read More">...</a>
+                </div>
+            </div>
+        </section>
+    </main><!-- #content -->
+    <footer class="footer" id="colophon">
+        <div class="footer__inner">
+            <div class="footer__social">
+                <div class="footer__social-text">Follow us:</div>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_fb">
+                                <title>Follow us on Facebook</title>
+                                <use xlink:href="img/icons.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_twitter">
+                                <title>Follow us on Twitter</title>
+                                <use xlink:href="img/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="javascript:void(0);">
+                            <svg class="icon icon_gplus">
+                                <title>Follow us on Google Plus</title>
+                                <use xlink:href="img/icons.svg#gplus"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__logo-wrap">
+                <a class="footer__logo" href="index.html">
+                    <img src="img/logo.svg" alt="Renome" />
+                </a>
+            </div>
+            <div class="footer__copyright">Copyright 2015 Renome by Estetiq<br />HTML template by Andrey Glotov</div>
+        </div>
+    </footer>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from%2CSet%2CObject.assign%2CArray.prototype.find%2CArray.prototype.includes"></script>
+    <script src="js/vendor.js?v=1.3.1"></script>
+    <script src="js/main.js?v=1.3.1"></script>
 </body>
 
 </html>
